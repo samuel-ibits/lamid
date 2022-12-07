@@ -1,0 +1,2 @@
+# lamid
+lamid consuluting firm
