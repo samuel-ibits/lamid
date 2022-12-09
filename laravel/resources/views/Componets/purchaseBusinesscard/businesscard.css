@@ -1,0 +1,53 @@
+*{
+    color: #eee;
+}
+.card{
+    width: 16rem;
+    padding: 1rem;
+    background: #000000;
+    border: 1px solid #D3202E;
+} 
+
+.card-title{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: .5rem;
+    color: #eee;
+}
+
+.discount{
+    color: #D3202E;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.card-list{
+    font-weight: 100;
+    font-size: 15px;
+    color: #eee;
+}
+
+.card-price{
+color: #eee;
+margin: .5rem 0px;
+}
+
+.buy-btn{
+    background: #D3202E;
+    margin: 1rem 0px;
+    padding: .5rem;
+}
+
+
+.business-card-holder {
+    width: max-content;
+}
+
+.business-card-scroll-container{
+    overflow-x: scroll;
+}
+
+.business-card-scroll-container::-webkit-scrollbar{
+    display: none;
+}
