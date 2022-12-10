@@ -18,7 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <link rel="stylesheet" href="./Componets/popup/popup.css">
 </head>
 
 <body>
@@ -40,6 +40,9 @@
                 </li>
                 <li class="p-5">
                     <a href="#">Talent management</a>
+                </li>
+                <li class="p-5">
+                    <a href="events.html">Events</a>
                 </li>
                 <li class="p-5">
                     <a href="insight.html">Insights</a>
@@ -64,6 +67,19 @@
 
         </div>
     </nav>
+
+    <div class="popup-holder">
+        <div class="form-holder">
+            <form action="" class="flex flex-col " style="gap: 1rem;">
+                <input type="text" name="" id="" placeholder="Username" class="p-2">
+                <input type="text" name="" id placeholder="Email" class="p-2">
+
+                <button class="default-btn">Confirm</button>
+            </form>
+
+        </div>
+    </div>
+
     <section class="section-1 flex  justify-around items-center w-full">
 
         <div class="text-white w-2/3 justify-around items-center">
@@ -465,6 +481,13 @@
     <script src="js/jquery.event.move.js"></script>
     <script src="js/jquery.twentytwenty.js"></script>
     <script>
+
+        $(".buy-btn").click(function () {
+            $(".popup-holder").fadeToggle('slow');
+          });
+          
+          $(".popup-holder").hide(.0000005);
+
         $(function () {
             $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
                 default_offset_pct: 0.7
