@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document </title>
-
-    <link href="css/foundation.css" rel="stylesheet" type="text/css" />
-    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+    
+<link rel="stylesheet" href="./Componets/twentytwenty/css/foundation.css">
+<link rel="stylesheet" href="./Componets/twentytwenty/css/twentytwenty-no-compass.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./Componets/menu/menu.css">
     <link rel="stylesheet" href="./styles/home.css">
@@ -85,9 +85,9 @@
     </section>
 
 
-    <p class="text-4xl bold mt-8">Business plans</p>
-    <section class="w-full business-card-scroll-container  flex flex-col  ">
-        <section class="business-card-holder  h-full flex ">
+    <section class="w-full business-card-scroll-container my-12 flex flex-col   items-center">
+        <p class="text-4xl bold mb-4">Business plans</p>
+        <section class="business-card-holder  item-center h-full flex ">
 
             <div class="card flex flex-col justify-between">
                 <div>
@@ -344,74 +344,28 @@
         </div>
 
     </section>
+   
+    <section class="w-full business-card-scroll-container my-12 flex flex-col   items-center">
+      <p class="text-4xl bold mb-4">Testimonials</p>
+      <section class="business-card-holder  item-center h-full flex ">
 
-
-    <p class="text-4xl bold mt-8">Testimonials</p>
-    <section class="w-full business-card-scroll-container flex flex-col">
-        <section class="business-card-holder gap-2rem  item-center h-full flex ">
-
-            <div class="row" style="width:15rem">
-                <div class="h-full">
-                    <div class="twentytwenty-container">
-                        <img src="img/1_1.jpg" />
-                        <img src="img/1_2.jpg" />
-                    </div>
-
-                    <div class="">
-                        <p class="testimonial-text">
-                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod assumenda, blanditiis
-                            commodi
-                            placeat quos alias debitis exercitationem doloremque quo. Odit nostrum id consequatur a
-                            ipsa, libero excepturi numquam quod voluptatibus."</p>
-
-                        <br>
-                        <p class="testimonial-user-name">John Doe</p>
-                    </div>
-                </div>
+        
+        <div class="row" style="margin-top: 2em;">
+          <div class="large-4 columns">
+            <h3>Basic Usage</h3>
+            <p>Demonstrates basic usage of the plugin.</p>
+          </div>
+          <div class="large-8 columns">
+            <div class="twentytwenty-container">
+              <img src="./assets/dp/images.png" />
+              <img src="./assets/dp/images2.png" />
             </div>
+          </div>
+        </div>
+        
 
-            <div class="row" style="width:15rem">
-                <div class="h-full">
-                    <div class="twentytwenty-container">
-                        <img src="img/1_1.jpg" />
-                        <img src="img/1_2.jpg" />
-                    </div>
-
-                    <div class="">
-                        <p class="testimonial-text">
-                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod assumenda, blanditiis
-                            commodi
-                            placeat quos alias debitis exercitationem doloremque quo. Odit nostrum id consequatur a
-                            ipsa, libero excepturi numquam quod voluptatibus."</p>
-
-                        <br>
-                        <p class="testimonial-user-name">John Doe</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" style="width:15rem">
-                <div class="h-full">
-                    <div class="twentytwenty-container">
-                        <img src="img/1_1.jpg" />
-                        <img src="img/1_2.jpg" />
-                    </div>
-
-                    <div class="">
-                        <p class="testimonial-text">
-                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod assumenda, blanditiis
-                            commodi
-                            placeat quos alias debitis exercitationem doloremque quo. Odit nostrum id consequatur a
-                            ipsa, libero excepturi numquam quod voluptatibus."</p>
-
-                        <br>
-                        <p class="testimonial-user-name">John Doe</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-    </section>
+      </section>
+  </section>
 
 
     <footer class="flex w-full">
@@ -460,22 +414,15 @@
     </div>
     <script src="./Componets/menu/menu.js"></script>
     <script src="./Componets/whatsappwidget/whatsappwidget.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"
-        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="js/jquery.event.move.js"></script>
-    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="./Componets/twentytwenty/js/jquery.event.move.js"></script>
+    <script src="./Componets/twentytwenty/js/jquery.twentytwenty.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>
-        $(function () {
-            $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
-                default_offset_pct: 0.7
-            });
-            $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
-                default_offset_pct: 0.3,
-                orientation: 'vertical'
-            });
-        });
-
-    </script>
+      $(window).load(function(){
+        $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+        $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+      });
+      </script>
 </body>
 
 </html>
