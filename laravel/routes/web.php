@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-
+//page  routes
 Route::get('/', function () {
     return view('welcome');
 });
@@ -29,3 +29,19 @@ Route::get('/home', function () {
 Route::get('/event', function () {
     return view('event');
 });
+
+
+// db routes
+
+// event
+
+//create
+Route::post('createEvents','controller@createEvents');
+//insert
+Route::get('insertEvents','controller@insertEvents');
+//view
+Route::get('viewEvents','controller@viewEvents');
+
+
+
+
