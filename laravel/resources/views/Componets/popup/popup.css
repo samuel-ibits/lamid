@@ -1,0 +1,33 @@
+.popup-holder{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #00000088;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.form-holder{
+    background: #000000;
+    padding: 1rem;
+}
+
+.default-btn{
+    background: #D3202E;
+    color: #fff;
+    padding: .5rem;
+}
+
+
+@media (max-width: 840px) {
+    .form-holder{
+        background: #000000;
+        padding: 1rem;
+        width: 80vw;
+    }
+}

@@ -51,6 +51,7 @@ body{
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    color: #000000;
 }
 
 .text-box-holder button{
