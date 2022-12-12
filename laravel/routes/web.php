@@ -24,14 +24,25 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/index.html', function () {
+    return view('index');
+});
+Route::get('/insight.html', function () {
+    return view('insight');
 });
 
-Route::get('/event', function () {
+Route::get('/events.html', function () {
     return view('events');
 });
 
+
+Route::get('/contactus.html', function () {
+    return view('contactus');
+});
+
+Route::get('/asset', function () {
+    return url('1_1.jpg');
+});
 
 // db routes
 
