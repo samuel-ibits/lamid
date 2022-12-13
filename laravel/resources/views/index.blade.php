@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document </title>
 
-    <link href={{url("css/foundation.css")} rel="stylesheet" type="text/css" />
+    <link href="css/foundation.css" rel="stylesheet" type="text/css" />
     <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./Componets/menu/menu.css">
