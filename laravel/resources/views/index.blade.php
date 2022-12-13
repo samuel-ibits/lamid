@@ -10,23 +10,24 @@
 
     <link href={{url("css/foundation.css")} rel="stylesheet" type="text/css" />
     <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+    <link href="css/foundation.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./Componets/menu/menu.css">
-    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="Componets/menu/menu.css">
+    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="./globalStyle.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="./Componets/popup/popup.css">
+    <link rel="stylesheet" href="Componets/popup/popup.css">
 </head>
 
 <body>
     <nav class="items-center w-screen place-content-around  text-sm nav-holder">
         <div class="top-div">
             <div class="logo-holder">
-                <img src="./assets/logo/lamids.png" alt="Logo" class="w-full">
+                <img src="assets/logo/lamids.png" alt="Logo" class="w-full">
             </div>
 
             <button class="menu-icon">
@@ -82,167 +83,21 @@
         </div>
     </div>
 
-    <section class="section-1 flex  justify-around items-center w-full">
+    <section class="section-1 flex  justify-around items-center ">
+    <div class="w-2/5 flex justify-around ">
+       <p class='big-txt'>We source and <br> recruit visionary leaders <br> and talaents with a singular purpose.</p>
 
-  <section class="w-full business-card-scroll-container my-12 flex   items-center">
-    <section class="business-card-holder  item-center h-full flex ">
+        <p class='big-txt-sub'>to Creat continuous innovation and disruption for  customer advantage.</p>
 
-        <div class="card flex flex-col justify-between">
-            <div>
-                <p class="card-Hatchling Plan">Hatchling Plan</p>
-                <p class="discount">Now 60% off!</p>
-                <ul class="card-list">
-                    <li>Unmetered bandwidth</li>
-                    <li>Free SSL certificate </li>
-                    <li>Single website</li>
-                  
-                   
-                </ul>
-            </div>
+        <button class='defaultBtn sm:px-7 sm:py-4'>join our job club</button>
 
-            <div>
-                <p class="card-price">$2.75/month</p>
-
-                <button class="buy-btn w-full">Buy now</button>
-            </div>
-        </div>
-
-        <div class="card flex flex-col justify-between">
-            <div>
-                <p class="card-Hatchling Plan">Hatchling Plan</p>
-                <p class="discount">Now 60% off!</p>
-                <ul class="card-list">
-                    <li>Unmetered bandwidth</li>
-                    <li>Free SSL certificate </li>
-                    <li>Single website</li>
-                    <li>Free WordPress/cPanel website transfer </li>
-                    <li>Free domain included</li>
-            </div>
-
-            <div>
-                <p class="card-price">$2.75/month</p>
-
-                <button class="buy-btn w-full">Buy now</button>
-            </div>
-        </div>
-
-        <div class="card flex flex-col justify-between">
-          <div>
-              <p class="card-Hatchling Plan">Hatchling Plan</p>
-              <p class="discount">Now 60% off!</p>
-              <ul class="card-list">
-                  <li>Unmetered bandwidth</li>
-                  <li>Free SSL certificate </li>
-                  <li>Single website</li>
-                  <li>Free WordPress/cPanel website transfer </li>
-                  <li>Free domain included</li>
-          </div>
-
-          <div>
-              <p class="card-price">$2.75/month</p>
-
-              <button class="buy-btn w-full">Buy now</button>
-          </div>
-      </div>
-
-      <div class="card flex flex-col justify-between">
-        <div>
-            <p class="card-Hatchling Plan">Hatchling Plan</p>
-            <p class="discount">Now 60% off!</p>
-            <ul class="card-list">
-                <li>Unmetered bandwidth</li>
-                <li>Free SSL certificate </li>
-                <li>Single website</li>
-                <li>Free WordPress/cPanel website transfer </li>
-                <li>Free domain included</li>
-        </div>
-
-        <div>
-            <p class="card-price">$2.75/month</p>
-
-            <button class="buy-btn w-full">Buy now</button>
-        </div>
-    </div>
-
-    <div class="card flex flex-col justify-between">
-      <div>
-          <p class="card-Hatchling Plan">Hatchling Plan</p>
-          <p class="discount">Now 60% off!</p>
-          <ul class="card-list">
-              <li>Unmetered bandwidth</li>
-              <li>Free SSL certificate </li>
-              <li>Single website</li>
-              <li>Free WordPress/cPanel website transfer </li>
-              <li>Free domain included</li>
-      </div>
-
-      <div>
-          <p class="card-price">$2.75/month</p>
-
-          <button class="buy-btn w-full">Buy now</button>
-      </div>
-  </div>
-
-  <div class="card flex flex-col justify-between">
-    <div>
-        <p class="card-Hatchling Plan">Hatchling Plan</p>
-        <p class="discount">Now 60% off!</p>
-        <ul class="card-list">
-            <li>Unmetered bandwidth</li>
-            <li>Free SSL certificate </li>
-            <li>Single website</li>
-            <li>Free WordPress/cPanel website transfer </li>
-            <li>Free domain included</li>
-    </div>
-
-    <div>
-        <p class="card-price">$2.75/month</p>
-
-        <button class="buy-btn w-full">Buy now</button>
-    </div>
-</div>
-
-<div class="card flex flex-col justify-between">
-  <div>
-      <p class="card-Hatchling Plan">Hatchling Plan</p>
-      <p class="discount">Now 60% off!</p>
-      <ul class="card-list">
-          <li>Unmetered bandwidth</li>
-          <li>Free SSL certificate </li>
-          <li>Single website</li>
-          <li>Free WordPress/cPanel website transfer </li>
-          <li>Free domain included</li>
-  </div>
-
-  <div>
-      <p class="card-price">$2.75/month</p>
-
-      <button class="buy-btn w-full">Buy now</button>
-  </div>
-</div>
-
-
-    </section>
-</section>
-
-  <section class="section-2 flex text-white justify-around items-center rounded-lg py-16 px-5">
-    <div class="w-1/2 flex flex-col justify-around input-holder-div">
-      <input type="search" placeholder="Search Job" class="p-5 mx-5 my-3 rounded outline-none text-black">
-      <input type="search" placeholder="Search Job" class="p-5 mx-5 rounded outline-none text-black">
-    </div>
-    <div class="w-1/2">
-      <p class="section-two-txt">
-        Careers at <br> LAMID Consulting
-      </p>
-    </div>
-  </section>
+    
 
 
         </div>
         <div class="w-1/3 flex justify-around items-center">
-            <img src="./assets/image1/na_may_29.png" class="image1" alt="">
+            <img src="assets/image1/na_may_29.png" class="image1" alt="">
         </div>
-
     </section>
 
 
@@ -435,19 +290,19 @@
 
         <ul class="flex justify-around item-center w-full my-10 text-center">
             <li class="flex justify-center item-center flex-col">
-                <img src="./assets/buld/Asset 1@3x.png" alt="">
+                <img src="assets/buld/Asset 1@3x.png" alt="">
                 <p>Engineering</p>
             </li>
             <li class="flex justify-center item-center flex-col">
-                <img src="./assets/chat/Asset 3@3x.png" alt="">
+                <img src="assets/chat/Asset 3@3x.png" alt="">
                 <p>Consultancy</p>
             </li>
             <li class="flex justify-center item-center flex-col">
-                <img src="./assets/customerCare/Asset 1@3x.png" alt="">
+                <img src="assets/customerCare/Asset 1@3x.png" alt="">
                 <p>Customer service</p>
             </li>
             <li class="flex justify-center item-center flex-col">
-                <img src="./assets/customerService//Asset 2@3x.png" alt="">
+                <img src="assets/customerService//Asset 2@3x.png" alt="">
                 <p>Customer service</p>
             </li>
         </ul>
@@ -511,7 +366,7 @@
     <section class="w-full business-card-scroll-container flex flex-col">
         <section class="business-card-holder gap-2rem  item-center h-full flex ">
 
-            <div class="row" style="width:15rem">
+            <div class="row mx-4" style="width:25rem">
                 <div class="h-full">
                     <div class="twentytwenty-container">
                         <img src="img/1_1.jpg" />
@@ -519,19 +374,19 @@
                     </div>
 
                     <div class="">
-                        <p class="testimonial-text">
+                        <p class="testimonial-text font-thin italic">
                             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod assumenda, blanditiis
                             commodi
                             placeat quos alias debitis exercitationem doloremque quo. Odit nostrum id consequatur a
                             ipsa, libero excepturi numquam quod voluptatibus."</p>
 
                         <br>
-                        <p class="testimonial-user-name">John Doe</p>
+                        <p class="testimonial-user-name text-red-500">John Doe</p>
                     </div>
                 </div>
             </div>
 
-            <div class="row" style="width:15rem">
+            <div class="row mx-4" style="width:25rem">
                 <div class="h-full">
                     <div class="twentytwenty-container">
                         <img src="img/1_1.jpg" />
@@ -539,19 +394,19 @@
                     </div>
 
                     <div class="">
-                        <p class="testimonial-text">
+                        <p class="testimonial-text font-thin italic">
                             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod assumenda, blanditiis
                             commodi
                             placeat quos alias debitis exercitationem doloremque quo. Odit nostrum id consequatur a
                             ipsa, libero excepturi numquam quod voluptatibus."</p>
 
                         <br>
-                        <p class="testimonial-user-name">John Doe</p>
+                        <p class="testimonial-user-name text-red-500">John Doe</p>
                     </div>
                 </div>
             </div>
 
-            <div class="row" style="width:15rem">
+            <div class="row mx-4" style="width:25rem">
                 <div class="h-full">
                     <div class="twentytwenty-container">
                         <img src="img/1_1.jpg" />
@@ -559,17 +414,63 @@
                     </div>
 
                     <div class="">
-                        <p class="testimonial-text">
+                        <p class="testimonial-text font-thin italic">
                             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod assumenda, blanditiis
                             commodi
                             placeat quos alias debitis exercitationem doloremque quo. Odit nostrum id consequatur a
                             ipsa, libero excepturi numquam quod voluptatibus."</p>
 
                         <br>
-                        <p class="testimonial-user-name">John Doe</p>
+                        <p class="testimonial-user-name text-red-500">John Doe</p>
                     </div>
                 </div>
             </div>
+
+            <div class="row mx-4" style="width:25rem">
+                <div class="h-full">
+                    <div class="twentytwenty-container">
+                        <img src="img/1_1.jpg" />
+                        <img src="img/1_2.jpg" />
+                    </div>
+
+                    <div class="">
+                        <p class="testimonial-text font-thin italic">
+                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod assumenda, blanditiis
+                            commodi
+                            placeat quos alias debitis exercitationem doloremque quo. Odit nostrum id consequatur a
+                            ipsa, libero excepturi numquam quod voluptatibus."</p>
+
+                        <br>
+                        <p class="testimonial-user-name text-red-500">John Doe</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mx-4" style="width:25rem">
+                <div class="h-full">
+                    <div class="twentytwenty-container">
+                        <img src="img/1_1.jpg" />
+                        <img src="img/1_2.jpg" />
+                    </div>
+
+                    <div class="">
+                        <p class="testimonial-text font-thin italic">
+                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod assumenda, blanditiis
+                            commodi
+                            placeat quos alias debitis exercitationem doloremque quo. Odit nostrum id consequatur a
+                            ipsa, libero excepturi numquam quod voluptatibus."</p>
+
+                        <br>
+                        <p class="testimonial-user-name text-red-500">John Doe</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+           
+
+          
 
         </section>
     </section>
@@ -577,7 +478,7 @@
 
     <footer class="flex w-full">
         <div>
-            <img src="./assets/logo/lamids.png" alt="">
+            <img src="assets/logo/lamids.png" alt="">
             <ul class="flex justify-around">
                 <li>
                     <a href="http://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
@@ -617,14 +518,16 @@
     </div>
 
     <div class="widget-toggler">
-        <img src="./assets/whatsapp/images1.png" alt="">
+        <img src="assets/whatsapp/images1.png" alt="">
     </div>
-    <script src="./Componets/menu/menu.js"></script>
-    <script src="./Componets/whatsappwidget/whatsappwidget.js"></script>
+    <script src="Componets/menu/menu.js"></script>
+    <script src="Componets/menu/menu.js
+    "></script>
+    <script src="Componets/whatsappwidget/whatsappwidget.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js"
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="js/jquery.event.move.js"></script>
-    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="../../public/js/jquery.event.move.js"></script>
+    <script src="../../public/js/jquery.twentytwenty.js"></script>
     <script>
 
         $(".buy-btn").click(function () {
