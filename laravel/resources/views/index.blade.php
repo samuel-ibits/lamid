@@ -72,7 +72,9 @@
     </nav>
 
     <div class="popup-holder">
-        <div class="form-holder">
+       
+        <div class="form-holder flex flex-col items-start">
+        <span class='remove-pop-up cursor-pointer'><i class="bi bi-x"></i></span>
             <form action="" class="flex flex-col " style="gap: 1rem;">
                 <input type="text" name="" id="" placeholder="Username" class="p-2">
                 <input type="text" name="" id placeholder="Email" class="p-2">
@@ -526,11 +528,15 @@
     <script src="Componets/whatsappwidget/whatsappwidget.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js"
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="../../public/js/jquery.event.move.js"></script>
-    <script src="../../public/js/jquery.twentytwenty.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
     <script>
 
         $(".buy-btn").click(function () {
+            $(".popup-holder").fadeToggle('slow');
+          });
+
+           $(".remove-pop-up").click(function () {
             $(".popup-holder").fadeToggle('slow');
           });
           
