@@ -30,8 +30,11 @@
                 <img src="assets/logo/lamids.png" alt="Logo" class="w-full">
             </div>
 
-            <button class="menu-icon">
+            <button class="menu-icon openmenu">
                 <i class="bi bi-list  text-white"></i>
+            </button>
+            <button class="menu-icon closemenu">
+            <i class="bi bi-x text-white"></i>
             </button>
         </div>
 
@@ -86,7 +89,7 @@
     </div>
 
     <section class="section-1 flex  justify-around items-center ">
-    <div class="w-2/5 flex justify-around ">
+    <div class="sm:w-2/5 flex justify-around ">
        <p class='big-txt'>We source and <br> recruit visionary leaders <br> and talaents with a singular purpose.</p>
 
         <p class='big-txt-sub'>to Creat continuous innovation and disruption for  customer advantage.</p>
@@ -246,13 +249,12 @@
     </section>
 
     <section class="section-2 flex text-white justify-around items-center rounded-lg py-16 px-5">
-        <div class="w-1/2 flex flex-col justify-around input-holder-div">
+        <div class="sm:w-1/2 flex flex-col justify-around input-holder-div">
             <input type="search" placeholder="Search Job" class="p-5 mx-5 my-3 rounded outline-none text-black">
-            <input type="search" placeholder="Search Job" class="p-5 mx-5 rounded outline-none text-black">
-        </div>
-        <div class="w-1/2">
+         </div>
+        <div class="sm:w-1/2">
             <p class="section-two-txt">
-                Careers at <br> LAMID Consulting
+                Careers at  LAMID Consulting
             </p>
         </div>
     </section>
@@ -278,7 +280,7 @@
 
     </section>
 
-    <section class="section-4 text-white justify-around items-center rounded-lg py-16 px-5 my-24">
+    <section class="section-4 text-white justify-around items-center rounded-lg py-5 px-5 my-10">
         <p class="headerText">Expore Categories</p>
 
         <p class="section-4-text sm:text-center">
@@ -290,26 +292,26 @@
             most suitable people with set competencies that fit into the organization’s need and culture.
         </p>
 
-        <ul class="flex justify-around item-center w-full my-10 text-center">
-            <li class="flex justify-center item-center flex-col">
+        <ul class="flex justify-around items-center w-full my-0 text-center section-4-list">
+            <li class="flex justify-center items-center  flex-col">
                 <img src="assets/buld/Asset 1@3x.png" alt="">
                 <p>Engineering</p>
             </li>
-            <li class="flex justify-center item-center flex-col">
+            <li class="flex justify-center items-center flex-col">
                 <img src="assets/chat/Asset 3@3x.png" alt="">
                 <p>Consultancy</p>
             </li>
-            <li class="flex justify-center item-center flex-col">
+            <li class="flex justify-center items-center flex-col">
                 <img src="assets/customerCare/Asset 1@3x.png" alt="">
                 <p>Customer service</p>
             </li>
-            <li class="flex justify-center item-center flex-col">
+            <li class="flex justify-center items-center flex-col">
                 <img src="assets/customerService//Asset 2@3x.png" alt="">
                 <p>Customer service</p>
             </li>
         </ul>
 
-        <button class="defaultBtn-2 px-9 py-5 ">
+        <button class="defaultBtn-2 sm:px-9 sm:py-5 ">
             See all opening
         </button>
     </section>
@@ -329,8 +331,8 @@
         </div>
     </section>
 
-    <section class="section-4 text-white justify-around items-center rounded-lg py-16 px-5 sm:my-24">
-        <p class="headerText">Featured Jobs</p>
+    <section class="section-4 text-white flex flex-col justify-around items-center rounded-lg py-16 px-5 sm:my-24">
+        <p class="headerText text-center">Featured Jobs</p>
         <p class="section-4-text text-center">
             Know your worth and find the job that qualify your life
         </p>
@@ -366,9 +368,9 @@
 
     <p class="text-4xl bold mt-8">Testimonials</p>
     <section class="w-full business-card-scroll-container flex flex-col">
-        <section class="business-card-holder gap-2rem  item-center h-full flex ">
+        <section class="business-card-holder gap-2rem  items-center h-full flex ">
 
-            <div class="row mx-4" style="width:25rem">
+            <div class="row mx-4" style="width:17rem">
                 <div class="h-full">
                     <div class="twentytwenty-container">
                         <img src="img/1_1.jpg" />
@@ -388,7 +390,7 @@
                 </div>
             </div>
 
-            <div class="row mx-4" style="width:25rem">
+            <div class="row mx-4" style="width:17rem">
                 <div class="h-full">
                     <div class="twentytwenty-container">
                         <img src="img/1_1.jpg" />
@@ -408,7 +410,7 @@
                 </div>
             </div>
 
-            <div class="row mx-4" style="width:25rem">
+            <div class="row mx-4" style="width:17rem">
                 <div class="h-full">
                     <div class="twentytwenty-container">
                         <img src="img/1_1.jpg" />
@@ -428,7 +430,7 @@
                 </div>
             </div>
 
-            <div class="row mx-4" style="width:25rem">
+            <div class="row mx-4" style="width:17rem">
                 <div class="h-full">
                     <div class="twentytwenty-container">
                         <img src="img/1_1.jpg" />
@@ -448,7 +450,7 @@
                 </div>
             </div>
 
-            <div class="row mx-4" style="width:25rem">
+            <div class="row mx-4" style="width:17rem">
                 <div class="h-full">
                     <div class="twentytwenty-container">
                         <img src="img/1_1.jpg" />
@@ -526,8 +528,7 @@
     <script src="Componets/menu/menu.js
     "></script>
     <script src="Componets/whatsappwidget/whatsappwidget.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"
-        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    
     <script src="js/jquery.event.move.js"></script>
     <script src="js/jquery.twentytwenty.js"></script>
     <script>

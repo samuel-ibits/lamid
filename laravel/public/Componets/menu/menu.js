@@ -1,5 +1,16 @@
 $(".menu-icon").click(function () {
-  $("#menuList").toggle('slow');
+  $("#menuList").show(0.000000000005);
+  $(".closemenu").show(0.000000000005);
+  $(".openmenu").hide(0.000000000005);
+});
+
+
+$(".closemenu").hide(0.000000000005);
+
+$(".closemenu").click(function () {
+  $("#menuList").hide(0.000000000005);
+  $(".closemenu").hide(0.000000000005);
+  $(".openmenu").show(0.000000000005);
 });
 $("#slider").on("input change", (e)=>{
   const sliderPos = e.target.value;

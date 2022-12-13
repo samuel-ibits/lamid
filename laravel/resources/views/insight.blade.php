@@ -27,8 +27,11 @@
                 <img src="./assets/logo/lamids.png" alt="Logo" class="w-full">
             </div>
 
-            <button class="menu-icon">
+            <button class="menu-icon openmenu">
                 <i class="bi bi-list  text-white"></i>
+            </button>
+            <button class="menu-icon closemenu">
+            <i class="bi bi-x text-white"></i>
             </button>
         </div>
 
@@ -70,9 +73,9 @@
         <button class="searchBtn p-1 rounded px-3 outline-none">Search</button>
         <input type="text" class="sm:w-2/3 p-1 rounded outline-none text-black px-3">
     </div>
-    <div class="flex page-holder mx-14">
+    <div class="flex page-holder sm:mx-14">
 
-        <div class="page-card-holder sm:w-3/5 mx-10">
+        <div class="page-card-holder sm:w-3/5 sm:mx-10">
             <div class="card-outline w-full my-5  p-5 flex justify-around item-center rounded-lg">
                 <img src="./assets/image1/na_may_29.png" class="image-one" alt="">
                 <div class="flex justify-around item-center flex-col mx-3">
@@ -89,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <div class="div-two w-4/12 flex  flex-col">
+        <div class="div-two sm:w-4/12 flex  flex-col">
 
             <ul class="pagination-component my-5">
                 <li class="active-list">1</li>

@@ -27,8 +27,11 @@
                 <img src="./assets/logo/lamids.png" alt="Logo" class="w-full">
             </div>
 
-            <button class="menu-icon">
+            <button class="menu-icon openmenu">
                 <i class="bi bi-list  text-white"></i>
+            </button>
+            <button class="menu-icon closemenu">
+            <i class="bi bi-x text-white"></i>
             </button>
         </div>
 
