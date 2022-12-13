@@ -346,7 +346,7 @@ margin: .5rem 0px;
 }
 
 .gap-2rem{
-    gap: 2rem;
+    gap: 3rem;
 }
 
 @media (max-width: 900px) { 
@@ -523,5 +523,5 @@ margin: .5rem 0px;
 .section-6-sub{
 width: 100%;
 }
-
+}
 }
