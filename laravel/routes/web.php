@@ -55,6 +55,17 @@ Route::get('insertEvents','controller@insertEvents');
 //view
 Route::get('viewEvents','controller@viewEvents');
 
+//buisness plan
+ use App\Http\Controllers\plans;
+
+Route::post('/buyPlans', [plans::class, 'buy'] );
+
+Route::post('/createPlans','plans@createPlans');
+use App\Http\Controllers\contact;
+
+
+Route::post('/reachout', [contact::class, 'reachout'] );
+
 
 
 

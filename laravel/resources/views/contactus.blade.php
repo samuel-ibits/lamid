@@ -79,7 +79,8 @@
             <img src="./assets//contactUsimage/contactusimage.png" style="width:100;" alt="">
         </div>
     </div>
-
+    <form method="POST" action="/contact" class="flex flex-col " style="gap: 1rem;">
+     @csrf
     <div class="contact-holder flex flex-col justify-center item-center">
         <div class="flex sm:flex-rol my-3">
             <input type="text" placeholder="Name" class="rounded mr-5 w-2/3 p-4 text-black outline-none">
@@ -90,6 +91,8 @@
         <textarea name="" placeholder="Type your message" class="rounded  w-full mb-3 p-4 outline-none text-black" id=""
             cols="30" rows="10"></textarea>
     </div>
+
+</form>
     <footer class="flex w-full">
         <div>
             
