@@ -45,33 +45,35 @@ Route::get('/asset', function () {
 });
 
 
-Route::get('/400.html', function () {
-    return view('400');
+Route::get('/adminPortal/404.html', function () {
+    return view('adminPortal/404');
 });
 
 
-Route::get('/addEvent.html', function () {
-    return view('addEvent');
+Route::get('/adminPortal/addEvent.html', function () {
+    return view('adminPortal/addEvent');
 });
 
-Route::get('/500.html', function () {
-    return view('500');
+Route::get('/adminPortal/500.html', function () {
+    return view('adminPortal/500');
 });
 
-Route::get('/dashboard.html', function () {
-    return view('dashboard');
+Route::get('/adminPortal/dashboard.html', function () {
+    return view('adminPortal/dashboard');
 });
 
-Route::get('adminPortal/index.html', function () {
+Route::get('/adminPortal/index.html', function () {
     return view('adminPortal/index');
 });
 
-Route::get('/ongoingevents.html', function () {
-    return view('ongoingevents');
+Route::get('/adminPortal/ongoingevents.html', function () {
+    return view('adminPortal/ongoingevents');
 });
 
-Route::get('/resume.html', function () {
-    return view('resume');
+Route::get('/adminPortal/resume.html', function () {
+    return view('adminPortal/resume');
+
+
 });
 
 // db routes
