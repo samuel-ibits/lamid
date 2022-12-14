@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document </title>
+    <title>Lamid Consulting </title>
 
     <link href="css/foundation.css" rel="stylesheet" type="text/css" />
     <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
@@ -78,11 +78,14 @@
        
         <div class="form-holder flex flex-col items-start">
         <span class='remove-pop-up cursor-pointer'><i class="bi bi-x"></i></span>
-            <form action="" class="flex flex-col " style="gap: 1rem;">
-                <input type="text" name="" id="" placeholder="Username" class="p-2">
-                <input type="text" name="" id placeholder="Email" class="p-2">
+            <form method="POST" action="/buyPlans" class="flex flex-col " style="gap: 1rem;">
+            @csrf
+            <input type="text" name="name" id="" placeholder="fullname" class="p-2">
+                <input type="text" name="email" id="" placeholder="Email" class="p-2">
+                <input type="text" name="planid" value="" id="planid" placeholder="Email" class="p-2">
+                <input type="text" name="amount"  value="" id="amount" placeholder="Email" class="p-2">
 
-                <button class="default-btn">Confirm</button>
+                <button type="submit" class="default-btn">Confirm</button>
             </form>
 
         </div>
@@ -92,7 +95,7 @@
     <div class="sm:w-2/5 flex justify-around ">
        <p class='big-txt'>We source and <br> recruit visionary leaders <br> and talaents with a singular purpose.</p>
 
-        <p class='big-txt-sub'>to Creat continuous innovation and disruption for  customer advantage.</p>
+        <p class='big-txt-sub'>to Create continuous innovation and disruption for  customer advantage.</p>
 
         <button class='defaultBtn sm:px-7 sm:py-4'>join our job club</button>
 
@@ -109,27 +112,39 @@
     <p class="text-4xl bold mt-8">Business plans</p>
     <section class="w-full business-card-scroll-container  flex flex-col  ">
         <section class="business-card-holder  h-full flex ">
+        <?php  $plan = DB::table('plans')->get(); ?>
 
+@foreach($plan as $plan) 
             <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
+           
+           
+            <div>
+                    <p class="card-Hatchling Plan">{{ $plan->name}} </p>
+                    <p class="discount">{{ $plan->discount}}</p>
                     <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
+                        <li>{{ $plan->description }}</li>
+                        
 
 
                     </ul>
                 </div>
+                
 
                 <div>
-                    <p class="card-price">$2.75/month</p>
+                    <p class="card-price">${{ $plan->price }}</month</p>
 
-                    <button class="buy-btn w-full">Buy now</button>
+                    <button class="buy-btn w-full" >Buy now</button>
                 </div>
             </div>
+            @endforeach
 
+            @forelse ($plan as $plan)
+    <li>{{ $plan->name }}</li>
+@empty
+    <p>No buisness plan available</p>
+@endforelse
+
+           
             <div class="card flex flex-col justify-between">
                 <div>
                     <p class="card-Hatchling Plan">Hatchling Plan</p>
