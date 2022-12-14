@@ -71,7 +71,9 @@
     </nav>
 
     <div class="event-page">
+    <?php  $event = DB::table('events')->get(); ?>
 
+    @foreach($event as $event)
 
         <div class="feed-card">
             <div class="feed-card-image">
@@ -80,13 +82,10 @@
 
             <div class="card-text">
                 <div class="">
-                    <h1 class="mb-4">Event Title</h1>
-                    <p class="about-event">Lorem ipsum dolor seat amet consectetur adipisicing elit. Id eius saepe
-                        commodi repellat, blanditiis vero
-                        provident consequatur consectetur consequuntur officiis? Molestias perferendis libero
-                        e quia exercitationem perspiciatis.</p>
+                    <h1 class="mb-4">{{ $event->title }}</h1>
+                    <p class="about-event">{{ $event->description }}</p>
 
-                    <p class="my-4">21 august 2022</p>
+                    <p class="my-4">{{ $event->date }}</p>
 
                 </div>
 
@@ -94,7 +93,13 @@
 
             </div>
         </div>
+        @endforeach
 
+@forelse ($event as $plan)
+<li>{{ $event->name }}</li>
+@empty
+<p>No events available</p>
+@endforelse
         <div class="feed-card">
             <div class="feed-card-image">
                 <img src="./assets/bg/bg-1.jpg" alt="">
