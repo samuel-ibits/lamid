@@ -12,7 +12,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- favicon
   ============================================ -->
-  <link rel="shortcut icon" type="image/x-icon" href="./../assets/logo/lamids.png">
+  <link rel="shortcut icon" type="image/x-icon" href="./../../../public/assets/logo/lamids.png">
   <!-- Google Fonts
   ============================================ -->
   <link rel="stylesheet" href="./../globalStyle.css">
@@ -83,8 +83,8 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" class=" flex flex-col justify-center items-center">
             <div class="sidebar-header">
-                <a href="index.html"><img class="main-logo" src="./../assets/logo/lamids.png" alt="" /></a>
-                <strong><a href="index.html"><img src="./../assets/logo/lamids.png" alt="" /></a></strong>
+                <a href="index.html"><img class="main-logo" src="./../../../public/assets/logo/lamids.png" alt="" /></a>
+                <strong><a href="index.html"><img src="./../../../public/assets/logo/lamids.png" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
@@ -124,7 +124,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro">
-                        <a href="index.html"><img class="main-logo" src="./../assets/logo/lamids.png" alt="" /></a>
+                        <a href="index.html"><img class="main-logo" src="./../../../public/assets/logo/lamids.png" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -222,7 +222,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="courses-inner res-mg-b-30">
                             <div class="courses-title">
-                                <a href="#"><img src="./../../assets/image1/na_may_29.png" alt=""></a>
+                                <a href="#"><img src="./../../../public/assets/image1/na_may_29.png" alt=""></a>
                                 <h2>Event title</h2>
                                 <p>
                                     event text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
