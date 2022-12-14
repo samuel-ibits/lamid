@@ -79,7 +79,7 @@
             <img src="./assets//contactUsimage/contactusimage.png" style="width:100;" alt="">
         </div>
     </div>
-    <form method="POST" action="/contact" class="flex flex-col " style="gap: 1rem;">
+    <form method="POST" action="/reachout" class="flex flex-col " style="gap: 1rem;">
      @csrf
     <div class="contact-holder flex flex-col justify-center item-center">
         <div class="flex sm:flex-rol my-3">
