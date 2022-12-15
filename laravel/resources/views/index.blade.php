@@ -146,19 +146,13 @@
             @endforeach
 
             @forelse ($plan as $plan)
-<<<<<<< HEAD
-           
-            @empty
-            <p>No buisness plan available</p>
-            @endforelse
-=======
-    <li>{{ $plan->name }}</li>
+
 @empty
    <div class='justify-center items-center flex p-5'>
    <p>No buisness plan available</p>
    </div>
 @endforelse
->>>>>>> 3dd085d475ecd6634a03ea95264e9f9135d82b86
+
 
            
         </section>
