@@ -58,7 +58,7 @@
     <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
     <!-- style CSS
   ============================================ -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <!-- responsive CSS
   ============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
@@ -87,7 +87,7 @@
                 <div class="hpanel">
                     <div class="panel-body">
                         <div class="logo-holder p-1 my-4" style="background: #000000; width:6rem">
-                            <img src="./../../../public/assets/logo/lamids.png" alt="Logo" class="w-full">
+                            <img src="./../../assets/logo/lamids.png" alt="Logo" class="w-full">
                         </div>
                         <form action="./dashboard.html" id="loginForm">
                             <div class="form-group">
