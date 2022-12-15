@@ -16,7 +16,7 @@ class plans extends Model
         'image',
         'description',
         'discount',
-        'fike',
+        'file',
         'status',
         
     ];
