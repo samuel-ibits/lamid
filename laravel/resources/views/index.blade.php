@@ -61,7 +61,7 @@
             <ul class="text-white flex items-center place-content-around menu-list">
                
                 <li class="p-3">
-                <a href='./adminPortal/index.blade.php'> <button class="outline-btn"> Admin</button> </a>
+                <a href='/adminPortal/index.blade.php'> <button class="outline-btn"> Admin</button> </a>
                 </li>
                 <li class="p-3">
                     <button class="filled-button">View all jobs</button>
@@ -76,9 +76,9 @@
        
         <div class="form-holder flex flex-col items-start">
         <span class='remove-pop-up cursor-pointer'><i class="bi bi-x"></i></span>
-            <form method="POST" action="/buyPlans" class="flex flex-col " style="gap: 1rem;">
+            <form method="POST" action="/buyPlans" class="flex flex-col w-full" style="gap: 1rem;">
             @csrf
-            <input type="text" name="name" id="" placeholder="fullname" class="p-2">
+            <input type="text" name="name" id="" placeholder="fullname" class="p-2 ">
                 <input type="text" name="email" id="" placeholder="Email" class="p-2">
                 <input type="text" name="planid" value="" id="planid" placeholder="Email" class="p-2">
                 <input type="text" name="amount"  value="" id="amount" placeholder="Email" class="p-2">
@@ -108,7 +108,7 @@
 
 
     <p class="text-4xl bold mt-8">Business plans</p>
-    <section class="w-full business-card-scroll-container  flex flex-col  ">
+    <section class="w-full business-card-scroll-container  flex flex-col ">
         <section class="business-card-holder  h-full flex ">
         <?php  $plan = DB::table('plans')->get(); ?>
 
@@ -121,9 +121,6 @@
                     <p class="discount">{{ $plan->discount}}</p>
                     <ul class="card-list">
                         <li>{{ $plan->description }}</li>
-                        
-
-
                     </ul>
                 </div>
                 
@@ -139,7 +136,9 @@
             @forelse ($plan as $plan)
     <li>{{ $plan->name }}</li>
 @empty
-    <p>No buisness plan available</p>
+   <div class='justify-center items-center flex p-5'>
+   <p>No buisness plan available</p>
+   </div>
 @endforelse
 
            
@@ -262,8 +261,9 @@
     </section>
 
     <section class="section-2 flex text-white justify-around items-center rounded-lg py-16 px-5">
-        <div class="sm:w-1/2 flex flex-col justify-around input-holder-div">
-            <input type="search" placeholder="Search Job" class="p-5 mx-5 my-3 rounded outline-none text-black">
+        <div class="sm:w-1/2 flex flex-rol justify-center input-holder-div items-center ">
+            <input type="search" placeholder="Search Job" class="p-5 w-4/5 mx-5 my-3 rounded outline-none text-black">
+            <button class='search-btn p-5'> <i class="bi bi-search" style='color:#D3202E'></i></button>
          </div>
         <div class="sm:w-1/2">
             <p class="section-two-txt">
