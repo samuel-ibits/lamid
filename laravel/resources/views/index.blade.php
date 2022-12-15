@@ -21,6 +21,18 @@
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="Componets/popup/popup.css">
+    <script>
+    function buyplan(can) {
+        var id= can.id;
+        var amount= 'amount'; 
+
+     var amountval= document.getElementById(amount).value;      
+     document.getElementById('amount').value= amountval;
+     document.getElementById('planid').value= id;
+       }
+   </script>
+
+
 </head>
 
 <body>
@@ -80,8 +92,8 @@
             @csrf
             <input type="text" name="name" id="" placeholder="fullname" class="p-2 ">
                 <input type="text" name="email" id="" placeholder="Email" class="p-2">
-                <input type="text" name="planid" value="" id="planid" placeholder="Email" class="p-2">
-                <input type="text" name="amount"  value="" id="amount" placeholder="Email" class="p-2">
+                <input type="text" name="planid" value="" id="planid" placeholder="planid"  style="display:none" class="p-2">
+                <input type="text" name="amount"  value="" id="amount" placeholder="amount" class="p-2">
 
                 <button type="submit" class="default-btn">Confirm</button>
             </form>
@@ -117,7 +129,7 @@
            
            
             <div>
-                    <p class="card-Hatchling Plan">{{ $plan->name}} </p>
+                    <p class="card-Hatchling Plan">{{ $plan->name}}  </p>
                     <p class="discount">{{ $plan->discount}}</p>
                     <ul class="card-list">
                         <li>{{ $plan->description }}</li>
@@ -126,137 +138,23 @@
                 
 
                 <div>
-                    <p class="card-price">${{ $plan->price }}</month</p>
-
-                    <button class="buy-btn w-full" >Buy now</button>
+                    <p class="card-price">{{ $plan->price }}</month</p>
+<input type="hidden" id="amount" />
+                    <button class="buy-btn w-full" id="${{ $plan->id }}" onclick="buyplan(this)" >Buy now</button>
                 </div>
             </div>
             @endforeach
 
             @forelse ($plan as $plan)
-    <li>{{ $plan->name }}</li>
+
 @empty
    <div class='justify-center items-center flex p-5'>
    <p>No buisness plan available</p>
    </div>
 @endforelse
 
+
            
-            <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
-                    <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
-                        <li>Free WordPress/cPanel website transfer </li>
-                        <li>Free domain included</li>
-                </div>
-
-                <div>
-                    <p class="card-price">$2.75/month</p>
-
-                    <button class="buy-btn w-full">Buy now</button>
-                </div>
-            </div>
-
-            <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
-                    <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
-                        <li>Free WordPress/cPanel website transfer </li>
-                        <li>Free domain included</li>
-                </div>
-
-                <div>
-                    <p class="card-price">$2.75/month</p>
-
-                    <button class="buy-btn w-full">Buy now</button>
-                </div>
-            </div>
-
-            <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
-                    <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
-                        <li>Free WordPress/cPanel website transfer </li>
-                        <li>Free domain included</li>
-                </div>
-
-                <div>
-                    <p class="card-price">$2.75/month</p>
-
-                    <button class="buy-btn w-full">Buy now</button>
-                </div>
-            </div>
-
-            <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
-                    <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
-                        <li>Free WordPress/cPanel website transfer </li>
-                        <li>Free domain included</li>
-                </div>
-
-                <div>
-                    <p class="card-price">$2.75/month</p>
-
-                    <button class="buy-btn w-full">Buy now</button>
-                </div>
-            </div>
-
-            <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
-                    <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
-                        <li>Free WordPress/cPanel website transfer </li>
-                        <li>Free domain included</li>
-                </div>
-
-                <div>
-                    <p class="card-price">$2.75/month</p>
-
-                    <button class="buy-btn w-full">Buy now</button>
-                </div>
-            </div>
-
-            <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
-                    <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
-                        <li>Free WordPress/cPanel website transfer </li>
-                        <li>Free domain included</li>
-                </div>
-
-                <div>
-                    <p class="card-price">$2.75/month</p>
-
-                    <button class="buy-btn w-full">Buy now</button>
-                </div>
-            </div>
-
-
         </section>
     </section>
 
