@@ -18,8 +18,6 @@ Route::get('/welcome', function () {
 });
 
 //page  routes
-
-
 Route::get('/', function () {
     return view('index');
 });
@@ -35,7 +33,6 @@ Route::get('/events.html', function () {
     return view('events');
 });
 
-
 Route::get('/contactus.html', function () {
     return view('contactus');
 });
@@ -44,11 +41,9 @@ Route::get('/asset', function () {
     return url('1_1.jpg');
 });
 
-
 Route::get('/adminPortal/404.html', function () {
     return view('adminPortal/404');
 });
-
 
 Route::get('/adminPortal/addEvent.html', function () {
     return view('adminPortal/addEvent');
@@ -72,9 +67,8 @@ Route::get('/adminPortal/ongoingevents.html', function () {
 
 Route::get('/adminPortal/resume.html', function () {
     return view('adminPortal/resume');
-
-
 });
+
 
 // db routes
 
@@ -88,14 +82,11 @@ Route::get('insertEvents','controller@insertEvents');
 Route::get('viewEvents','controller@viewEvents');
 
 //buisness plan
- use App\Http\Controllers\plans;
-
+use App\Http\Controllers\plans;
 Route::post('/buyPlans', [plans::class, 'buy'] );
-
 Route::post('/createPlans','plans@createPlans');
+
 use App\Http\Controllers\contact;
-
-
 Route::post('/reachout', [contact::class, 'reachout'] );
 
 
