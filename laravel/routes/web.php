@@ -49,6 +49,10 @@ Route::get('/addEvent.html', function () {
     return view('/addEvent');
 });
 
+Route::get('/addBusinessPlan.html', function () {
+    return view('/addBusinessPlan.html');
+});
+
 Route::get('/500.html', function () {
     return view('/500');
 });

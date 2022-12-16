@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- favicon
 		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="./../../../public/assets/logo/lamids.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./../../assets/logo/lamids.png">
     <!-- Google Fonts
 		============================================ -->
     <link rel="stylesheet" href="./../globalStyle.css">
@@ -83,13 +83,13 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" class=" flex flex-col justify-center items-center">
             <div class="sidebar-header">
-                <a href="index.html"><img class="main-logo" src="./../../../public/assets/logo/lamids.png" alt="" /></a>
-                <strong><a href="index.html"><img src="./../../../public/assets/logo/lamids.png" alt="" /></a></strong>
+                <a href="index.html"><img class="main-logo" src="./../../assets/logo/lamids.png" alt="" /></a>
+                <strong><a href="index.html"><img src="./../../assets/logo/lamids.png" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
-                <nav class="sidebar-nav left-sidebar-menu-pro">
+               <nav class="sidebar-nav left-sidebar-menu-pro">
                     <ul class="metismenu" id="menu1">
-                        <li class="active">
+                        <li class="active-menu" >
                             <a class="" href="./dashboard.html">
                                 <i class='bx bxs-dashboard'></i>
                                 <span class="mini-click-non">Dashboard</span>
@@ -111,6 +111,10 @@
                             <a class="" href="addEvent.html" aria-expanded="false">
                                 <i class='bx bxs-add-to-queue'></i> <span class="mini-click-non">Add events</span></a>
                         </li>
+                        <li>
+                            <a class="" href="addBusinessPlan.html" aria-expanded="false">
+                                <i class='bx bxs-add-to-queue'></i> <span class="mini-click-non">Add bussiness plan</span></a>
+                        </li>
 
                     </ul>
                 </nav>
@@ -124,7 +128,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro">
-                        <a href="index.html"><img class="main-logo" src="./../../../public/assets/logo/lamids.png" alt="" /></a>
+                        <a href="index.html"><img class="main-logo" src="./../../assets/logo/lamids.png" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -205,6 +209,11 @@
                                                 <i class='bx bxs-add-to-queue'></i> <span class="mini-click-non">Add
                                                     events</span></a>
                                         </li>
+                                        <li>
+                                            <a class="" href="addBusinessPlan.html" aria-expanded="false">
+                                                <i class='bx bxs-add-to-queue'></i> <span class="mini-click-non">Add
+                                                    bussiness plan</span></a>
+                                        </li>
 
                                     </ul>
                                 </nav>
@@ -252,7 +261,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="footer-copy-right">
-                            <p>Copyright © 2022. All rights reserved. by <a href="#">SAGATO</a></p>
+                            <p>Copyright © 2022. All rights reserved. by <a href="#">Lamid</a></p>
                         </div>
                     </div>
                 </div>
