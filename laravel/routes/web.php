@@ -41,32 +41,32 @@ Route::get('/asset', function () {
     return url('1_1.jpg');
 });
 
-Route::get('/adminPortal/404.html', function () {
-    return view('adminPortal/404');
+Route::get('/404.html', function () {
+    return view('/404');
 });
 
-Route::get('/adminPortal/addEvent.html', function () {
-    return view('adminPortal/addEvent');
+Route::get('/addEvent.html', function () {
+    return view('/addEvent');
 });
 
-Route::get('/adminPortal/500.html', function () {
-    return view('adminPortal/500');
+Route::get('/500.html', function () {
+    return view('/500');
 });
 
-Route::get('/adminPortal/dashboard.html', function () {
-    return view('adminPortal/dashboard');
+Route::get('/dashboard.html', function () {
+    return view('/dashboard');
 });
 
-Route::get('/adminPortal/index.html', function () {
-    return view('adminPortal/index');
+Route::get('/adminindex.html', function () {
+    return view('/adminindex');
 });
 
-Route::get('/adminPortal/ongoingevents.html', function () {
-    return view('adminPortal/ongoingevents');
+Route::get('/ongoingevents.html', function () {
+    return view('/ongoingevents');
 });
 
-Route::get('/adminPortal/resume.html', function () {
-    return view('adminPortal/resume');
+Route::get('/resume.html', function () {
+    return view('/resume');
 });
 
 
