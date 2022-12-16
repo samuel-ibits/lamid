@@ -343,9 +343,6 @@
 
     <!-- form validate JS
 		============================================ -->
-    <script src="js/form-validation/jquery.form.min.js"></script>
-    <script src="js/form-validation/jquery.validate.min.js"></script>
-    <script src="js/form-validation/form-active.js"></script>
     <!-- dropzone JS
 		============================================ -->
     <script src="js/dropzone/dropzone.js"></script>
