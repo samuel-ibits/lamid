@@ -73,7 +73,7 @@
             <ul class="text-white flex items-center place-content-around menu-list">
                
                 <li class="p-3">
-                <a href='./adminPortal/index.html'> <button class="outline-btn"> Admin</button> </a>
+                <a href='./adminindex.html'> <button class="outline-btn"> Admin</button> </a>
                 </li>
                 <li class="p-3">
                     <button class="filled-button">View all jobs</button>
