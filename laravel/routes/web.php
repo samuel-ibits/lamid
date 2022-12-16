@@ -82,13 +82,17 @@ Route::get('insertEvents','controller@insertEvents');
 Route::get('viewEvents','controller@viewEvents');
 
 //buisness plan
-use App\Http\Controllers\plans;
-Route::post('/buyPlans', [plans::class, 'buy'] );
+use App\Http\Controllers\plan;
+Route::post('/buyPlans', [plan::class, 'buy'] );
 Route::post('/createPlans','plans@createPlans');
 
 use App\Http\Controllers\contact;
 Route::post('/reachout', [contact::class, 'reachout'] );
 
+use App\Http\Controllers\payment;
+Route::get('/paynow', [payment::class, 'paystack'] );
+
+Route::get('/paycallback', [payment::class, 'callback'] );
 
 
 

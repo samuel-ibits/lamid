@@ -24,7 +24,7 @@
     <script>
     function buyplan(can) {
         var id= can.id;
-        var amount= 'amount'; 
+        var amount= 'amount'+id; 
 
      var amountval= document.getElementById(amount).value;      
      document.getElementById('amount').value= amountval;
@@ -90,10 +90,10 @@
         <span class='remove-pop-up cursor-pointer'><i class="bi bi-x"></i></span>
             <form method="POST" action="/buyPlans" class="flex flex-col w-full" style="gap: 1rem;">
             @csrf
-            <input type="text" name="name" id="" placeholder="fullname" class="p-2 ">
-                <input type="text" name="email" id="" placeholder="Email" class="p-2">
-                <input type="text" name="planid" value="" id="planid" placeholder="planid"  style="display:none" class="p-2">
-                <input type="text" name="amount"  value="" id="amount" placeholder="amount" class="p-2">
+            <input type="text" name="name" id="name" required placeholder="fullname" class="p-2 ">
+                <input type="text" name="email" required id="email" placeholder="Email" class="p-2">
+                <input type="text" name="planid" value="" id="planid" placeholder="planid"   style="display:none;" class="p-2">
+                <input type="text" name="amount"  value="" id="amount" placeholder="amount" style="display:none;" class="p-2">
 
                 <button type="submit" class="default-btn">Confirm</button>
             </form>
@@ -139,8 +139,8 @@
 
                 <div>
                     <p class="card-price">{{ $plan->price }}</month</p>
-<input type="hidden" id="amount" />
-                    <button class="buy-btn w-full" id="${{ $plan->id }}" onclick="buyplan(this)" >Buy now</button>
+<input style="display:none;" value="{{ $plan->price }}" id="amount{{ $plan->id }}" />
+                    <button class="buy-btn w-full" id="{{ $plan->id }}" onclick="buyplan(this)" >Buy now</button>
                 </div>
             </div>
             @endforeach

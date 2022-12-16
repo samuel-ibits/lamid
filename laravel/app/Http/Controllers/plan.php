@@ -22,10 +22,10 @@ class plan extends Controller
             $plans->planid = $data['planid'];
             $plans->amount = $data['amount'];
             $plans->save();
-            return redirect('insert')->with('status',"Insert successfully");
+            return redirect('paynow?email='.$plans->email.'&tranid='.$plans->tranid.'&amount='.$plans->amount)->with('status',"Insert successfully");
         }
         catch(Exception $e){
-            return redirect('insert')->with('failed',"operation failed");
+            return back()->withInput('failed',"operation failed");
         }
     }
 
@@ -52,5 +52,7 @@ class plan extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+   
 }
 
