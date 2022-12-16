@@ -113,7 +113,7 @@
         @endforeach
 
 @forelse ($event as $plan)
-<li>{{ $event->name }}</li>
+
 @empty
 <p>No events available</p>
 @endforelse
