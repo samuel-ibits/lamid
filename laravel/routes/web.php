@@ -50,7 +50,7 @@ Route::get('/addEvent.html', function () {
 });
 
 Route::get('/addBusinessPlan.html', function () {
-    return view('/addBusinessPlan.html');
+    return view('/addBusinessPlan');
 });
 
 Route::get('/500.html', function () {

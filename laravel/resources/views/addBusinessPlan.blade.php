@@ -245,25 +245,38 @@
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="form-group">
                                                                     <input name="coursename" type="text"
-                                                                        class="form-control" placeholder="Event Title">
+                                                                        class="form-control" placeholder="Business plan title" required>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <textarea name="description"
-                                                                        placeholder="Description"></textarea>
+                                                                    <input name="coursename" type="text"
+                                                                        class="form-control" placeholder="Business plan item" required>
                                                                 </div>
-                                                                <div class="form-group alert-up-pd">
-                                                                    <div class="dz-message needsclick download-custom flex justify-center items-center flex-col">
-                                                                        <i class="fa fa-download edudropnone"
-                                                                            aria-hidden="true"></i>
-                                                                        <h2 class="edudropnone">Drop image here or click
-                                                                            to upload.</h2>
-                                                                        <p class="edudropnone">
-                                                                          
-                                                                        </p>
-                                                                        <input name="imageico" class="hd-pro-img"
-                                                                            type="text" />
-                                                                    </div>
+                                                                <div class="form-group">
+                                                                    <input name="coursename" type="text"
+                                                                        class="form-control" placeholder="Business plan item (optional)">
                                                                 </div>
+                                                                <div class="form-group">
+                                                                    <input name="coursename" type="text"
+                                                                        class="form-control" placeholder="Business plan item (optional)">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input name="coursename" type="text"
+                                                                        class="form-control" placeholder="Business plan item (optional)">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input name="coursename" type="text"
+                                                                        class="form-control" placeholder="Business plan item (optional)">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input name="coursename" type="text"
+                                                                        class="form-control" placeholder="Business plan item (optional)">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input name="coursename" type="text"
+                                                                        class="form-control" placeholder="Business plan item (optional)">
+                                                                </div>
+                                                              
+                                                               
 
                                                                 <div class="form-group">
                                                                     <button class="w-full p-4 default-button text-white" style="background: #D3202E;">Upload</button>
@@ -275,7 +288,6 @@
                                                     </form>
                                                 </div>
                                             </div>
-
                                        
                                         </div>
                                     </div>
@@ -343,12 +355,8 @@
 
     <!-- form validate JS
 		============================================ -->
-    <script src="js/form-validation/jquery.form.min.js"></script>
-    <script src="js/form-validation/jquery.validate.min.js"></script>
-    <script src="js/form-validation/form-active.js"></script>
     <!-- dropzone JS
 		============================================ -->
-    <script src="js/dropzone/dropzone.js"></script>
     <!-- tab JS
 		============================================ -->
     <script src="js/tab.js"></script>
