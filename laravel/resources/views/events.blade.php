@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+        <link rel="stylesheet" href="Componets/popup/popup.css">
     <link rel="stylesheet" href="./styles/insight.css">
     <link rel="stylesheet" href="./styles/event.css">
 </head>
@@ -67,6 +67,25 @@
 
         </div>
     </nav>
+
+
+    <div class="popup-holder">
+       
+       <div class="form-holder flex flex-col items-start">
+       <span class='remove-pop-up cursor-pointer'><i class="bi bi-x"></i></span>
+           <form method="POST" action="/buyPlans" class="flex flex-col w-full" style="gap: 1rem;">
+           @csrf
+           <input type="text" name="name" id="" placeholder="fullname" class="p-2 ">
+               <input type="text" name="email" id="" placeholder="Email" class="p-2">
+               <input type="text" name="planid" value="" id="planid" placeholder="planid"  style="display:none" class="p-2">
+               <input type="text" name="amount"  value="" id="amount" placeholder="amount" class="p-2">
+
+               <button type="submit" class="default-btn">Confirm</button>
+           </form>
+
+       </div>
+   </div>
+
 
     <div class="event-page">
     <?php  $event = DB::table('events')->get(); ?>
@@ -192,6 +211,29 @@
     </div>
     <script src="./Componets/menu/menu.js"></script>
     <script src="./Componets/whatsappwidget/whatsappwidget.js"></script>
+    <script>
+
+$(".buy-btn").click(function () {
+    $(".popup-holder").fadeToggle('slow');
+  });
+
+   $(".remove-pop-up").click(function () {
+    $(".popup-holder").fadeToggle('slow');
+  });
+  
+  $(".popup-holder").hide(.0000005);
+
+$(function () {
+    $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
+        default_offset_pct: 0.7
+    });
+    $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
+        default_offset_pct: 0.3,
+        orientation: 'vertical'
+    });
+});
+
+</script>
 </body>
 
 </html>

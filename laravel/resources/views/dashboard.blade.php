@@ -13,63 +13,64 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
+    
+
     <link rel="shortcut icon" type="image/x-icon" href="./../../assets/logo/lamids.png">
     <!-- Google Fonts
   ============================================ -->
-    <link rel="stylesheet" href="./../../globalStyle.css">
     <!-- Bootstrap CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- Bootstrap CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/css/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
     <!-- owl.carousel CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/css/css/owl.carousel.css">
-    <link rel="stylesheet" href="./../../public/css/css/owl.theme.css">
-    <link rel="stylesheet" href="./../../public/css/css/owl.transitions.css">
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.css">
+    <link rel="stylesheet" href="./css/owl.transitions.css">
     <!-- animate CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/css/css/animate.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <!-- normalize CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/css/css/normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <!-- meanmenu icon CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/css/css/meanmenu.min.css">
+    <link rel="stylesheet" href="./css/meanmenu.min.css">
     <!-- main CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/css/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <!-- educate icon CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/css/css/educate-custon-icon.css">
+    <link rel="stylesheet" href="./css/educate-custon-icon.css">
     <!-- morrisjs CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/css/css/morris.css">
+    <link rel="stylesheet" href="./css/morris.css">
     <!-- mCustomScrollbar CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/css/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./css/scrollbar/jquery.mCustomScrollbar.min.css">
     <!-- metisMenu CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/css/css/metisMenu/metisMenu.min.css">
-    <link rel="stylesheet" href="./../../public/css/css/metisMenu/metisMenu-vertical.css">
+    <link rel="stylesheet" href="./css/metisMenu/metisMenu.min.css">
+    <link rel="stylesheet" href="./css/metisMenu/metisMenu-vertical.css">
     <!-- calendar CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/css/css/calendar/fullcalendar.min.css">
-    <link rel="stylesheet" href="./../../public/css/css/calendar/fullcalendar.print.min.css">
+    <link rel="stylesheet" href="./css/calendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="./css/calendar/fullcalendar.print.min.css">
     <!-- style CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/style.css">
+    <link rel="stylesheet" href="./../style.css">
     <!-- responsive CSS
   ============================================ -->
-    <link rel="stylesheet" href="./../../public/css/css/responsive.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <!-- modernizr JS
   ============================================ -->
-    <script src="./../../public/js/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="./js/vendor/modernizr-2.8.3.min.js"></script>
 
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/./../../public/css/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/./css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -84,13 +85,13 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" class=" flex flex-col justify-center items-center">
             <div class="sidebar-header">
-                <a href="index.html"><img class="main-logo" src="./../../public/assets/logo/lamids.png" alt="" /></a>
-                <strong><a href="index.html"><img src="./../../public/assets/logo/lamids.png" alt="" /></a></strong>
+                <a href="index.html"><img class="main-logo" src="./../../assets/logo/lamids.png" alt="" /></a>
+                <strong><a href="index.html"><img src="./../../assets/logo/lamids.png" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
-                <nav class="sidebar-nav left-sidebar-menu-pro">
+               <nav class="sidebar-nav left-sidebar-menu-pro">
                     <ul class="metismenu" id="menu1">
-                        <li class="active">
+                        <li class="active-menu" >
                             <a class="" href="./dashboard.html">
                                 <i class='bx bxs-dashboard'></i>
                                 <span class="mini-click-non">Dashboard</span>
@@ -112,6 +113,10 @@
                             <a class="" href="addEvent.html" aria-expanded="false">
                                 <i class='bx bxs-add-to-queue'></i> <span class="mini-click-non">Add events</span></a>
                         </li>
+                        <li>
+                            <a class="" href="addBusinessPlan.html" aria-expanded="false">
+                                <i class='bx bxs-add-to-queue'></i> <span class="mini-click-non">Add bussiness plan</span></a>
+                        </li>
 
                     </ul>
                 </nav>
@@ -125,7 +130,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro">
-                        <a href="index.html"><img class="main-logo" src="./../../public/assets/logo/lamids.png" alt="" /></a>
+                        <a href="index.html"><img class="main-logo" src="./../../assets/logo/lamids.png" alt="" /></a>
                     </div>
                 </div>
             </div>

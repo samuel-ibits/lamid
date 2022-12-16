@@ -1,79 +1,77 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Lamid </title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- favicon
-		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="./../../assets/logo/lamids.png">
-    <!-- Google Fonts
-		============================================ -->
-    <link rel="stylesheet" href="./../globalStyle.css">
-    <!-- Bootstrap CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Bootstrap CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- owl.carousel CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/owl.transitions.css">
-    <!-- animate CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- normalize CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- meanmenu icon CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/meanmenu.min.css">
-    <!-- main CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- educate icon CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/educate-custon-icon.css">
-    <!-- morrisjs CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/morrisjs/morris.css">
-    <!-- mCustomScrollbar CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
-    <!-- metisMenu CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
-    <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
-    <!-- calendar CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
-    <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
-    <!-- style CSS
-		============================================ -->
-    <link rel="stylesheet" href="style.css">
-    <!-- responsive CSS
-		============================================ -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- modernizr JS
-		============================================ -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
-
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
-
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Lamid </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- favicon
+            ============================================ -->
+        <link rel="shortcut icon" type="image/x-icon" href="./../../assets/logo/lamids.png">
+        <!-- Google Fonts
+            ============================================ -->
+        <link rel="stylesheet" href="./../globalStyle.css">
+        <!-- Bootstrap CSS
+            ============================================ -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Bootstrap CSS
+            ============================================ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- owl.carousel CSS
+            ============================================ -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/owl.transitions.css">
+        <!-- animate CSS
+            ============================================ -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- normalize CSS
+            ============================================ -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- meanmenu icon CSS
+            ============================================ -->
+        <link rel="stylesheet" href="css/meanmenu.min.css">
+        <!-- main CSS
+            ============================================ -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- educate icon CSS
+            ============================================ -->
+        <link rel="stylesheet" href="css/educate-custon-icon.css">
+        <!-- morrisjs CSS
+            ============================================ -->
+        <link rel="stylesheet" href="css/morrisjs/morris.css">
+        <!-- mCustomScrollbar CSS
+            ============================================ -->
+        <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
+        <!-- metisMenu CSS
+            ============================================ -->
+        <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
+        <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
+        <!-- calendar CSS
+            ============================================ -->
+        <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
+        <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
+        <!-- style CSS
+            ============================================ -->
+        <link rel="stylesheet" href="style.css">
+        <!-- responsive CSS
+            ============================================ -->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- modernizr JS
+            ============================================ -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    
+    
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    
 
 <body>
     <!--[if lt IE 8]>
@@ -87,7 +85,7 @@
                 <strong><a href="index.html"><img src="./../../assets/logo/lamids.png" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
-               <nav class="sidebar-nav left-sidebar-menu-pro">
+                <nav class="sidebar-nav left-sidebar-menu-pro">
                     <ul class="metismenu" id="menu1">
                         <li class="active-menu" >
                             <a class="" href="./dashboard.html">
@@ -113,7 +111,7 @@
                         </li>
                         <li>
                             <a class="" href="addBusinessPlan.html" aria-expanded="false">
-                                <i class='bx bxs-add-to-queue'></i> <span class="mini-click-non">Add bussiness plan</span></a>
+                                <i class='bx bxs-add-to-queue'></i> <span class="mini-click-non">Add bussiness plans</span></a>
                         </li>
 
                     </ul>
@@ -124,7 +122,7 @@
     <!-- End Left menu area -->
     <!-- Start Welcome area -->
     <div class="all-content-wrapper">
-         <div class="container-fluid" >
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro">
@@ -210,9 +208,9 @@
                                                     events</span></a>
                                         </li>
                                         <li>
-                                            <a class="" href="addBusinessPlan.html" aria-expanded="false">
+                                            <a class="" href="addEvent.html" aria-expanded="false">
                                                 <i class='bx bxs-add-to-queue'></i> <span class="mini-click-non">Add
-                                                    bussiness plan</span></a>
+                                                    Add bussiness plans</span></a>
                                         </li>
 
                                     </ul>
@@ -225,35 +223,67 @@
             <!-- Mobile Menu end -->
 
         </div>
-        <div class="contacts-area mg-b-15">
+        <!-- Single pro tab review Start-->
+        <div class="single-pro-review-area mt-t-30 mg-b-15">
             <div class="container-fluid">
-                <div class="row" style="min-height: 100vh">
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="hpanel hblue contact-panel contact-panel-cs responsive-mg-b-30">
-                            <div class="panel-body custom-panel-jw">
-                                <div class="social-media-in">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                                </div>
-                                <img alt="logo" class="img-circle m-b" src="img/contact/1.jpg">
-                                <h3><a href="">John Alva</a></h3>
-                                <p class="all-pro-ad">Lagos, Nigeria</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet of, consectetur adipiscing elitable. Vestibulum tincidunt est vitae ultrices accumsan.
-                                </p>
-                            </div>
-                            <div class="panel-footer contact-footer">
-                               <a href="./pdf/mamunur.pdf" class="text-white"><i class='bx bxs-file'></i> View resume</a>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="product-payment-inner-st">
+                            <ul id="myTabedu1" class="tab-review-design">
+                                <li class="active"><a href="#description">Add Bussiness Plan</a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content custom-product-edit">
+                                <div class="product-tab-list tab-pane fade active in" id="description">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div id="dropzone1" class="pro-ad addcoursepro">
+                                                    <form action="/upload"
+                                                        class="dropzone dropzone-custom needsclick addcourse"
+                                                        id="demo1-upload">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <input name="coursename" type="text"
+                                                                        class="form-control" placeholder="Event Title">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <textarea name="description"
+                                                                        placeholder="Description"></textarea>
+                                                                </div>
+                                                                <div class="form-group alert-up-pd">
+                                                                    <div class="dz-message needsclick download-custom flex justify-center items-center flex-col">
+                                                                        <i class="fa fa-download edudropnone"
+                                                                            aria-hidden="true"></i>
+                                                                        <h2 class="edudropnone">Drop image here or click
+                                                                            to upload.</h2>
+                                                                        <p class="edudropnone">
+                                                                          
+                                                                        </p>
+                                                                        <input name="imageico" class="hd-pro-img"
+                                                                            type="text" />
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <button class="w-full p-4 default-button text-white" style="background: #D3202E;">Upload</button>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+            
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                       
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                  
-                   
-                  
                 </div>
-              
             </div>
         </div>
         <div class="footer-copyright-area">
@@ -268,6 +298,7 @@
             </div>
         </div>
     </div>
+
     <!-- jquery
 		============================================ -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
@@ -300,7 +331,27 @@
 		============================================ -->
     <script src="js/metisMenu/metisMenu.min.js"></script>
     <script src="js/metisMenu/metisMenu-active.js"></script>
+    <!-- morrisjs JS
+		============================================ -->
+    <script src="js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="js/sparkline/jquery.charts-sparkline.js"></script>
 
+    <!-- maskedinput JS
+		============================================ -->
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/masking-active.js"></script>
+
+    <!-- form validate JS
+		============================================ -->
+    <script src="js/form-validation/jquery.form.min.js"></script>
+    <script src="js/form-validation/jquery.validate.min.js"></script>
+    <script src="js/form-validation/form-active.js"></script>
+    <!-- dropzone JS
+		============================================ -->
+    <script src="js/dropzone/dropzone.js"></script>
+    <!-- tab JS
+		============================================ -->
+    <script src="js/tab.js"></script>
     <!-- plugins JS
 		============================================ -->
     <script src="js/plugins.js"></script>
