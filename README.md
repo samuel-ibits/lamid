@@ -11,3 +11,6 @@ Install laravel
 Run app with
 
 php artisan serve
+
+
+Before making any changes pls create a branch
