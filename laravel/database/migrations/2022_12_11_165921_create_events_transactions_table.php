@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('amount');
             $table->string('status');
             $table->string('seatNumber');
+            $table->string('name');
             $table->string('email');
 
             $table->timestamps();

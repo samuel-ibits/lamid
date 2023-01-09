@@ -228,11 +228,61 @@
         <div class="courses-area">
             <div class="container-fluid" style="min-height: 100vh;">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <?php  $event = DB::table('events')->get(); ?>
+
+@foreach($event as $event)
+      
+
+  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="courses-inner res-mg-b-30">
                             <div class="courses-title">
                                 <a href="#"><img src="./assets/image1/na_may_29.png" alt=""></a>
                                 <h2>Event title</h2>
+                                <p>
+                                    event text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+                                    quas expedita pariatur eius quidem minus modi architecto quasi similique animi fuga
+                                    incidunt perferendis autem tempora nemo, nisi cupiditate sint.
+                                </p>
+                            </div>
+                            <p class="my-4 font-bold">22/12/2023</p>
+                            <div class="product-buttons">
+                                <button type="button" class="button-default cart-btn">Remove Event</button>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="courses-inner res-mg-b-30">
+                            <div class="courses-title">
+                                <a href="#"><img src="./assets/image1/na_may_29.png" alt=""></a>
+                                <h2>Event title</h2>
+                                <p>
+                                    event text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+                                    quas expedita pariatur eius quidem minus modi architecto quasi similique animi fuga
+                                    incidunt perferendis autem tempora nemo, nisi cupiditate sint.
+                                </p>
+                            </div>
+                            <p class="my-4 font-bold">22/12/2023</p>
+                            <div class="product-buttons">
+                                <button type="button" class="button-default cart-btn">Remove Event</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    @endforeach
+
+@forelse ($event as $plan)
+
+@empty
+<p>No events available</p>
+@endforelse
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="courses-inner res-mg-b-30">
+                            <div class="courses-title">
+                                <a href="#"><img src="./assets/image1/na_may_29.png" alt=""></a>
+           
+                             <h2>Event title</h2>
                                 <p>
                                     event text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
                                     quas expedita pariatur eius quidem minus modi architecto quasi similique animi fuga

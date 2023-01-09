@@ -17,15 +17,57 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('plans')->insert([
-            
+        DB::table('events')->insert([
+            'name'=> Str::random(5),
+            'time'=> Str::random(5),
+            'venue'=> Str::random(5),
             'price'=> Str::random(5),
+            'status'=> Str::random(5),
             'image'=> Str::random(5),
             'description'=> Str::random(5),
             'discount'=> Str::random(5),
             'file'=> Str::random(5),
+            'bookedSeats'=> Str::random(5),
+            'totalSeats'=> Str::random(5),
+ 
+        ]);
+            
+        // DB::table('plans')->insert([
+            
+        //     'price'=> Str::random(5),
+        //     'image'=> Str::random(5),
+        //     'description'=> Str::random(5),
+        //     'discount'=> Str::random(5),
+        //     'file'=> Str::random(5),
+        //     'status'=> Str::random(5),
+        //     'name' => Str::random(5),
+            
+        //      ]);
+        // \App\Models\User::factory(10)->create();
+
+        // \App\Models\User::factory()->create([
+        //     'name' => 'Test User',
+        //     'email' => 'test@example.com',
+        // ]);
+    }
+}
+    class events extends Seeder
+{
+    public function run()
+    {
+        DB::table('events')->insert([
+            'name'=> Str::random(5),
+            'time'=> Str::random(5),
+            'venue'=> Str::random(5),
+            'price'=> Str::random(5),
             'status'=> Str::random(5),
-            'name' => Str::random(5),
+            'image'=> Str::random(5),
+            'description'=> Str::random(5),
+            'discount'=> Str::random(5),
+            'file'=> Str::random(5),
+            'bookedSeats'=> Str::random(5),
+            'totalSeats'=> Str::random(5),
+
             
              ]);
         // \App\Models\User::factory(10)->create();
