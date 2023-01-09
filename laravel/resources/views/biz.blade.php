@@ -10,16 +10,16 @@
 
     <link href="css/foundation.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../../public/Componets/menu/menu.css">
-    <link rel="stylesheet" href="./../../public/styles/home.css">
-    <link rel="stylesheet" href="./../../public/globalStyle.css">
+    <link rel="stylesheet" href="Componets/menu/menu.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="globalStyle.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="../../public/Componets/popup/popup.css">
-    <link rel="stylesheet" href="../../public/hcb/hcb.css">
+    <link rel="stylesheet" href="Componets/popup/popup.css">
+    <link rel="stylesheet" href="hcb/hcb.css">
     
     
 </head>
@@ -28,7 +28,7 @@
     <nav class="items-center w-screen place-content-around  text-sm nav-holder">
         <div class="top-div">
             <div class="logo-holder">
-                <img src="../../public/assets/logo/lamids.png" alt="Logo" class="w-full">
+                <img src="assets/logo/lamids.png" alt="Logo" class="w-full">
             </div>
 
             <button class="menu-icon">
@@ -42,14 +42,12 @@
                 <li class="p-5">
                     <a href="index.html">Home</a>
                 </li>
-                <li class="p-5">
-                    <a href="#"></a>
+                <li class="p-5 active-menu-item" >
+                   
+                    <a href="./biz.html">BIZ</a>
                 </li>
-                <li class="p-5">
-                    <a href="./HCD.html">HCD</a>
-                </li>
-                <li class="p-5 active-menu-item">
-                    <a href="./Biz.html">Biz</a>
+                <li class="p-5 ">
+                    <a href="./hcd.html">HCD</a>
                 </li>
                 <li class="p-5">
                     <a href="#">SDE</a>
@@ -89,7 +87,7 @@
       <section class="section-6 my-8 flex justify-around items-center">
         <div class="image1-holder-container sm:w-1/3 flex justify-around items-center">
             <div class="image1-holder">
-                <img src="../../public/assets/dp/images.png" class="w-full f-full">
+                <img src="assets/dp/images.png" class="w-full f-full">
             </div>
         </div>
         <div class="section-6-sub text-white sm:w-2/3 justify-around items-center">
@@ -128,7 +126,7 @@
         </div>
         <div class="image1-holder-container sm:w-1/3 flex justify-around items-center">
             <div class="image1-holder">
-                <img src="../../public/assets/whatsapp/images1.png" class="w-full f-full">
+                <img src="assets/whatsapp/images1.png" class="w-full f-full">
             </div>
         </div>
     </section>
@@ -169,7 +167,7 @@ BIZ uses data to activate a culture of continuous innovation in the entrepreneur
 
     <footer class="flex w-full">
         <div>
-            <img src="../../public/assets/logo/lamids.png" alt="">
+            <img src="assets/logo/lamids.png" alt="">
             <ul class="flex justify-around">
                 <li>
                     <a href="http://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
@@ -209,12 +207,12 @@ BIZ uses data to activate a culture of continuous innovation in the entrepreneur
     </div>
 
     <div class="widget-toggler">
-        <img src="../../public/assets/whatsapp/images1.png" alt="">
+        <img src="assets/whatsapp/images1.png" alt="">
     </div>
-    <script src="./../../public/Componets/menu/menu.js"></script>
+    <script src="./Componets/menu/menu.js"></script>
     <script src="Componets/menu/menu.js
     "></script>
-    <script src="./../../public/Componets/whatsappwidget/whatsappwidget.js"></script>
+    <script src="./Componets/whatsappwidget/whatsappwidget.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js"
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="js/jquery.event.move.js"></script>

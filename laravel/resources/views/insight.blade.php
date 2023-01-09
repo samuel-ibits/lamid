@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Insights</title>
     <link rel="stylesheet" href="./styles/home.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./Componets/menu/menu.css">
@@ -41,8 +41,15 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li class="p-5">
-                    <a href="#">Talent management</a>
+                    <a href="biz.html">BIZ</a>
                 </li>
+                <li class="p-5">
+                    <a href="hcd.html">HCD</a>
+                </li>
+                <li class="p-5">
+                    <a href="sde.html">SDE</a>
+                </li>
+
                 <li class="p-5">
                     <a href="events.html">Events</a>
                 </li>
