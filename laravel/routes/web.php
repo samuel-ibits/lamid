@@ -76,19 +76,17 @@ Route::get('/resume.html', function () {
 
 // db routes
 
-// event
 
-//create
-Route::post('createEvents','controller@createEvents');
-//insert
-Route::get('insertEvents','controller@insertEvents');
-//view
-Route::get('viewEvents','controller@viewEvents');
+//event
+use App\Http\Controllers\event;
+
+Route::post('/bookEvents',[event::class, 'book']);
+Route::post('createEvents',[event::class, 'create']);
 
 //buisness plan
 use App\Http\Controllers\plan;
 Route::post('/buyPlans', [plan::class, 'buy'] );
-Route::post('/createPlans','plans@createPlans');
+Route::post('/createPlans',[plan::class, 'create'] );
 
 use App\Http\Controllers\contact;
 Route::post('/reachout', [contact::class, 'reachout'] );
