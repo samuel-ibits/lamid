@@ -18,6 +18,41 @@
         <link rel="stylesheet" href="Componets/popup/popup.css">
     <link rel="stylesheet" href="./styles/insight.css">
     <link rel="stylesheet" href="./styles/event.css">
+    <script>
+    function book(can) {
+        var id= can.id;
+ document.getElementById('eventId').value= id;
+
+        var amount= 'amount'+id; 
+var amountval= document.getElementById(amount).value;      
+document.getElementById('amount').value= amountval;
+   
+    
+var eventNumber= 'eventNumber'+id; 
+var seatNumberval= document.getElementById(seatNumber).value;      
+document.getElementById('seatNumber').value= seatNumberval;
+ 
+var eventName= 'eventName'+id; 
+var eventNameval= document.getElementById(eventName).value;      
+document.getElementById('eventName').value= eventNameval;
+
+var fullname= 'fullname'; 
+var fullnameval= document.getElementById(fullname).value;      
+document.getElementById('fullname').value= fullnameval;
+
+var email= 'email'; 
+
+var emailval= document.getElementById(email).value;      
+document.getElementById('email').value= emailval;
+
+var status= 'status'+id; 
+
+var statusval= document.getElementById(status).value;      
+document.getElementById('status').value= statusval;
+
+       }
+   </script>
+    
 </head>
 
 <body>
@@ -41,8 +76,15 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li class="p-5">
-                    <a href="#">Talent management</a>
+                    <a href="biz.html">BIZ</a>
                 </li>
+                <li class="p-5">
+                    <a href="hcd.html">HCD</a>
+                </li>
+                <li class="p-5">
+                    <a href="sde.html">SDE</a>
+                </li>
+
                 <li class="p-5 active-menu-item">
                     <a href="events.html">Events</a>
                 </li>
@@ -73,13 +115,17 @@
        
        <div class="form-holder flex flex-col items-start">
        <span class='remove-pop-up cursor-pointer'><i class="bi bi-x"></i></span>
-           <form method="POST" action="/buyPlans" class="flex flex-col w-full" style="gap: 1rem;">
+           <form method="POST" action="/bookEvents" class="flex flex-col w-full" style="gap: 1rem;">
            @csrf
-           <input type="text" name="name" id="" placeholder="fullname" class="p-2 ">
-               <input type="text" name="email" id="" placeholder="Email" class="p-2">
-               <input type="text" name="planid" value="" id="planid" placeholder="planid"  style="display:none" class="p-2">
-               <input type="text" name="amount"  value="" id="amount" placeholder="amount" class="p-2">
+           <input type="text" name="name" id="fulname" placeholder="fullname" class="p-2 ">
+               <input type="text" name="email" id="email" placeholder="Email" class="p-2">
+               <input type="text" name="eventId" value="" id="eventId"   style="display:none" class="p-2">
+               <input type="text" name="eventName" value="" id="eventName"  style="display:none" class="p-2">
 
+               <input type="text" name="amount"  value="" id="amount" placeholder="amount" class="p-2">
+               <input type="text" name="seatNumber" value="" id="seatNumber" placeholder="seatNumber"  style="display:none" class="p-2">
+               <input type="text" name="seatNumber" value="" id="status" placeholder="seatNumber"  style="display:none" class="p-2">
+              
                <button type="submit" class="default-btn">Confirm</button>
            </form>
 
@@ -99,14 +145,17 @@
 
             <div class="card-text">
                 <div class="">
-                    <h1 class="mb-4">{{ $event->title }}</h1>
+                    <h1 class="mb-4">{{ $event->name }}</h1>
                     <p class="about-event">{{ $event->description }}</p>
 
-                    <p class="my-4">{{ $event->date }}</p>
+                    <p class="my-4">{{ $event->time }}</p>
 
                 </div>
-
-                <button class="buy-btn w-full">Reserve seat</button>
+                <input type="text" value="{{$event->name}}" id="eventName{{$event->id}}"  style="display:none" >
+               <input type="text"   value="{{$event->price}}" id="amount{{$event->id}}"  style="display:none" >
+               <input type="text" value="{{$event->bookedSeats}}" id="seatNumber{{$event->id}}"   style="display:none" >
+     
+                <button id="{{ $event->id }}"class="buy-btn w-full" onclick="book(this)" >Reserve seat</button>
 
             </div>
         </div>

@@ -57,8 +57,15 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li class="p-5">
-                    <a href="#">Talent management</a>
+                    <a href="biz.html">BIZ</a>
                 </li>
+                <li class="p-5">
+                    <a href="hcd.html">HCD</a>
+                </li>
+                <li class="p-5">
+                    <a href="sde.html">SDE</a>
+                </li>
+
                 <li class="p-5">
                     <a href="events.html">Events</a>
                 </li>
