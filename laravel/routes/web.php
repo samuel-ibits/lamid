@@ -29,6 +29,19 @@ Route::get('/insight.html', function () {
     return view('insight');
 });
 
+Route::get('/biz.html', function () {
+    return view('biz');
+});
+
+
+Route::get('/hcd.html', function () {
+    return view('hcd');
+});
+
+Route::get('/sde.html', function () {
+    return view('sde');
+});
+
 Route::get('/events.html', function () {
     return view('events');
 });
@@ -72,6 +85,7 @@ Route::get('/ongoingevents.html', function () {
 Route::get('/resume.html', function () {
     return view('/resume');
 });
+
 
 
 // db routes
