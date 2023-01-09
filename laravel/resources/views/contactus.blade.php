@@ -28,8 +28,11 @@
                 <img src="./assets/logo/lamids.png" alt="Logo" class="w-full">
             </div>
 
-            <button class="menu-icon">
+            <button class="menu-icon openmenu">
                 <i class="bi bi-list  text-white"></i>
+            </button>
+            <button class="menu-icon closemenu">
+            <i class="bi bi-x text-white"></i>
             </button>
         </div>
 
@@ -53,11 +56,9 @@
             </ul>
 
             <ul class="text-white flex items-center place-content-around menu-list">
-                <li class="p-3">
-                    <a href="#">Signin</a>
-                </li>
-                <li class="p-3">
-                    <button class="outline-btn">Signin</button>
+               
+                  <li class="p-3">
+                  <a href='./adminindex.html'> <button class="outline-btn"> Admin</button> </a>
                 </li>
                 <li class="p-3">
                     <button class="filled-button">View all jobs</button>
@@ -79,17 +80,20 @@
             <img src="./assets//contactUsimage/contactusimage.png" style="width:100;" alt="">
         </div>
     </div>
-
+    <form method="POST" action="/reachout" class="flex flex-col " style="gap: 1rem;">
+     @csrf
     <div class="contact-holder flex flex-col justify-center item-center">
         <div class="flex sm:flex-rol my-3">
-            <input type="text" placeholder="Name" class="rounded mr-5 w-2/3 p-4 text-black outline-none">
-            <input type="text" placeholder="Email" class="rounded  w-1/2 p-4 outline-none text-black">
+            <input type="text" placeholder="Name" name="name" class="rounded mr-5 w-2/3 p-4 text-black outline-none">
+            <input type="text" placeholder="Email" name="email" class="rounded  w-1/2 p-4 outline-none text-black">
         </div>
 
-        <input type="text" placeholder="Subject" class="rounded  w-full mb-3 p-4 outline-none text-black">
-        <textarea name="" placeholder="Type your message" class="rounded  w-full mb-3 p-4 outline-none text-black" id=""
+        <input type="text" name="subject" placeholder="Subject" class="rounded  w-full mb-3 p-4 outline-none text-black">
+        <textarea name="message" placeholder="Type your message" class="rounded  w-full mb-3 p-4 outline-none text-black" id=""
             cols="30" rows="10"></textarea>
     </div>
+
+</form>
     <footer class="flex w-full">
         <div>
             

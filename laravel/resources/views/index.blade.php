@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document </title>
+    <title>Lamid Consulting </title>
 
-    <link href={{url("css/foundation.css")} rel="stylesheet" type="text/css" />
+    <link href="css/foundation.css" rel="stylesheet" type="text/css" />
     <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
     <link href="css/foundation.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,6 +21,18 @@
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="Componets/popup/popup.css">
+    <script>
+    function buyplan(can) {
+        var id= can.id;
+        var amount= 'amount'+id; 
+
+     var amountval= document.getElementById(amount).value;      
+     document.getElementById('amount').value= amountval;
+     document.getElementById('planid').value= id;
+       }
+   </script>
+
+
 </head>
 
 <body>
@@ -30,8 +42,11 @@
                 <img src="assets/logo/lamids.png" alt="Logo" class="w-full">
             </div>
 
-            <button class="menu-icon">
+            <button class="menu-icon openmenu">
                 <i class="bi bi-list  text-white"></i>
+            </button>
+            <button class="menu-icon closemenu">
+            <i class="bi bi-x text-white"></i>
             </button>
         </div>
 
@@ -56,11 +71,9 @@
             </ul>
 
             <ul class="text-white flex items-center place-content-around menu-list">
+               
                 <li class="p-3">
-                    <a href="#">Signin</a>
-                </li>
-                <li class="p-3">
-                    <button class="outline-btn">Signin</button>
+                <a href='./adminindex.html'> <button class="outline-btn"> Admin</button> </a>
                 </li>
                 <li class="p-3">
                     <button class="filled-button">View all jobs</button>
@@ -75,21 +88,24 @@
        
         <div class="form-holder flex flex-col items-start">
         <span class='remove-pop-up cursor-pointer'><i class="bi bi-x"></i></span>
-            <form action="" class="flex flex-col " style="gap: 1rem;">
-                <input type="text" name="" id="" placeholder="Username" class="p-2">
-                <input type="text" name="" id placeholder="Email" class="p-2">
+            <form method="POST" action="/buyPlans" class="flex flex-col w-full" style="gap: 1rem;">
+            @csrf
+            <input type="text" name="name" id="name" required placeholder="fullname" class="p-2 ">
+                <input type="text" name="email" required id="email" placeholder="Email" class="p-2">
+                <input type="text" name="planid" value="" id="planid" placeholder="planid"   style="display:none;" class="p-2">
+                <input type="text" name="amount"  value="" id="amount" placeholder="amount" style="display:none;" class="p-2">
 
-                <button class="default-btn">Confirm</button>
+                <button type="submit" class="default-btn">Confirm</button>
             </form>
 
         </div>
     </div>
 
     <section class="section-1 flex  justify-around items-center ">
-    <div class="w-2/5 flex justify-around ">
+    <div class="sm:w-2/5 flex justify-around ">
        <p class='big-txt'>We source and <br> recruit visionary leaders <br> and talaents with a singular purpose.</p>
 
-        <p class='big-txt-sub'>to Creat continuous innovation and disruption for  customer advantage.</p>
+        <p class='big-txt-sub'>to Create continuous innovation and disruption for  customer advantage.</p>
 
         <button class='defaultBtn sm:px-7 sm:py-4'>join our job club</button>
 
@@ -104,155 +120,52 @@
 
 
     <p class="text-4xl bold mt-8">Business plans</p>
-    <section class="w-full business-card-scroll-container  flex flex-col  ">
+    <section class="w-full business-card-scroll-container  flex flex-col ">
         <section class="business-card-holder  h-full flex ">
+        <?php  $plan = DB::table('plans')->get(); ?>
 
+@foreach($plan as $plan) 
             <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
+           
+           
+            <div>
+                    <p class="card-Hatchling Plan">{{ $plan->name}}  </p>
+                    <p class="discount">{{ $plan->discount}}</p>
                     <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
-
-
+                        <li>{{ $plan->description }}</li>
                     </ul>
                 </div>
+                
 
                 <div>
-                    <p class="card-price">$2.75/month</p>
-
-                    <button class="buy-btn w-full">Buy now</button>
+                    <p class="card-price">{{ $plan->price }}</month</p>
+<input style="display:none;" value="{{ $plan->price }}" id="amount{{ $plan->id }}" />
+                    <button class="buy-btn w-full" id="{{ $plan->id }}" onclick="buyplan(this)" >Buy now</button>
                 </div>
             </div>
+            @endforeach
 
-            <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
-                    <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
-                        <li>Free WordPress/cPanel website transfer </li>
-                        <li>Free domain included</li>
-                </div>
+            @forelse ($plan as $plan)
 
-                <div>
-                    <p class="card-price">$2.75/month</p>
-
-                    <button class="buy-btn w-full">Buy now</button>
-                </div>
-            </div>
-
-            <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
-                    <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
-                        <li>Free WordPress/cPanel website transfer </li>
-                        <li>Free domain included</li>
-                </div>
-
-                <div>
-                    <p class="card-price">$2.75/month</p>
-
-                    <button class="buy-btn w-full">Buy now</button>
-                </div>
-            </div>
-
-            <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
-                    <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
-                        <li>Free WordPress/cPanel website transfer </li>
-                        <li>Free domain included</li>
-                </div>
-
-                <div>
-                    <p class="card-price">$2.75/month</p>
-
-                    <button class="buy-btn w-full">Buy now</button>
-                </div>
-            </div>
-
-            <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
-                    <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
-                        <li>Free WordPress/cPanel website transfer </li>
-                        <li>Free domain included</li>
-                </div>
-
-                <div>
-                    <p class="card-price">$2.75/month</p>
-
-                    <button class="buy-btn w-full">Buy now</button>
-                </div>
-            </div>
-
-            <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
-                    <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
-                        <li>Free WordPress/cPanel website transfer </li>
-                        <li>Free domain included</li>
-                </div>
-
-                <div>
-                    <p class="card-price">$2.75/month</p>
-
-                    <button class="buy-btn w-full">Buy now</button>
-                </div>
-            </div>
-
-            <div class="card flex flex-col justify-between">
-                <div>
-                    <p class="card-Hatchling Plan">Hatchling Plan</p>
-                    <p class="discount">Now 60% off!</p>
-                    <ul class="card-list">
-                        <li>Unmetered bandwidth</li>
-                        <li>Free SSL certificate </li>
-                        <li>Single website</li>
-                        <li>Free WordPress/cPanel website transfer </li>
-                        <li>Free domain included</li>
-                </div>
-
-                <div>
-                    <p class="card-price">$2.75/month</p>
-
-                    <button class="buy-btn w-full">Buy now</button>
-                </div>
-            </div>
+@empty
+   <div class='justify-center items-center flex p-5'>
+   <p>No buisness plan available</p>
+   </div>
+@endforelse
 
 
+           
         </section>
     </section>
 
     <section class="section-2 flex text-white justify-around items-center rounded-lg py-16 px-5">
-        <div class="w-1/2 flex flex-col justify-around input-holder-div">
-            <input type="search" placeholder="Search Job" class="p-5 mx-5 my-3 rounded outline-none text-black">
-            <input type="search" placeholder="Search Job" class="p-5 mx-5 rounded outline-none text-black">
-        </div>
-        <div class="w-1/2">
+        <div class="sm:w-1/2 flex flex-rol justify-center input-holder-div items-center ">
+            <input type="search" placeholder="Search Job" class="p-5 w-4/5 mx-5 my-3 rounded outline-none text-black">
+            <button class='search-btn p-5'> <i class="bi bi-search" style='color:#D3202E'></i></button>
+         </div>
+        <div class="sm:w-1/2">
             <p class="section-two-txt">
-                Careers at <br> LAMID Consulting
+                Careers at  LAMID Consulting
             </p>
         </div>
     </section>
@@ -278,7 +191,7 @@
 
     </section>
 
-    <section class="section-4 text-white justify-around items-center rounded-lg py-16 px-5 my-24">
+    <section class="section-4 text-white justify-around items-center rounded-lg py-5 px-5 my-10">
         <p class="headerText">Expore Categories</p>
 
         <p class="section-4-text sm:text-center">
@@ -290,26 +203,26 @@
             most suitable people with set competencies that fit into the organization’s need and culture.
         </p>
 
-        <ul class="flex justify-around item-center w-full my-10 text-center">
-            <li class="flex justify-center item-center flex-col">
+        <ul class="flex justify-around items-center w-full my-0 text-center section-4-list">
+            <li class="flex justify-center items-center  flex-col">
                 <img src="assets/buld/Asset 1@3x.png" alt="">
                 <p>Engineering</p>
             </li>
-            <li class="flex justify-center item-center flex-col">
+            <li class="flex justify-center items-center flex-col">
                 <img src="assets/chat/Asset 3@3x.png" alt="">
                 <p>Consultancy</p>
             </li>
-            <li class="flex justify-center item-center flex-col">
+            <li class="flex justify-center items-center flex-col">
                 <img src="assets/customerCare/Asset 1@3x.png" alt="">
                 <p>Customer service</p>
             </li>
-            <li class="flex justify-center item-center flex-col">
+            <li class="flex justify-center items-center flex-col">
                 <img src="assets/customerService//Asset 2@3x.png" alt="">
                 <p>Customer service</p>
             </li>
         </ul>
 
-        <button class="defaultBtn-2 px-9 py-5 ">
+        <button class="defaultBtn-2 sm:px-9 sm:py-5 ">
             See all opening
         </button>
     </section>
@@ -329,8 +242,8 @@
         </div>
     </section>
 
-    <section class="section-4 text-white justify-around items-center rounded-lg py-16 px-5 sm:my-24">
-        <p class="headerText">Featured Jobs</p>
+    <section class="section-4 text-white flex flex-col justify-around items-center rounded-lg py-16 px-5 sm:my-24">
+        <p class="headerText text-center">Featured Jobs</p>
         <p class="section-4-text text-center">
             Know your worth and find the job that qualify your life
         </p>
@@ -366,9 +279,9 @@
 
     <p class="text-4xl bold mt-8">Testimonials</p>
     <section class="w-full business-card-scroll-container flex flex-col">
-        <section class="business-card-holder gap-2rem  item-center h-full flex ">
+        <section class="business-card-holder gap-2rem  items-center h-full flex ">
 
-            <div class="row mx-4" style="width:25rem">
+            <div class="row mx-4" style="width:17rem">
                 <div class="h-full">
                     <div class="twentytwenty-container">
                         <img src="img/1_1.jpg" />
@@ -388,7 +301,7 @@
                 </div>
             </div>
 
-            <div class="row mx-4" style="width:25rem">
+            <div class="row mx-4" style="width:17rem">
                 <div class="h-full">
                     <div class="twentytwenty-container">
                         <img src="img/1_1.jpg" />
@@ -408,7 +321,7 @@
                 </div>
             </div>
 
-            <div class="row mx-4" style="width:25rem">
+            <div class="row mx-4" style="width:17rem">
                 <div class="h-full">
                     <div class="twentytwenty-container">
                         <img src="img/1_1.jpg" />
@@ -428,7 +341,7 @@
                 </div>
             </div>
 
-            <div class="row mx-4" style="width:25rem">
+            <div class="row mx-4" style="width:17rem">
                 <div class="h-full">
                     <div class="twentytwenty-container">
                         <img src="img/1_1.jpg" />
@@ -448,7 +361,7 @@
                 </div>
             </div>
 
-            <div class="row mx-4" style="width:25rem">
+            <div class="row mx-4" style="width:17rem">
                 <div class="h-full">
                     <div class="twentytwenty-container">
                         <img src="img/1_1.jpg" />
@@ -526,8 +439,7 @@
     <script src="Componets/menu/menu.js
     "></script>
     <script src="Componets/whatsappwidget/whatsappwidget.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"
-        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    
     <script src="js/jquery.event.move.js"></script>
     <script src="js/jquery.twentytwenty.js"></script>
     <script>
