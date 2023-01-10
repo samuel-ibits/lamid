@@ -129,36 +129,178 @@
     <p class="text-4xl bold mt-8">Business plans</p>
     <section class="w-full business-card-scroll-container  flex flex-col ">
         <section class="business-card-holder  h-full flex ">
-        <?php  $plan = DB::table('plans')->get(); ?>
-
-@foreach($plan as $plan) 
-            <div class="card flex flex-col justify-between">
-           
-           
-            <div>
-                    <p class="card-Hatchling Plan">{{ $plan->name}}  </p>
-                    <p class="discount">{{ $plan->discount}}</p>
+     
+            <div class="card flex flex-col justify-between"> 
+                <div>
+                 
+                    <p class="card-Hatchling Plan">Business plan title </p>
+                    <p class="discount">60% discount</p>
                     <ul class="card-list">
-                        <li>{{ $plan->description }}</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
                     </ul>
                 </div>
                 
 
                 <div>
-                    <p class="card-price">{{ $plan->price }}</month</p>
-<input style="display:none;" value="{{ $plan->price }}" id="amount{{ $plan->id }}" />
-                    <button class="buy-btn w-full" id="{{ $plan->id }}" onclick="buyplan(this)" >Buy now</button>
+                    <p class="card-price">N 60,000</month</p>
+                <input style="display:none;"   />
+                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
                 </div>
             </div>
-            @endforeach
 
-            @forelse ($plan as $plan)
+            <div class="card flex flex-col justify-between"> 
+                <div>
+                 
+                    <p class="card-Hatchling Plan">Business plan title </p>
+                    <p class="discount">60% discount</p>
+                    <ul class="card-list">
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                    </ul>
+                </div>
+                
 
-@empty
-   <div class='justify-center items-center flex p-5'>
-   <p>No buisness plan available</p>
-   </div>
-@endforelse
+                <div>
+                    <p class="card-price">N 60,000</month</p>
+                <input style="display:none;"   />
+                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+                </div>
+            </div>
+     
+            <div class="card flex flex-col justify-between"> 
+                <div>
+                 
+                    <p class="card-Hatchling Plan">Business plan title </p>
+                    <p class="discount">60% discount</p>
+                    <ul class="card-list">
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                    </ul>
+                </div>
+                
+
+                <div>
+                    <p class="card-price">N 60,000</month</p>
+                <input style="display:none;"   />
+                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+                </div>
+            </div>
+            <div class="card flex flex-col justify-between"> 
+                <div>
+                 
+                    <p class="card-Hatchling Plan">Business plan title </p>
+                    <p class="discount">60% discount</p>
+                    <ul class="card-list">
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                    </ul>
+                </div>
+                
+
+                <div>
+                    <p class="card-price">N 60,000</month</p>
+                <input style="display:none;"   />
+                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+                </div>
+            </div>
+            <div class="card flex flex-col justify-between"> 
+                <div>
+                 
+                    <p class="card-Hatchling Plan">Business plan title </p>
+                    <p class="discount">60% discount</p>
+                    <ul class="card-list">
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                    </ul>
+                </div>
+                
+
+                <div>
+                    <p class="card-price">N 60,000</month</p>
+                <input style="display:none;"   />
+                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+                </div>
+            </div>
+            <div class="card flex flex-col justify-between"> 
+                <div>
+                 
+                    <p class="card-Hatchling Plan">Business plan title </p>
+                    <p class="discount">60% discount</p>
+                    <ul class="card-list">
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                    </ul>
+                </div>
+                
+
+                <div>
+                    <p class="card-price">N 60,000</month</p>
+                <input style="display:none;"   />
+                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+                </div>
+            </div>
+            <div class="card flex flex-col justify-between"> 
+                <div>
+                 
+                    <p class="card-Hatchling Plan">Business plan title </p>
+                    <p class="discount">60% discount</p>
+                    <ul class="card-list">
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                    </ul>
+                </div>
+                
+
+                <div>
+                    <p class="card-price">N 60,000 month</p>
+                <input style="display:none;"   />
+                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+                </div>
+            </div>
+            <div class="card flex flex-col justify-between"> 
+                <div>
+                 
+                    <p class="card-Hatchling Plan">Business plan title </p>
+                    <p class="discount">60% discount</p>
+                    <ul class="card-list">
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                        <li>plan priviledge</li>
+                    </ul>
+                </div>
+                
+
+                <div>
+                    <p class="card-price">N 60,000</month</p>
+                <input style="display:none;"   />
+                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+                </div>
+            </div>
+
 
 
            
@@ -234,6 +376,39 @@
         </button>
     </section>
 
+    <section class="section-4 text-white flex flex-col justify-around items-center rounded-lg py-14 px-5 sm:my-4">
+        <p class="headerText text-center">Biz</p>
+        <p class="section-4-text text-center">
+        Unlock Africa's entrepreneurial potential with the Business Innovation Zone, fostering tech-driven innovation and propelling success in the market.
+        </p>
+        
+        <button class="defaultBtn-2-outline px-9 py-5 " id="openBizBtn">
+           Read more
+        </button>
+    </section>
+    <section class="section-4 text-white flex flex-col justify-around items-center rounded-lg py-14 px-5 sm:my-4">
+        <p class="headerText text-center">HCD</p>
+        <p class="section-4-text text-center">
+        LAMID consulting offers recruitment, training, programs, business plans, and expert insights for human capital development and business growth.
+        </p>
+        
+        <button class="defaultBtn-2-outline px-9 py-5 " id="openHCDBtn">
+           Read more
+        </button>
+    </section>
+
+    <section class="section-4 text-white flex flex-col justify-around items-center rounded-lg py-14 px-5 sm:my-4">
+        <p class="headerText text-center">SDE</p>
+        <p class="section-4-text text-center">
+       .....
+        </p>
+        
+        <button class="defaultBtn-2-outline px-9 py-5 " id="openSDEBtn">
+           Read more
+        </button>
+    </section>
+
+
     <section class="section-5 rounded-lg text-black">
         <p class="big-black-txt text-black">Your Dream Jobs Are Waiting</p>
         <p class="section-5-text text-black">over 1 million interactions, 50,000 success <br> stories Make yours now.
@@ -258,6 +433,7 @@
             Browse for jobs
         </button>
     </section>
+
 
     <section class="section-6 flex justify-around items-center">
 
