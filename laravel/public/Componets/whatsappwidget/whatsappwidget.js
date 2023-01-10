@@ -10,3 +10,7 @@ $(".widget-toggler").click(function () {
   document.querySelector('#openHCDBtn').addEventListener('click',()=>{
     location.assign('hcd.html')
   })
+
+  document.querySelector('#openSDEBtn').addEventListener('click',()=>{
+   alert("No SDE")
+  })
