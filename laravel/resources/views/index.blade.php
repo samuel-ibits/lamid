@@ -274,7 +274,7 @@
                 
 
                 <div>
-                    <p class="card-price">N 60,000</month</p>
+                    <p class="card-price">N 60,000 month</p>
                 <input style="display:none;"   />
                     <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
                 </div>

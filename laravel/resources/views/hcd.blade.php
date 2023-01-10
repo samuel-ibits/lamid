@@ -39,7 +39,7 @@
 
         <div id="menuList" class="list-holder-top ">
             <ul class="text-white flex place-content-around items-center menu-list">
-               < li class="p-5">
+               <li class="p-5">
                     <a href="index.html">Home</a>
                 </li>
                 
