@@ -376,6 +376,39 @@
         </button>
     </section>
 
+    <section class="section-4 text-white flex flex-col justify-around items-center rounded-lg py-14 px-5 sm:my-4">
+        <p class="headerText text-center">Biz</p>
+        <p class="section-4-text text-center">
+        Unlock Africa's entrepreneurial potential with the Business Innovation Zone, fostering tech-driven innovation and propelling success in the market.
+        </p>
+        
+        <button class="defaultBtn-2-outline px-9 py-5 " id="openBizBtn">
+           Read more
+        </button>
+    </section>
+    <section class="section-4 text-white flex flex-col justify-around items-center rounded-lg py-14 px-5 sm:my-4">
+        <p class="headerText text-center">HCD</p>
+        <p class="section-4-text text-center">
+        LAMID consulting offers recruitment, training, programs, business plans, and expert insights for human capital development and business growth.
+        </p>
+        
+        <button class="defaultBtn-2-outline px-9 py-5 " id="openHCDBtn">
+           Read more
+        </button>
+    </section>
+
+    <section class="section-4 text-white flex flex-col justify-around items-center rounded-lg py-14 px-5 sm:my-4">
+        <p class="headerText text-center">SDE</p>
+        <p class="section-4-text text-center">
+       .....
+        </p>
+        
+        <button class="defaultBtn-2-outline px-9 py-5 ">
+           Read more
+        </button>
+    </section>
+
+
     <section class="section-5 rounded-lg text-black">
         <p class="big-black-txt text-black">Your Dream Jobs Are Waiting</p>
         <p class="section-5-text text-black">over 1 million interactions, 50,000 success <br> stories Make yours now.
@@ -400,6 +433,7 @@
             Browse for jobs
         </button>
     </section>
+
 
     <section class="section-6 flex justify-around items-center">
 
