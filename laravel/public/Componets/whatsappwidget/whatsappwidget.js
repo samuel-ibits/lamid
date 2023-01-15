@@ -7,6 +7,11 @@ $(".widget-toggler").click(function () {
     location.assign('biz.html')
   })
 
+  
+  document.querySelector('#openBizpageBtn').addEventListener('click',()=>{
+    location.assign('biz-page.html')
+  })
+
   document.querySelector('#openHCDBtn').addEventListener('click',()=>{
     location.assign('hcd.html')
   })
