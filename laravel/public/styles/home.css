@@ -18,6 +18,53 @@ body{
     width: 65%;
 }
 
+.biz-section-1{
+    width: 100vw;
+    padding: 1rem 7rem;
+    color: #ffffff;
+    margin-top: 5rem;
+}
+
+.big-text-white{
+    font-size: 4rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.big-text-white-title{
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.big-text-white::after{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background: #D3202E;
+    margin-left: -67vw;
+    margin-top:6rem;
+}
+
+.important-Text{
+    color: #D3202E;
+    margin: 1rem 0px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.bold-text{
+    font-weight: 400 !important;
+}
+
+.thin{
+    font-weight: 100 !important;
+}
+
+.plain-text{
+    font-weight: 300;
+}
 
 .section-1 div{
     display: flex;
@@ -26,18 +73,30 @@ body{
 }
 
 .big-txt{
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 60px;
+    line-height: 65px;
     text-align: left;
 }
 
 .big-txt-sub{
-    font-size: 30px;
+    font-size: 20px;
     line-height: 30px;
     text-align: left;
     font-weight: 100;
     opacity: .7;
     margin-top: 2rem;
+}
+
+.strong{
+    font-weight: 400;
+    margin: .5rem 0px;
+    color: #fff !important;
+}
+
+
+.strong-2{
+    font-weight: 400;
+    color: #fff !important;
 }
 
 .defaultBtn{
@@ -173,7 +232,6 @@ body{
 }
 
 .image1-holder{
-    border: 1px solid #eee;
     width: 17rem;
     height: 17rem;
 }
@@ -255,6 +313,89 @@ margin: .5rem 0px;
 
 
 @media (max-width: 900px) { 
+
+    
+
+.biz-section-1{
+    width: 100vw;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    margin-top: 5rem;
+}
+
+.big-text-white{
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.big-text-white-title{
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.big-text-white::after{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background: #D3202E;
+    margin-left: -67vw;
+    margin-top:6rem;
+}
+
+.important-Text{
+    color: #D3202E;
+    margin: 1rem 0px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.bold-text{
+    font-weight: 400 !important;
+}
+
+.thin{
+    font-weight: 100 !important;
+}
+
+.plain-text{
+    font-weight: 300;
+}
+
+.section-1 div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.big-txt{
+    font-size: 60px;
+    line-height: 65px;
+    text-align: left;
+}
+
+.big-txt-sub{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 100;
+    opacity: .7;
+    margin-top: 2rem;
+}
+
+.strong{
+    font-weight: 400;
+    margin: .5rem 0px;
+    color: #fff !important;
+}
+
+
+.strong-2{
+    font-weight: 400;
+    color: #fff !important;
+}
     .section-1{
         width: 100vw;
         padding: .5rem;

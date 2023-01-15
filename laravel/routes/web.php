@@ -33,6 +33,11 @@ Route::get('/biz.html', function () {
     return view('biz');
 });
 
+Route::get('/biz-page.html', function () {
+    return view('biz-page');
+});
+
+
 
 Route::get('/hcd.html', function () {
     return view('hcd');

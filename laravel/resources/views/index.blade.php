@@ -110,11 +110,13 @@
 
     <section class="section-1 flex  justify-around items-center ">
     <div class="sm:w-2/5 flex justify-around ">
-       <p class='big-txt'>We source and <br> recruit visionary leaders <br> and talaents with a singular purpose.</p>
+       <p class='big-txt'>Leaders in creating <br> business growth</p>
 
-        <p class='big-txt-sub'>to Create continuous innovation and disruption for  customer advantage.</p>
+       <p class='big-txt-sub strong'>Be the next raving success</p>
 
-        <button class='defaultBtn sm:px-7 sm:py-4'>join our job club</button>
+        <p class='big-txt-sub'>Let’s place you ahead of others using those who know how to <br> customize solutions.</p>
+
+        <button class='defaultBtn sm:px-7 sm:py-4' id="openBizpageBtn">Learn more</button>
 
     
 
@@ -453,7 +455,7 @@
         </div>
         <div class="image1-holder-container sm:w-1/3 flex justify-around items-center">
             <div class="image1-holder">
-
+                <img src="img/img/happy-cheerful-business-people-posing-office-hallway.png" alt="" class="w-full h-full">
             </div>
         </div>
 
