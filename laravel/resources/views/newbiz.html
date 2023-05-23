@@ -120,10 +120,20 @@
         <div class="biz-card">
             <img src="../../public//img/Frame 26.png" alt="">
         </div>
-
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h1 class="modal-title">BIZSPHERE</h1>
+                <p class="modal-subtitle">It’s all about business</p>
+                <p class="modal-text">A platform for securing information on appropriate finance, properties, assets,
+                    land, and other resources, and to announce required assistance, and advocate with stakeholders for a
+                    more conducive business environment for the advancement and development of SMIs</p>
+                <button class="custom-btn-ab-1">Join Our Community</button>
+            </div>
+        </div>
         <div class="gapped">
             <button class="custom-btn-ab-1">ABOUT US</button>
-            <button class="custom-btn-ab-1">JOIN BIZSHPERE</button>
+            <button class="custom-btn-ab-1 open-modal">JOIN BIZSHPERE</button>
             <button class="custom-btn-ab-1">SEE EVENT</button>
         </div>
 
@@ -135,6 +145,7 @@
             with the right skills and expertise to work with you and your business at nominal periodic retention fees.
         </p>
     </div>
+
     <div class="tie-and-die">
         <div class="tnd">
             <div class="biz-top-holder">
@@ -402,6 +413,19 @@
         </div>
     </section>
     <script>
+        const openModalButton = document.querySelector('.open-modal');
+        const modalOverlay = document.querySelector('.modal-overlay');
+        const closeModalButton = document.querySelector('.close-modal');
+
+        openModalButton.addEventListener('click', function () {
+            modalOverlay.style.display = 'block';
+        });
+
+        closeModalButton.addEventListener('click', function () {
+            modalOverlay.style.display = 'none';
+        });
+
+
         const menu = document.querySelector('.menu');
         const hamburger = document.querySelector('.hamburger');
 

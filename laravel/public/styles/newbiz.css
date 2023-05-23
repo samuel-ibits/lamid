@@ -369,6 +369,68 @@ border-right: 5px solid #C12129;
 }
 
 
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .modal-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .modal-subtitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .modal-text {
+    margin-bottom: 15px;
+  }
+  
+  .modal-button {
+    background-color: #C12129;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Media Queries for Responsive Layout */
+  
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 90%;
+    }
+  }
+  
+
 @media (max-width: 1024px) {
 
     .biz-text-one span {
