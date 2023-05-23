@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.biz-text-one span {
+    color: #C12129;
+}
+
+.biz-text-one {
+    text-align: left;
+}
+
+.absection1-biz {
+    padding: 1rem 0px;
+    width: 100vw;
+    min-height: 90vh;
+    background-image: url('../../public/img/young-businessman-talking-his-coworkers-while-analyzing-charts-during-meeting-board-room-all-them-are-wearing-protective-face-masks-due-covid-19-epidemic\ 1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.absection1-biz .biz-sub {
+    width: 80%;
+}
+
+
+.absection1-biz .biz-sub p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+    min-width: 30vw;
+}
+
+
+.logo-biz img {
+    width: 20rem;
+    margin-top: 1rem;
+    margin-left: 7rem;
+}
+
+
+.biz-text {
+    width: 60%;
+}
+
+.biz-img {
+    width: 20%;
+}
+
+.biz-img img {
+    width: 100%;
+}
+
+.biz-top-holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-icons {
+    width: 80%;
+    margin-left: 7rem;
+}
+
+.section-1-icons ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.section-1-icons ul li p{
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+}
+
+.best-section{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #585656;
+  
+}
+
+.bes-section-sub{
+    width: 100%;
+    height: 100%;
+    background: #585656;
+    background-image: url('../../public/img/Best.png');
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.biz-brand{
+        width: 100vw;
+        min-height: 70vh;
+        background: linear-gradient(to bottom, #eee, #000);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1REM 0PX;
+      }
+
+      .biz-card{
+        width: 45rem;
+      }
+
+      
+      .biz-card-small{
+        width: 30rem;
+      }
+
+      .biz-card-small img{
+        width: 100%;
+      }
+
+      .gapped{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+      }
+
+      .gapped button{
+        padding: 1rem 4rem;
+      }
+
+      .PADDED{
+        padding: 1rem 4rem;
+      }
+
+      .biz-card img{
+        width: 100%;
+      }
+
+      .text{
+        width: 50%;
+        font-weight: 400;
+        font-size: 15px;
+        color: #fff;
+        overflow: visible;
+        line-height: 16px;
+      }
+
+      .tnd{
+        width: 80%;
+      }
+
+
+      .center-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .tie-and-die{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #fff;
+        min-height: 40vh;
+        padding: 2rem 0px;
+      }
+      
+      .big-red-2{
+        font-size: 35px;
+        color: #C12129;
+        text-align: left;
+        width: 100%;
+        margin: .5rem 0px;
+      }
