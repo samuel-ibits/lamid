@@ -1,0 +1,839 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.biz-text-one span {
+    color: #C12129;
+}
+
+.biz-text-one {
+    text-align: left;
+}
+
+.absection1-biz {
+    padding: 1rem 0px;
+    width: 100vw;
+    min-height: 90vh;
+    background-image: url('../../public/img/young-businessman-talking-his-coworkers-while-analyzing-charts-during-meeting-board-room-all-them-are-wearing-protective-face-masks-due-covid-19-epidemic\ 1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.absection1-biz .biz-sub {
+    width: 80%;
+}
+
+
+.absection1-biz .biz-sub p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+    min-width: 30vw;
+}
+
+
+.logo-biz img {
+    width: 20rem;
+    margin-top: 1rem;
+    margin-left: 7rem;
+}
+
+
+.biz-text {
+    width: 60%;
+}
+
+.biz-img {
+    width: 20%;
+}
+
+.biz-img img {
+    width: 100%;
+}
+
+.biz-top-holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-icons {
+    width: 80%;
+    margin-left: 7rem;
+}
+
+.section-1-icons ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.section-1-icons ul li p{
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+}
+
+.best-section{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #585656;
+  
+}
+
+.bes-section-sub{
+    width: 100%;
+    height: 100%;
+    background: #585656;
+    background-image: url('../../public/img/Best.png');
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.biz-brand{
+        width: 100vw;
+        min-height: 70vh;
+        background: linear-gradient(to bottom, #eee, #000);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1REM 0PX;
+      }
+
+      .biz-card{
+        width: 45rem;
+      }
+
+      
+      .biz-card-small{
+        width: 30rem;
+      }
+
+      .biz-card-small img{
+        width: 100%;
+      }
+
+      .gapped{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+      }
+
+      .gapped button{
+        padding: 1rem 4rem;
+      }
+
+      .PADDED{
+        padding: 1rem 4rem;
+      }
+
+      .biz-card img{
+        width: 100%;
+      }
+
+      .text{
+        width: 50%;
+        font-weight: 400;
+        font-size: 15px;
+        color: #fff;
+        overflow: visible;
+        line-height: 16px;
+      }
+
+      .tnd{
+        width: 80%;
+      }
+
+
+      .center-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .tie-and-die{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #fff;
+        min-height: 40vh;
+        padding: 2rem 0px;
+      }
+      
+      .big-red-2{
+        font-size: 35px;
+        color: #C12129;
+        text-align: left;
+        width: 100%;
+        margin: .5rem 0px;
+      }
+
+      .bzdark{
+        width: 100vw;
+        min-height: 60vh;
+        background: #000;
+        padding: 1rem 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+
+      .inside-bzdaark{
+        width: 60%;
+        min-height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .bizcard-white{
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+}
+
+
+.bizcard-red{
+    background: #C12129;
+    padding: 1.5rem;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.dotted-image{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px dotted #fff;
+    padding: 1rem;
+}
+
+.dotted-image img{
+    width: 70%;
+}
+
+.dkbottom{
+    width: 100%;
+    display: flex;
+}
+
+.dkbottom-img{
+    width: 40%;
+}
+
+.dkbottom-img img{
+    width: 100%;
+}
+
+.dkbottom p{
+    width: 70%;
+}
+
+.bzsection4{
+    width: 100%;
+    min-height: 40vh;
+    background: linear-gradient(to bottom, #444, #333);   
+    color: #fff;
+}
+
+.bzsection4{
+    padding: 2rem 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bzsection4 p{width: 60%;}
+
+
+.bzsection4 div{
+    display: flex;
+    flex-direction: row;
+}
+
+.bzsection4 div div{
+    width: 35vw;
+    padding: 1rem;
+}
+
+
+
+.bzsection4 div div ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.bzsection4 div div ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+ }
+
+
+.bzsection4 div div:nth-child(1){
+border-right: 5px solid #C12129;
+}
+
+.black-bottom{
+    padding: 1rem 0px;
+    width: 100%;
+    min-height: 60vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-bottom-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.wht-bttom{
+    border-radius: 20px;
+    width: 100%;
+    background: #fff;
+    padding: 1rem 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.red-text{
+    color: #C12129;
+}
+
+.left-text{
+ text-align: left;   
+}
+
+.sm-scl{
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .modal-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .modal-subtitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .modal-text {
+    margin-bottom: 15px;
+  }
+  
+  .modal-button {
+    background-color: #C12129;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Media Queries for Responsive Layout */
+  
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 90%;
+    }
+  }
+  
+
+@media (max-width: 1024px) {
+
+    .biz-text-one span {
+        color: #C12129;
+    }
+    
+    .biz-text-one {
+        text-align: left;
+    }
+
+    .hide-mobile{
+        display: none;
+    }
+    
+    .absection1-biz {
+        padding: 1rem 0px;
+        width: 100vw;
+        min-height: 90vh;
+        background-image: url('../../public/img/young-businessman-talking-his-coworkers-while-analyzing-charts-during-meeting-board-room-all-them-are-wearing-protective-face-masks-due-covid-19-epidemic\ 1.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .absection1-biz .biz-sub {
+        width: 100%;
+    }
+    
+
+    
+    .absection1-biz .biz-sub p {
+        color: #fff;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 3rem;
+        width: 100%;
+    }
+    
+    .space {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 30vw;
+        min-height: 8rem;
+    }
+    
+    
+    .logo-biz img {
+        width: 20rem;
+        margin-top: 1rem;
+        margin-left: 7rem;
+    }
+    
+    
+    .biz-text {
+        width: 90%;
+        order: 2;
+    }
+
+    .small-icon{
+         width: 100%;
+    }
+    
+    .biz-img {
+        width: 40%;
+        order: 1;
+    }
+    
+    .biz-img img {
+        width: 100%;
+    }
+    
+    .biz-top-holder {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .section-1-icons {
+        width: 80%;
+        margin-left: 0rem;
+    }
+    
+    .section-1-icons ul{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .section-1-icons ul li p{
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        font-size: 10px;
+    }
+    
+    .section-1-icons ul li div{
+        width: 4rem;
+    }
+
+    .section-1-icons ul li div img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .small-img{
+        width: 3rem !important;
+    }
+    
+
+    .best-section{
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background: #585656;
+      
+    }
+    
+    .bes-section-sub{
+        width: 100%;
+        height: 100%;
+        background: #585656;
+        background-image: url('../../public/img/Best.png');
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+    }
+    
+    .biz-brand{
+            width: 100vw;
+            min-height: 70vh;
+            background: linear-gradient(to bottom, #eee, #000);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            padding: 1REM 0PX;
+          }
+
+          .biz-brand h2{
+            font-size: 16px;
+            width: 80%;
+          }
+    
+          .biz-card{
+            width: 90%;
+          }
+    
+          
+          .biz-card-small{
+            width: 80%;
+          }
+    
+          .biz-card-small img{
+            width: 100%;
+          }
+    
+          .gapped{
+            display: flex;
+            flex-direction: row;
+            flex-direction: column;
+            gap: 2rem;
+          }
+    
+          .gapped button{
+            padding: 1rem 4rem;
+          }
+    
+          .PADDED{
+            padding: 1rem 4rem;
+          }
+    
+          .biz-card img{
+            width: 100%;
+          }
+    
+          .text{
+            width: 90%;
+            font-weight: 400;
+            font-size: 15px;
+            color: #fff;
+            overflow: visible;
+            line-height: 16px;
+          }
+    
+          .tnd{
+            width: 100%;
+          }
+    
+    
+          .center-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+          }
+    
+          .tie-and-die{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background: #fff;
+            min-height: 40vh;
+            padding: 2rem 0px;
+          }
+          
+          .big-red-2{
+            font-size: 35px;
+            color: #C12129;
+            text-align: left;
+            width: 100%;
+            margin: .5rem 0px;
+          }
+    
+          .bzdark{
+            width: 100vw;
+            min-height: 60vh;
+            background: #000;
+            padding: 1rem 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+          }
+    
+          .inside-bzdaark{
+            width: 90%;
+            min-height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+          }
+    
+          .bizcard-white{
+            background: #fff;
+            color: #000;
+            padding: 1.5rem;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+    }
+    
+    
+    .bizcard-red{
+        background: #C12129;
+        padding: 1.5rem;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    
+    .dotted-image{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 3px dotted #fff;
+        padding: 1rem;
+    }
+    
+    .dotted-image img{
+        width: 70%;
+    }
+    
+    .dkbottom{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dkbottom-img{
+        width: 40%;
+    }
+    
+    .dkbottom-img img{
+        width: 100%;
+    }
+    
+    .dkbottom p{
+        width: 100%;
+    }
+    
+    .bzsection4{
+        width: 100%;
+        min-height: 40vh;
+        background: linear-gradient(to bottom, #444, #333);   
+        color: #fff;
+    }
+    
+    .bzsection4{
+        padding: 2rem 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .bzsection4 p{width: 90%;}
+    
+    
+    .bzsection4 div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bzsection4 div div{
+        width: 90vw;
+        padding: .5rem;
+    }
+    
+    
+    
+    .bzsection4 div div ul{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: left;
+       flex-direction: column;
+       gap: 2rem;
+    }
+    
+    .bzsection4 div div ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        flex-direction: column;
+        gap: 2rem;
+     }
+    
+    
+    .bzsection4 div div:nth-child(1){
+    border-bottom: 5px solid #C12129;
+    border-right: none;
+    }
+    
+    .black-bottom{
+        padding: 1rem 0px;
+        width: 100%;
+        min-height: 60vh;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .black-bottom-img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .wht-bttom{
+        border-radius: 20px;
+        width: 100%;
+        background: #fff;
+        padding: 1rem 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
+}
+    
+    .red-text{
+        color: #C12129;
+    }
+    
+    .left-text{
+     text-align: left;   
+    }
+    
+    .sm-scl{
+        transform: scale(.8);
+        -webkit-transform: scale(.8);
+        -moz-transform: scale(.8);
+        -ms-transform: scale(.8);
+        -o-transform: scale(.8);
+    }
+    
+}
