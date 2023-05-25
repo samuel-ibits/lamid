@@ -137,7 +137,6 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-
     padding: 2rem 1rem;
 }
 
@@ -357,4 +356,248 @@
 
 .newbiz-img img {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .innernewbiz4section2 {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+
+    .newbizbb {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        overflow-x: scroll;
+    }
+
+    .newbizbb ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-left: 6rem;
+    }
+
+    .full-biz-img {
+        width: 8rem;
+    }
+
+    .full-biz-img img {
+        width: 100%;
+    }
+
+    .d-div-holder-iii {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+
+    .d-div-holder-iii div:nth-child(1) {
+        border-bottom: 3px solid #C12129;
+        border-right: none;
+
+    }
+
+    .d-div-holder-iii div:nth-child(2) {
+        margin-left: 0rem;
+    }
+
+    .d-div-holder-iii div p {
+        width: 100%;
+        font-weight: 600;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .innernewbizsection4 {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 2rem 1rem;
+    }
+
+
+    .innernewbizsection4 div {
+        background: #554A4A;
+        color: #fff;
+        width: 90%;
+        height: max-content;
+        padding: 1.5rem;
+        border: 1px solid #fff;
+        border-top-left-radius: 20px;
+        display: flex;
+        border-bottom-right-radius: 20px;
+    }
+
+    .innernewbizsection4 div:nth-child(1) p {
+        height: 20%;
+        overflow: visible !important;
+    }
+
+    .innernewbizsection4 div:nth-child(1) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .innernewbizsection4 div:nth-child(2) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .innernewbizsection4 div:nth-child(1) img {
+        width: 10rem
+    }
+
+    .innernewbizsection4 div:nth-child(2) img {
+        height: 100%;
+        width: 26%;
+    }
+
+    
+.innernewbizwhitebg {
+    width: 90%;
+    padding: 1rem 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.three-section-holder {
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    text-align: center;
+}
+
+.three-section-holder div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.white-section {
+    background: #DCD4D4;
+    border: 2px solid #444;
+    font-size: 15px;
+}
+
+.white-section button {
+    background: 999999;
+    padding: .5rem;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    font-weight: 500;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.abls {
+    position: absolute;
+   display: none;
+}
+
+
+
+.innernewbiz-darkbottom {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.newbiz-sub-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.newbiz-sub-section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grey-btn {
+    width: 100%;
+    padding: .5rem .5rem;
+    background: #474141;
+    color: #fff;
+    font-weight: 500;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.grey-btn-i {
+    padding: .5rem .5rem;
+    background: #474141;
+    color: #fff;
+    font-weight: 500;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.red-btn {
+    width: 100%;
+    padding: .5rem .5rem;
+    background: #C12129;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.red-btn-i {
+    padding: .5rem .5rem;
+    background: #C12129;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.newbiz-sub-section div:nth-child(2) {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+}
+
 }
