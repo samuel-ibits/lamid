@@ -21,6 +21,7 @@
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    box-shadow: 0px 3px 5px #444444aa;
 }
 
 .menu ul {
