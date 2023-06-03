@@ -1,0 +1,143 @@
+.red-btn-big {
+    border: 2px solid #d3202e;
+    padding: 1rem 2rem;
+    width: fit-content;
+}
+
+.margin-top-4 {
+    margin-top: 6rem !important;
+}
+
+.full-img {
+    width: 100%;
+    height: 100%;
+}
+
+.med-font {
+    font-size: 20px !important;
+    text-align: left !important;
+}
+
+.bg-trans {
+    background: transparent !important;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: row !important;
+    width: 50% !important;
+}
+
+.form-input input {
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid #eee;
+    margin-left: .5rem;
+    background: transparent;
+    outline: none;
+    color: #eee;
+    font-size: 20px;
+}
+
+.form-input textarea {
+    width: 80%;
+    font-size: 20px;
+    border: none;
+    color: #eee;
+    border-bottom: 2px solid #eee;
+    margin-left: .5rem;
+    background: transparent;
+    outline: none;
+}
+
+.form-holder {
+    width: 100% !important;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem !important;
+}
+
+.vw-80 {
+    width: 80vw !important;
+}
+
+.centered-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick-links {
+    background-color: #313030;
+    width: 100vw;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.quick-links div {
+    width: 30%;
+    font-size: 25px;
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.quick-links div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.quick-links div ul li a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.quick-links div:nth-child(2) {
+    width: 40% !important;
+}
+
+@media (max-width: 768px) {
+    .vw-80 {
+        width: 100vw !important;
+    }
+    .form-input {
+        display: flex;
+        flex-direction: row !important;
+        width: 90% !important;
+    }
+    .quick-links {
+        background-color: #313030;
+        width: 95vw;
+        min-height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .quick-links div {
+        width: 100%;
+        font-size: 25px;
+        text-align: left;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .quick-links div:nth-child(2) {
+        width: 100% !important;
+    }
+}
