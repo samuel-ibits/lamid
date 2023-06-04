@@ -1,651 +1,456 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lamid Consulting </title>
-
-    <link href="css/foundation.css" rel="stylesheet" type="text/css" />
-    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
-    <link href="css/foundation.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="Componets/menu/menu.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="./globalStyle.css">
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="Componets/popup/popup.css">
-    <script>
-    function buyplan(can) {
-        var id= can.id;
-        var amount= 'amount'+id; 
-
-     var amountval= document.getElementById(amount).value;      
-     document.getElementById('amount').value= amountval;
-     document.getElementById('planid').value= id;
-       }
-   </script>
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/styles/newhomage.css">
 </head>
 
 <body>
-    <nav class="items-center w-screen place-content-around  text-sm nav-holder">
-        <div class="top-div">
-            <div class="logo-holder">
-                <img src="assets/logo/lamids.png" alt="Logo" class="w-full">
-            </div>
-
-            <button class="menu-icon openmenu">
-                <i class="bi bi-list  text-white"></i>
-            </button>
-            <button class="menu-icon closemenu">
-            <i class="bi bi-x text-white"></i>
-            </button>
-        </div>
-
-
-        <div id="menuList" class="list-holder-top ">
-            <ul class="text-white flex place-content-around items-center menu-list">
-                <li class="p-5 active-menu-item">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="p-5">
-                    <a href="biz.html">BIZ</a>
-                </li>
-                <li class="p-5">
-                    <a href="hcd.html">HCD</a>
-                </li>
-                <li class="p-5">
-                    <a href="sde.html">SDE</a>
-                </li>
-
-                <li class="p-5">
-                    <a href="events.html">Events</a>
-                </li>
-                <li class="p-5">
-                    <a href="insight.html">Insights</a>
-                </li>
-                <li class="p-5">
-                    <a href="contactus.html">Contact</a>
-                </li>
-            </ul>
-
-            <ul class="text-white flex items-center place-content-around menu-list">
-               
-                <li class="p-3">
-                <a href='./adminindex.html'> <button class="outline-btn"> Admin</button> </a>
-                </li>
-                <li class="p-3">
-                    <button class="filled-button">View all jobs</button>
-                </li>
-
-            </ul>
-
+    <nav class="menu">
+        <ul>
+            <li><a href="/" class="active">HOME</a></li>
+            <li><a href="/biz">SERVICES</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/events">EVENTS</a></li>
+            <li><a href="/businessplan">PLANS</a></li>
+            <li><a href="/contactus">CONTACT</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </nav>
 
-    <div class="popup-holder">
-       
-        <div class="form-holder flex flex-col items-start">
-        <span class='remove-pop-up cursor-pointer'><i class="bi bi-x"></i></span>
-            <form method="POST" action="/buyPlans" class="flex flex-col w-full" style="gap: 1rem;">
-            @csrf
-            <input type="text" name="name" id="name" required placeholder="fullname" class="p-2 ">
-                <input type="text" name="email" required id="email" placeholder="Email" class="p-2">
-                <input type="text" name="planid" value="" id="planid" placeholder="planid"   style="display:none;" class="p-2">
-                <input type="text" name="amount"  value="" id="amount" placeholder="amount" style="display:none;" class="p-2">
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <div class="slide-content">
+                    <div class="logo">
+                        <img src="/img/logo (1).png" alt="" srcset="">
+                    </div>
 
-                <button type="submit" class="default-btn">Confirm</button>
-            </form>
+                    <h1>Leaders in Creating Business Growth</h1>
+                    <p>Be the next raving success. </p>
+                    <br>
+                    <p>Let’s place you ahead of others
+                        using those who know how to customize solutions...
+                    </p>
+                    <div class="buttons">
+                        <button class="learn-more">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="logo">
+                        <img src="/img/logo (1).png" alt="" srcset="">
+                    </div>
+                    <h1>Leaders in Creating Business Growth</h1>
+                    <p>Be the next raving success</p>
+                    <p>Let’s place you ahead of others using those who know how to customize solutions...</p>
+                    <div class="buttons">
+                        <button>LEARN MORE</button>
 
+                        <button>ABOUT US</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="logo">
+                        <img src="/img/logo (1).png" alt="" srcset="">
+                    </div>
+
+                    <h1>Leaders in Creating Business Growth</h1>
+                    <p>Be the next raving success. </p>
+                    <br>
+                    <p>Let’s place you ahead of others
+                        using those who know how to customize solutions...
+                    </p>
+                    <div class="buttons">
+                        <button class="learn-more">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="indicators">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+        </div>
+
     </div>
 
-    <section class="section-1 flex  justify-around items-center ">
-    <div class="sm:w-2/5 flex justify-around ">
-       <p class='big-txt'>Leaders in creating <br> business growth</p>
-
-       <p class='big-txt-sub strong'>Be the next raving success</p>
-
-        <p class='big-txt-sub'>Let’s place you ahead of others using those who know how to <br> customize solutions.</p>
-
-        <button class='defaultBtn sm:px-7 sm:py-4' id="openBizpageBtn">Learn more</button>
-
-    
-
-
+    <section class="main-section">
+        <div class="sub-section-holder">
+            <div class="sub-section sub-section-left">
+                <h1 class="header-text-2">CORE SERVICES</h1>
+                <div class="title-img">
+                    <img src="/img/Rectangle 2.png" alt="Title Image">
+                </div>
+                <p>LAMID’s Business Innovation Zone (BIZ) rapidly produces and expands Africa’s best entrepreneurs and
+                    startups to deliver
+                    exceptional value by deploying our technology-enabled entrepreneurial and management expertise -
+                    BEST.
+                </p>
+                <p>
+                    Gain access to credit, finance and investors and dominate markets with our Business Expansion
+                    Strategy and Technology (BEST)”.
+                </p>
+            </div>
+            <div class="sub-section sub-section-right">
+                <div class="image-grid">
+                    <img src="/img/Group 93.png" alt="Image 1">
+                    <img src="/img/Group 96.png" alt="Image 2">
+                    <img src="/img/Group 94.png" alt="Image 3">
+                    <img src="/img/Group 95.png" alt="Image 4">
+                </div>
+            </div>
         </div>
-        <div class="w-1/3 flex justify-around items-center">
-            <img src="assets/image1/na_may_29.png" class="image1" alt="">
+        <div class="bottom-div">
+            <h2>BIZ - 3000+ SMEs created and grown, using our start and expand <br>
+                knowledge machinery. <a href="#">Learn how now</a>.</h2>
+
         </div>
     </section>
-
-
-    <p class="text-4xl bold mt-8">Business plans</p>
-    <section class="w-full business-card-scroll-container  flex flex-col ">
-        <section class="business-card-holder  h-full flex ">
-     
-            <div class="card flex flex-col justify-between"> 
-                <div>
-                 
-                    <p class="card-Hatchling Plan">Business plan title </p>
-                    <p class="discount">60% discount</p>
-                    <ul class="card-list">
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                    </ul>
-                </div>
-                
-
-                <div>
-                    <p class="card-price">N 60,000</month</p>
-                <input style="display:none;"   />
-                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+    <section class="section-2-holder">
+        <section class="main-section-2">
+            <div class="card">
+                <img src="/img/Rectangle 59.png" alt="Image 1">
+                <div class="card-content">
+                    <h2 class="card-title"><b> Access Finance </b></h2>
+                    <p class="card-about">At a point, all businesses will
+                        need help accessing the right finance to remain profitable, and keep growing.</p>
                 </div>
             </div>
 
-            <div class="card flex flex-col justify-between"> 
-                <div>
-                 
-                    <p class="card-Hatchling Plan">Business plan title </p>
-                    <p class="discount">60% discount</p>
-                    <ul class="card-list">
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                    </ul>
-                </div>
-                
-
-                <div>
-                    <p class="card-price">N 60,000</month</p>
-                <input style="display:none;"   />
-                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+            <div class="card">
+                <img src="/img/Rectangle 59 (1).png" alt="Image 1">
+                <div class="card-content">
+                    <h2 class="card-title"><b>Diagnosis</b> and <b>Strategy</b></h2>
+                    <p class="card-about">We reveal uncommon opportunities from everyday ideas and challenges, and build
+                        fit-for-purpose, easy-to adopt solutions.Let’s deploy the winning strategies and knowledge.</p>
                 </div>
             </div>
-     
-            <div class="card flex flex-col justify-between"> 
-                <div>
-                 
-                    <p class="card-Hatchling Plan">Business plan title </p>
-                    <p class="discount">60% discount</p>
-                    <ul class="card-list">
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                    </ul>
-                </div>
-                
-
-                <div>
-                    <p class="card-price">N 60,000</month</p>
-                <input style="display:none;"   />
-                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+            <div class="card">
+                <img src="/img/Rectangle 59 (2).png" alt="Image 1">
+                <div class="card-content">
+                    <h2 class="card-title"><b>Digitize</b> for <b>Gains</b></h2>
+                    <p class="card-about">Automate and optimize with the right- budget digital and intellectual tools
+                        and intellectual property.Adopt a global mentality: think big but act small.</p>
                 </div>
             </div>
-            <div class="card flex flex-col justify-between"> 
-                <div>
-                 
-                    <p class="card-Hatchling Plan">Business plan title </p>
-                    <p class="discount">60% discount</p>
-                    <ul class="card-list">
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                    </ul>
-                </div>
-                
-
-                <div>
-                    <p class="card-price">N 60,000</month</p>
-                <input style="display:none;"   />
-                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+            <div class="card">
+                <img src="/img/Rectangle 59 (3).png" alt="Image 1">
+                <div class="card-content">
+                    <h2 class="card-title"><b>Co-Work</b></h2>
+                    <p class="card-about">Low-cost price point for all,
+                        even the early-stage startup
+                        or small business matters.</p>
                 </div>
             </div>
-            <div class="card flex flex-col justify-between"> 
-                <div>
-                 
-                    <p class="card-Hatchling Plan">Business plan title </p>
-                    <p class="discount">60% discount</p>
-                    <ul class="card-list">
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                    </ul>
-                </div>
-                
-
-                <div>
-                    <p class="card-price">N 60,000</month</p>
-                <input style="display:none;"   />
-                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+            <div class="card">
+                <img src="/img/Rectangle 59.png" alt="Image 1">
+                <div class="card-content">
+                    <h2 class="card-title"><b>Entrepreneurship</b> Camps</h2>
+                    <p class="card-about">3000+businesses built and grown, including start-ups. More than training;
+                        offers management advisory with environmental and social governance support for sustainability.
+                    </p>
                 </div>
             </div>
-            <div class="card flex flex-col justify-between"> 
-                <div>
-                 
-                    <p class="card-Hatchling Plan">Business plan title </p>
-                    <p class="discount">60% discount</p>
-                    <ul class="card-list">
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                    </ul>
-                </div>
-                
-
-                <div>
-                    <p class="card-price">N 60,000</month</p>
-                <input style="display:none;"   />
-                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+            <div class="card">
+                <img src="/img/Rectangle 59 (5).png" alt="Image 1">
+                <div class="card-content">
+                    <h2 class="card-title"><b>Unleash</b> your people's <b>potential</b></h2>
+                    <p class="card-about">From recruitment to on-boarding, to building the company handbook into
+                        culture, to training, and performance and productivity tracking,</p>
                 </div>
             </div>
-            <div class="card flex flex-col justify-between"> 
-                <div>
-                 
-                    <p class="card-Hatchling Plan">Business plan title </p>
-                    <p class="discount">60% discount</p>
-                    <ul class="card-list">
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                    </ul>
-                </div>
-                
-
-                <div>
-                    <p class="card-price">N 60,000 month</p>
-                <input style="display:none;"   />
-                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+            <div class="card">
+                <img src="/img/Rectangle 59 (2).png" alt="Image 1">
+                <div class="card-content">
+                    <h2 class="card-title"><b>Talent Sourcing </b></h2>
+                    <p class="card-about">We source and recruit smart, visionary leaders and talents,with a singular
+                        purpose – to create continuous innovation and disruption for client advantage.</p>
                 </div>
             </div>
-            <div class="card flex flex-col justify-between"> 
-                <div>
-                 
-                    <p class="card-Hatchling Plan">Business plan title </p>
-                    <p class="discount">60% discount</p>
-                    <ul class="card-list">
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                        <li>plan priviledge</li>
-                    </ul>
-                </div>
-                
-
-                <div>
-                    <p class="card-price">N 60,000</month</p>
-                <input style="display:none;"   />
-                    <button class="buy-btn w-full"  onclick="buyplan(this)" >Buy now</button>
+            <div class="card">
+                <img src="/img/Rectangle 59 (3).png" alt="Image 1">
+                <div class="card-content">
+                    <h2 class="card-title"><b>Social Impact</b></h2>
+                    <p class="card-about">
+                        we assist governments and international partners on their climate compatible development
+                        mission.</p>
                 </div>
             </div>
-
-
-
-           
+            <!-- Repeat the above card structure for the remaining cards -->
         </section>
     </section>
-
-    <section class="section-2 flex text-white justify-around items-center rounded-lg py-16 px-5">
-        <div class="sm:w-1/2 flex flex-rol justify-center input-holder-div items-center ">
-            <input type="search" placeholder="Search Job" class="p-5 w-4/5 mx-5 my-3 rounded outline-none text-black">
-            <button class='search-btn p-5'> <i class="bi bi-search" style='color:#D3202E'></i></button>
-         </div>
-        <div class="sm:w-1/2">
-            <p class="section-two-txt">
-                Careers at  LAMID Consulting
+    <section class="main-section">
+        <div class="main-sub-section-ii">
+            <h1 class="l-header">WHO ARE WE?</h1>
+            <p>
+                LAMID is an expert at integrating academic excellence with real-world applications. It uses the most
+                intellectually experienced consultant facilitators, matching their expertise to clients’ needs.
+                Consultants are selected from suitable and best qualified people, chosen for their ability to convey
+                knowledge, and share their skills and experience. These are specialists in their own fields, who each
+                bring experience in a professional specialty and commit to model the theories they learn.
+                <br>
+                Our team of ten resident consultants and other external specialists is led by: MRS. MAUREEN O. AKINTAYO,
+                Executive Chairperson, LAMID Consulting. With over 30 years in management consulting and Human Capital
+                development, Mrs. Akintayo has led the team LAMID consultants to growing pedestals in providing learning
+                solutions to client organizations.
             </p>
-        </div>
-    </section>
 
-    <section class="section-3 rounded-lg">
+            <div class="circle">
 
-        <div class="opac flex text-white justify-around items-center w-full h-full" style="opacity:.2">
-
-        </div>
-
-        <div class="flex text-white justify-around items-center w-full h-full">
-            <p class="section-3-text text-center">
-                Attracting and retaining the right talents at the right time <br> remains the key factor that can thwart
-                your
-                vision,
-                and capacity <br> to compete on innovation, strategy, processes and all other <br> customer-focused
-                solutions -
-                it is the
-                singular make or break <br> issue that can define any organization’s success.
-            </p>
-        </div>
-
-
-    </section>
-
-    <section class="section-4 text-white justify-around items-center rounded-lg py-5 px-5 my-10">
-        <p class="headerText">Expore Categories</p>
-
-        <p class="section-4-text sm:text-center">
-            Recruitment is an essential function in the human capital planning and development of an organization. World
-            class
-            organizations and business management consultants cannot over emphasize the need to recruit right. It is a
-            meticulous process of attracting the best ahead-of-the-curve candidates - scheduling interviews and hiring
-            the
-            most suitable people with set competencies that fit into the organization’s need and culture.
-        </p>
-
-        <ul class="flex justify-around items-center w-full my-0 text-center section-4-list">
-            <li class="flex justify-center items-center  flex-col">
-                <img src="assets/buld/Asset 1@3x.png" alt="">
-                <p>Engineering</p>
-            </li>
-            <li class="flex justify-center items-center flex-col">
-                <img src="assets/chat/Asset 3@3x.png" alt="">
-                <p>Consultancy</p>
-            </li>
-            <li class="flex justify-center items-center flex-col">
-                <img src="assets/customerCare/Asset 1@3x.png" alt="">
-                <p>Customer service</p>
-            </li>
-            <li class="flex justify-center items-center flex-col">
-                <img src="assets/customerService//Asset 2@3x.png" alt="">
-                <p>Customer service</p>
-            </li>
-        </ul>
-
-        <button class="defaultBtn-2 sm:px-9 sm:py-5 ">
-            See all opening
-        </button>
-    </section>
-
-    <section class="section-4 text-white flex flex-col justify-around items-center rounded-lg py-14 px-5 sm:my-4">
-        <p class="headerText text-center">Biz</p>
-        <p class="section-4-text text-center">
-        Unlock Africa's entrepreneurial potential with the Business Innovation Zone, fostering tech-driven innovation and propelling success in the market.
-        </p>
-        
-        <button class="defaultBtn-2-outline px-9 py-5 " id="openBizBtn">
-           Read more
-        </button>
-    </section>
-    <section class="section-4 text-white flex flex-col justify-around items-center rounded-lg py-14 px-5 sm:my-4">
-        <p class="headerText text-center">HCD</p>
-        <p class="section-4-text text-center">
-        LAMID consulting offers recruitment, training, programs, business plans, and expert insights for human capital development and business growth.
-        </p>
-        
-        <button class="defaultBtn-2-outline px-9 py-5 " id="openHCDBtn">
-           Read more
-        </button>
-    </section>
-
-    <section class="section-4 text-white flex flex-col justify-around items-center rounded-lg py-14 px-5 sm:my-4">
-        <p class="headerText text-center">SDE</p>
-        <p class="section-4-text text-center">
-       .....
-        </p>
-        
-        <button class="defaultBtn-2-outline px-9 py-5 " id="openSDEBtn">
-           Read more
-        </button>
-    </section>
-
-
-    <section class="section-5 rounded-lg text-black">
-        <p class="big-black-txt text-black">Your Dream Jobs Are Waiting</p>
-        <p class="section-5-text text-black">over 1 million interactions, 50,000 success <br> stories Make yours now.
-        </p>
-
-        <div class="my-4">
-            <button class="outline-btn text-black sm:p-6 sm:px-16">
-                Search jobs
-            </button>
-            <button class="filled-button text-white   sm:p-6 sm:px-16">
-                Join our jobs club
-            </button>
-        </div>
-    </section>
-
-    <section class="section-4 text-white flex flex-col justify-around items-center rounded-lg py-16 px-5 sm:my-24">
-        <p class="headerText text-center">Featured Jobs</p>
-        <p class="section-4-text text-center">
-            Know your worth and find the job that qualify your life
-        </p>
-        <button class="defaultBtn-2-outline px-9 py-5 ">
-            Browse for jobs
-        </button>
-    </section>
-
-
-    <section class="section-6 flex justify-around items-center">
-
-        <div class="section-6-sub text-white sm:w-2/3 justify-around items-center">
-            <div class="flex items-start">
-                <p class="big-txt-sub-2 section-4-text my-8">We understand that there is a tightening supply of high
-                    talent <br> personnel due to
-                    the
-                    increasing shortage of leadership, <br> entrepreneurial management and technical knowledge, despite
-                    the
-                    prevalent
-                    high unemployment. <br><br> This is also a result of the rapid economic and technological changes
-                    around the
-                    world.</p>
-            </div>
-
-        </div>
-        <div class="image1-holder-container sm:w-1/3 flex justify-around items-center">
-            <div class="image1-holder">
-                <img src="img/img/happy-cheerful-business-people-posing-office-hallway.png" alt="" class="w-full h-full">
             </div>
         </div>
-
     </section>
-
-
-    <p class="text-4xl bold mt-8">Testimonials</p>
-    <section class="w-full business-card-scroll-container flex flex-col">
-        <section class="business-card-holder gap-2rem  items-center h-full flex ">
-
-            <div class="row mx-4" style="width:17rem">
-                <div class="h-full">
-                    <div class="twentytwenty-container">
-                        <img src="img/1_1.jpg" />
-                        <img src="img/1_2.jpg" />
-                    </div>
-
-                    <div class="">
-                        <p class="testimonial-text font-thin italic">
-                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod assumenda, blanditiis
-                            commodi
-                            placeat quos alias debitis exercitationem doloremque quo. Odit nostrum id consequatur a
-                            ipsa, libero excepturi numquam quod voluptatibus."</p>
-
-                        <br>
-                        <p class="testimonial-user-name text-red-500">John Doe</p>
-                    </div>
+    <section class="gradient-bg" onclick="alert('Just link the page through this event listener')">
+        <img src="/img/UPCOMIINGEVENTS.png" alt="">
+    </section>
+    <section class="white-bg-big">
+        <div class="inner-div-holder">
+            <div class="d-div-holder">
+                <div>
+                    <p>
+                        Ready-to-adopt
+                        <br />
+                        prototypes
+                    </p>
+                </div>
+                <div>
+                    Proven to earn the bank's trust, <br /> and increase success rate
                 </div>
             </div>
-
-            <div class="row mx-4" style="width:17rem">
-                <div class="h-full">
-                    <div class="twentytwenty-container">
-                        <img src="img/1_1.jpg" />
-                        <img src="img/1_2.jpg" />
-                    </div>
-
-                    <div class="">
-                        <p class="testimonial-text font-thin italic">
-                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod assumenda, blanditiis
-                            commodi
-                            placeat quos alias debitis exercitationem doloremque quo. Odit nostrum id consequatur a
-                            ipsa, libero excepturi numquam quod voluptatibus."</p>
-
-                        <br>
-                        <p class="testimonial-user-name text-red-500">John Doe</p>
-                    </div>
+            <div class="div-holder-ii">
+                <div class="img-holder">
+                    <img src="/img/WECAN HELP.png" alt="img">
                 </div>
-            </div>
-
-            <div class="row mx-4" style="width:17rem">
-                <div class="h-full">
-                    <div class="twentytwenty-container">
-                        <img src="img/1_1.jpg" />
-                        <img src="img/1_2.jpg" />
-                    </div>
-
-                    <div class="">
-                        <p class="testimonial-text font-thin italic">
-                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod assumenda, blanditiis
-                            commodi
-                            placeat quos alias debitis exercitationem doloremque quo. Odit nostrum id consequatur a
-                            ipsa, libero excepturi numquam quod voluptatibus."</p>
-
-                        <br>
-                        <p class="testimonial-user-name text-red-500">John Doe</p>
-                    </div>
+                <div>
+                    <p><b>Get</b> To</p>
+                    <p>HIGHER <b>HEIGHTS!</b></p>
                 </div>
+
+                <button class="custom-btn-1">JOIN BIZ CLUB</button>
             </div>
-
-            <div class="row mx-4" style="width:17rem">
-                <div class="h-full">
-                    <div class="twentytwenty-container">
-                        <img src="img/1_1.jpg" />
-                        <img src="img/1_2.jpg" />
-                    </div>
-
-                    <div class="">
-                        <p class="testimonial-text font-thin italic">
-                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod assumenda, blanditiis
-                            commodi
-                            placeat quos alias debitis exercitationem doloremque quo. Odit nostrum id consequatur a
-                            ipsa, libero excepturi numquam quod voluptatibus."</p>
-
-                        <br>
-                        <p class="testimonial-user-name text-red-500">John Doe</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mx-4" style="width:17rem">
-                <div class="h-full">
-                    <div class="twentytwenty-container">
-                        <img src="img/1_1.jpg" />
-                        <img src="img/1_2.jpg" />
-                    </div>
-
-                    <div class="">
-                        <p class="testimonial-text font-thin italic">
-                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod assumenda, blanditiis
-                            commodi
-                            placeat quos alias debitis exercitationem doloremque quo. Odit nostrum id consequatur a
-                            ipsa, libero excepturi numquam quod voluptatibus."</p>
-
-                        <br>
-                        <p class="testimonial-user-name text-red-500">John Doe</p>
-                    </div>
-                </div>
-            </div>
-
-            
-
-           
-
-          
-
-        </section>
+            <button class="custom-btn-2">SEE BUSINESS GUIDES</button>
+        </div>
     </section>
+    <section class="sponsors">
+        <img src="/img/OTHERSWHOTRUST.png" alt="" srcset="">
+    </section>
+    <section class="down-grid">
+        <div class="inner-down-grid-holder">
+            <div class="inner-down-grid">
+                <div>
+                    <button>HOME</button>
+                </div>
+                <div>
+                    <button>ABOUT US</button>
+                </div>
+                <div>
+                    <button>CONTACT US</button>
+                </div>
+                <div>
+                    <button>SERVICES</button>
+                </div>
+                <div>
+                    <button>EVENTS</button>
+                </div>
+                <div>
+                    <button>Business Plan</button>
+                </div>
+            </div>
+            <div class="bottom-of-grid">
+                <input type="text" placeholder="Your mail..."> <button>GET NEWSLETTER</button>
+            </div>
+        </div>
+    </section>
+    <section class="bottom">
+        <div class="flexed">
+            <div class="logo-2">
+                <img src="/img/logo (1).png" alt="">
+            </div>
+            <ul class="socials">
+                <li><a href=""><img src="/img/Rectangle 178.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 179.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 180.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 181.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 182.png" alt=""></a></li>
+            </ul>
+        </div>
 
+        <p class="bottom-text"><b>All right reserved - Copyrights 2023 Lamidconsulting</b></p>
 
-    <footer class="flex w-full">
-        <div>
-            <img src="assets/logo/lamids.png" alt="">
-            <ul class="flex justify-around">
+        <div class="mobile-bottom">
+            <ul class="all-bottom-list-holders">
                 <li>
-                    <a href="http://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                    <ul>
+                        <li>
+                            <h3>HOME</h3>
+                        </li>
+                        <li>
+                            <p> <a href=""> join biz </a></p>
+                        </li>
+                        <li>
+                            <p> <a href=""> join biz club </a></p>
+                        </li>
+                        <li>
+                            <p> <a href=""> join biz shpere </a></p>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="http://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+                    <ul>
+                        <li>
+                            <h3>SERVICES</h3>
+                        </li>
+                        <li>
+                            <p> <a href=""> biz </a></p>
+                        </li>
+                        <li>
+                            <p> <a href=""> hcd </a></p>
+                        </li>
+                        <li>
+                            <p> <a href=""> biz-4-bbgr</a></p>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <ul>
+                        <li>
+                            <h3>ABOUT US</h3>
+                        </li>
+                        <li>
+                            <p> <a href="">business guides</a></p>
+                        </li>
+                        <li>
+                            <p> <a href="">benefits</a></p>
+                        </li>
+                        <li>
+                            <p> <a href="">job search clinic</a></p>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="http://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+                    <ul>
+                        <li>
+                            <h3>EVENTS</h3>
+                        </li>
+                        <li>
+                            <p> <a href="">recent events</a></p>
+                        </li>
+                        <li>
+                            <p> <a href="">upcoming events</a></p>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="contact-us">
+                <li>
+                    <h3>CONTACT US</h3>
+                </li>
+                <li>
+                    <p><i class="bi bi-envelope-fill"></i> <a href=""> hp@lamidconsulting.com
+                            <br>
+                            crm@lamidconsulting.com</a></p>
+                </li>
+                <li>
+                    <p><i class="bi bi-telephone-fill"></i> <a href=""> +2347026228801
+                        </a></p>
+                </li>
+                <li>
+                    <p><i class="bi bi-geo-alt"></i> <a href="">2 nd Floor Ivory Music
+                            <br> House, Alausa, Lagos.
+                        </a></p>
                 </li>
             </ul>
         </div>
-    </footer>
-
-    <div class="widget-holder">
-        <div class="chat-text-holder">
-            <div class="system">
-                Hi
-            </div>
-
-            <div class="client">
-                I'm Good today and you
-            </div>
-
-            <div class="client">
-                I'm Good today and you, can you help me with my Lamid account.
-            </div>
-
-        </div>
-        <div class="text-box-holder">
-            <input type="text" placeholder="Text message">
-            <button><i class="bi bi-arrow-up-short"></i></button>
-        </div>
-    </div>
-
-    <div class="widget-toggler">
-        <img src="assets/whatsapp/images1.png" alt="">
-    </div>
-    <script src="Componets/menu/menu.js"></script>
-    <script src="Componets/menu/menu.js
-    "></script>
-    <script src="Componets/whatsappwidget/whatsappwidget.js"></script>
-    
-    <script src="js/jquery.event.move.js"></script>
-    <script src="js/jquery.twentytwenty.js"></script>
+    </section>
     <script>
+        const menu = document.querySelector('.menu');
+        const hamburger = document.querySelector('.hamburger');
 
-        $(".buy-btn").click(function () {
-            $(".popup-holder").fadeToggle('slow');
-          });
 
-           $(".remove-pop-up").click(function () {
-            $(".popup-holder").fadeToggle('slow');
-          });
-          
-          $(".popup-holder").hide(.0000005);
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('collapsed');
+        });
 
-        $(function () {
-            $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
-                default_offset_pct: 0.7
+
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        let currentSlide = 0;
+        let autoplayInterval;
+
+        function showSlide(index) {
+            slides.forEach((slide, idx) => {
+                if (idx === index) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
             });
-            $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
-                default_offset_pct: 0.3,
-                orientation: 'vertical'
+
+            indicators.forEach((indicator, idx) => {
+                if (idx === index) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            if (currentSlide === slides.length) {
+                currentSlide = 0;
+            }
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+            showSlide(currentSlide);
+        }
+
+        function startAutoplay() {
+            autoplayInterval = setInterval(nextSlide, 5000);
+        }
+
+        function stopAutoplay() {
+            clearInterval(autoplayInterval);
+        }
+
+        showSlide(currentSlide);
+        startAutoplay();
+
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            stopAutoplay();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            stopAutoplay();
+        });
+
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+                stopAutoplay();
             });
         });
 

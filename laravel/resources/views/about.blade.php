@@ -3,20 +3,21 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../../public/styles/newhomage.css">
+    <link rel="stylesheet" type="text/css" href="/styles/newhomage.css">
 
-    <link rel="stylesheet" type="text/css" href="../../public/styles/newaboutus.css">
+    <link rel="stylesheet" type="text/css" href="/styles/newaboutus.css">
 </head>
 
 <body>
     <nav class="menu">
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#" class="active">ABOUT US</a></li>
-            <li><a href="#">EVENTS</a></li>
-            <li><a href="#">CONTACT US</a></li>
-            <li><a href="#">BUSSINESS PLANS</a></li>
+        <li><a href="/" >HOME</a></li>
+            <li><a href="/biz" >SERVICES</a></li>
+            <li><a href="/about"class="active"> ABOUT</a></li>
+            <li><a href="/events">EVENTS</a></li>
+            <!-- <li><a href="/contactus">CONTACT </a></li> -->
+            <li><a href="/businessplan"> PLANS</a></li>
+            <li><a href="/contactus">CONTACT</a></li>
         </ul>
         <div class="hamburger">
             <div class="line"></div>
@@ -51,36 +52,36 @@
         </div>
         <div class="team-grid">
             <div class="team-member">
-                <img src="../../public//img/Group 94 (1).png" alt="">
+                <img src="//img/Group 94 (1).png" alt="">
             </div>
             <div class="team-member">
-                <img src="../../public//img/Group 94 (1).png" alt="">
+                <img src="//img/Group 94 (1).png" alt="">
             </div>
             <div class="team-member">
-                <img src="../../public//img/Group 94 (1).png" alt="">
+                <img src="//img/Group 94 (1).png" alt="">
             </div>
             <div class="team-member">
-                <img src="../../public//img/Group 94 (1).png" alt="">
+                <img src="//img/Group 94 (1).png" alt="">
             </div>
             <div class="team-member">
-                <img src="../../public//img/Group 94 (1).png" alt="">
+                <img src="//img/Group 94 (1).png" alt="">
             </div>
             <div class="team-member">
-                <img src="../../public//img/Group 94 (1).png" alt="">
+                <img src="//img/Group 94 (1).png" alt="">
             </div>
             <div class="team-member">
-                <img src="../../public//img/Group 94 (1).png" alt="">
+                <img src="//img/Group 94 (1).png" alt="">
             </div>
             <div class="team-member">
-                <img src="../../public//img/Group 94 (1).png" alt="">
+                <img src="//img/Group 94 (1).png" alt="">
             </div>
             <div class="team-member">
-                <img src="../../public//img/Group 94 (1).png" alt="">
+                <img src="//img/Group 94 (1).png" alt="">
             </div>
         </div>
     </div>
     <div class="absection3">
-        <img src="../../public/img/VALUES.png" alt="" srcset="">
+        <img src="/img/VALUES.png" alt="" srcset="">
     </div>
 
     <div class="absection4">
@@ -140,13 +141,13 @@
         <h2 class="ab-big-red-2">RESULTS</h2>
         <div class="ab-grid">
             <div class="ab-member">
-                <img src="../../public/img/Frame 66.png" alt="">
+                <img src="/img/Frame 66.png" alt="">
             </div>
             <div class="ab-member">
-                <img src="../../public/img/Frame 67.png" alt="">
+                <img src="/img/Frame 67.png" alt="">
             </div>
             <div class="ab-member">
-                <img src="../../public/img/Frame 68.png" alt="">
+                <img src="/img/Frame 68.png" alt="">
             </div>
         </div>
 
@@ -243,14 +244,14 @@
     <section class="bottom">
         <div class="flexed">
             <div class="logo-2">
-                <img src="../../public/img/logo (1).png" alt="">
+                <img src="/img/logo (1).png" alt="">
             </div>
             <ul class="socials">
-                <li><a href=""><img src="../../public/img/Rectangle 178.png" alt=""></a></li>
-                <li><a href=""><img src="../../public/img/Rectangle 179.png" alt=""></a></li>
-                <li><a href=""><img src="../../public/img/Rectangle 180.png" alt=""></a></li>
-                <li><a href=""><img src="../../public/img/Rectangle 181.png" alt=""></a></li>
-                <li><a href=""><img src="../../public/img/Rectangle 182.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 178.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 179.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 180.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 181.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 182.png" alt=""></a></li>
             </ul>
         </div>
 

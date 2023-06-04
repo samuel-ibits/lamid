@@ -3,24 +3,25 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../../public/styles/newhomage.css">
-    <link rel="stylesheet" href="../../public/styles/newbiz.css">
-    <link rel="stylesheet" href="../../public/styles/newhcd.css">
-    <link rel="stylesheet" type="text/css" href="../../public/styles/newevent.css">
-    <link rel="stylesheet" type="text/css" href="../../public/styles/newbusinessplan.css">
-    <link rel="stylesheet" type="text/css" href="../../public/styles/newbiz4bbgr.css">
-    <link rel="stylesheet" type="text/css" href="../../public/styles/newaboutus.css">
+    <link rel="stylesheet" type="text/css" href="/styles/newhomage.css">
+    <link rel="stylesheet" href="/styles/newbiz.css">
+    <link rel="stylesheet" href="/styles/newhcd.css">
+    <link rel="stylesheet" type="text/css" href="/styles/newevent.css">
+    <link rel="stylesheet" type="text/css" href="/styles/newbusinessplan.css">
+    <link rel="stylesheet" type="text/css" href="/styles/newbiz4bbgr.css">
+    <link rel="stylesheet" type="text/css" href="/styles/newaboutus.css">
 </head>
 
 <body>
     <nav class="menu">
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#" class="active">SERVICES</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">EVENTS</a></li>
-            <li><a href="#">CONTACT US</a></li>
-            <li><a href="#">BUSSINESS PLANS</a></li>
+        <li><a href="/" >HOME</a></li>
+            <li><a href="/biz" >SERVICES</a></li>
+            <li><a href="/about" >ABOUT</a></li>
+            <li><a href="/events" >EVENTS</a></li>
+            <!-- <li><a href="/contactus" >CONTACT US</a></li> -->
+            <li><a href="/businessplan" class="active" >PLANS</a></li>
+            <li><a href="/contactus">CONTACT</a></li>
         </ul>
         <div class="hamburger">
             <div class="line"></div>
@@ -32,7 +33,7 @@
     <div class="event-section-1">
 
         <div class="logo absolute-position">
-            <img src="../../public/img/logo (1).png" alt="">
+            <img src="/img/logo (1).png" alt="">
         </div>
         <h1>
             BUSINESS PLANS
@@ -48,7 +49,7 @@
             <div class="subb-inner">
                 <div class="subb-section-image-holder">
                     <p class="full-width heading-normal">RECENT PLANS</p>
-                    <img src="../../public/img/Rectangle 240.png" alt="">
+                    <img src="/img/Rectangle 240.png" alt="">
                 </div>
                 <div>
                     <button class="grey-b-btn">
@@ -65,14 +66,14 @@
                 <p class="heading-normal margin-top-1">BUSINESS EVENTS</p>
                 <div class="subb-inner-flex">
                     <div class="img-ii">
-                        <img src="../../public/img/Rectangle 172.png" alt="">
+                        <img src="/img/Rectangle 172.png" alt="">
                     </div>
                     <button class="grey-b-btn">VIEW EVENTS</button>
                 </div>
                 <div class="subb-inner-flex">
                     <button class="grey-b-btn">VIEW EVENTS</button>
                     <div class="img-ii">
-                        <img src="../../public/img/Rectangle 173.png" alt="">
+                        <img src="/img/Rectangle 173.png" alt="">
                     </div>
                 </div>
             </div>
@@ -88,19 +89,19 @@
                 <div class="event-grid">
                     <div>
                         <div class="event-card-img">
-                            <img src="../../public/img/Rectangle 177.png" alt="">
+                            <img src="/img/Rectangle 177.png" alt="">
                         </div>
                         <div class="event-card-img">
-                            <img src="../../public/img/Rectangle 176.png" alt="">
+                            <img src="/img/Rectangle 176.png" alt="">
                         </div>
                     </div>
 
                     <div>
                         <div class="event-card-img">
-                            <img src="../../public/img/Rectangle 174.png" alt="">
+                            <img src="/img/Rectangle 174.png" alt="">
                         </div>
                         <div class="event-card-img">
-                            <img src="../../public/img/Rectangle 176.png" alt="">
+                            <img src="/img/Rectangle 176.png" alt="">
                         </div>
                     </div>
 
@@ -128,7 +129,7 @@
                 <div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public//img/Polygon 22.png" alt="">
+                            <img src="//img/Polygon 22.png" alt="">
                         </div>
                         <div class="subbb-btn-holder">
                             <button class="grey-btn-smaller">PURCHASE</button>
@@ -137,7 +138,7 @@
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public//img/Polygon 23.png" alt="">
+                            <img src="//img/Polygon 23.png" alt="">
                         </div>
                         <div class="subbb-btn-holder">
                             <button class="grey-btn-smaller">PURCHASE</button>
@@ -146,7 +147,7 @@
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public//img/Polygon 25.png" alt="">
+                            <img src="//img/Polygon 25.png" alt="">
                         </div>
                         <div class="subbb-btn-holder">
                             <button class="grey-btn-smaller">PURCHASE</button>
@@ -155,7 +156,7 @@
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public//img/Polygon 27.png" alt="">
+                            <img src="//img/Polygon 27.png" alt="">
                         </div>
                         <div class="subbb-btn-holder">
                             <button class="grey-btn-smaller">PURCHASE</button>
@@ -164,7 +165,7 @@
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public//img/Polygon 22.png" alt="">
+                            <img src="//img/Polygon 22.png" alt="">
                         </div>
                         <div class="subbb-btn-holder">
                             <button class="grey-btn-smaller">PURCHASE</button>
@@ -173,7 +174,7 @@
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public//img/Polygon 23.png" alt="">
+                            <img src="//img/Polygon 23.png" alt="">
                         </div>
                         <div class="subbb-btn-holder">
                             <button class="grey-btn-smaller">PURCHASE</button>
@@ -182,7 +183,7 @@
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public//img/Polygon 25.png" alt="">
+                            <img src="//img/Polygon 25.png" alt="">
                         </div>
                         <div class="subbb-btn-holder">
                             <button class="grey-btn-smaller">PURCHASE</button>
@@ -191,7 +192,7 @@
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public//img/Polygon 27.png" alt="">
+                            <img src="//img/Polygon 27.png" alt="">
                         </div>
                         <div class="subbb-btn-holder">
                             <button class="grey-btn-smaller">PURCHASE</button>
@@ -205,7 +206,7 @@
     </div>
 
     <div class="newbizsection3">
-        <img src="../../public//img/Frame 52 (2).png" alt="">
+        <img src="//img/Frame 52 (2).png" alt="">
     </div>
 
     <div class="newbizsection4">
@@ -235,49 +236,49 @@
                 <div class="centered-flex">
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 168 (1).png" alt="">
+                            <img src="/img/Rectangle 168 (1).png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 169.png" alt="">
+                            <img src="/img/Rectangle 169.png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 170.png" alt="">
+                            <img src="/img/Rectangle 170.png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 171.png" alt="">
+                            <img src="/img/Rectangle 171.png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 168 (1).png" alt="">
+                            <img src="/img/Rectangle 168 (1).png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 169.png" alt="">
+                            <img src="/img/Rectangle 169.png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 170.png" alt="">
+                            <img src="/img/Rectangle 170.png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 171.png" alt="">
+                            <img src="/img/Rectangle 171.png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
@@ -297,25 +298,25 @@
                 <div class="centered-flex">
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 168 (1).png" alt="">
+                            <img src="/img/Rectangle 168 (1).png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 169.png" alt="">
+                            <img src="/img/Rectangle 169.png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 170.png" alt="">
+                            <img src="/img/Rectangle 170.png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 171.png" alt="">
+                            <img src="/img/Rectangle 171.png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
@@ -331,25 +332,25 @@
                 <div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 168 (2).png" alt="">
+                            <img src="/img/Rectangle 168 (2).png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 169 (1).png" alt="">
+                            <img src="/img/Rectangle 169 (1).png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 170 (2).png" alt="">
+                            <img src="/img/Rectangle 170 (2).png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 171 (1).png" alt="">
+                            <img src="/img/Rectangle 171 (1).png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
@@ -392,14 +393,14 @@
     <section class="bottom">
         <div class="flexed">
             <div class="logo-2">
-                <img src="../../public/img/logo (1).png" alt="">
+                <img src="/img/logo (1).png" alt="">
             </div>
             <ul class="socials">
-                <li><a href=""><img src="../../public/img/Rectangle 178.png" alt=""></a></li>
-                <li><a href=""><img src="../../public/img/Rectangle 179.png" alt=""></a></li>
-                <li><a href=""><img src="../../public/img/Rectangle 180.png" alt=""></a></li>
-                <li><a href=""><img src="../../public/img/Rectangle 181.png" alt=""></a></li>
-                <li><a href=""><img src="../../public/img/Rectangle 182.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 178.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 179.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 180.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 181.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 182.png" alt=""></a></li>
             </ul>
         </div>
 

@@ -22,36 +22,48 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/index.html', function () {
+Route::get('/index', function () {
     return view('index');
 });
-Route::get('/insight.html', function () {
+Route::get('/insight', function () {
     return view('insight');
 });
 
-Route::get('/biz.html', function () {
+Route::get('/biz', function () {
     return view('biz');
 });
 
-Route::get('/biz-page.html', function () {
+Route::get('/biz-page', function () {
     return view('biz-page');
 });
 
 
+Route::get('/businessplan', function () {
+    return view('businessplan');
+});
 
-Route::get('/hcd.html', function () {
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+
+Route::get('/biz4blog', function () {
+    return view('biz4blog');
+});
+Route::get('/hcd', function () {
     return view('hcd');
 });
 
-Route::get('/sde.html', function () {
+Route::get('/sde', function () {
     return view('sde');
 });
 
-Route::get('/events.html', function () {
+Route::get('/events', function () {
     return view('events');
 });
 
-Route::get('/contactus.html', function () {
+Route::get('/contactus', function () {
     return view('contactus');
 });
 

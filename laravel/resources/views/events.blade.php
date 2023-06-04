@@ -1,288 +1,469 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/home.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./Componets/menu/menu.css">
-    <link rel="stylesheet" href="./globalStyle.css">
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="Componets/popup/popup.css">
-    <link rel="stylesheet" href="./styles/insight.css">
-    <link rel="stylesheet" href="./styles/event.css">
-    <script>
-    function book(can) {
-        var id= can.id;
- document.getElementById('eventId').value= id;
-
-        var amount= 'amount'+id; 
-var amountval= document.getElementById(amount).value;      
-document.getElementById('amount').value= amountval;
-   
-    
-var eventNumber= 'eventNumber'+id; 
-var seatNumberval= document.getElementById(seatNumber).value;      
-document.getElementById('seatNumber').value= seatNumberval;
- 
-var eventName= 'eventName'+id; 
-var eventNameval= document.getElementById(eventName).value;      
-document.getElementById('eventName').value= eventNameval;
-
-var fullname= 'fullname'; 
-var fullnameval= document.getElementById(fullname).value;      
-document.getElementById('fullname').value= fullnameval;
-
-var email= 'email'; 
-
-var emailval= document.getElementById(email).value;      
-document.getElementById('email').value= emailval;
-
-var status= 'status'+id; 
-
-var statusval= document.getElementById(status).value;      
-document.getElementById('status').value= statusval;
-
-       }
-   </script>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/styles/newhomage.css">
+    <link rel="stylesheet" href="/styles/newbiz.css">
+    <link rel="stylesheet" href="/styles/newhcd.css">
+    <link rel="stylesheet" type="text/css" href="/styles/newevent.css">
+    <link rel="stylesheet" type="text/css" href="/styles/newbiz4bbgr.css">
+    <link rel="stylesheet" type="text/css" href="/styles/newaboutus.css">
 </head>
 
 <body>
-    <nav class="items-center w-screen place-content-around  text-sm nav-holder">
-        <div class="top-div">
-            <div class="logo-holder">
-                <img src="./assets/logo/lamids.png" alt="Logo" class="w-full">
-            </div>
+    <nav class="menu">
+        <ul>
+        <li><a href="/" >HOME</a></li>
+            <li><a href="/biz" >SERVICES</a></li>
+            <li><a href="/about" >ABOUT</a></li>
+            <li><a href="/events" class="active">EVENTS</a></li>
+            <!-- <li><a href="/contactus">CONTACT US</a></li> -->
+            <li><a href="/businessplan">PLANS</a></li>
+            <li><a href="/contactus">CONTACT</a></li>
 
-            <button class="menu-icon openmenu">
-                <i class="bi bi-list  text-white"></i>
-            </button>
-            <button class="menu-icon closemenu">
-            <i class="bi bi-x text-white"></i>
-            </button>
-        </div>
-
-        <div id="menuList" class="list-holder-top">
-            <ul class="text-white flex place-content-around items-center menu-list">
-                <li class="p-5 ">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="p-5">
-                    <a href="biz.html">BIZ</a>
-                </li>
-                <li class="p-5">
-                    <a href="hcd.html">HCD</a>
-                </li>
-                <li class="p-5">
-                    <a href="sde.html">SDE</a>
-                </li>
-
-                <li class="p-5 active-menu-item">
-                    <a href="events.html">Events</a>
-                </li>
-                <li class="p-5">
-                    <a href="insight.html">Insights</a>
-                </li>
-                <li class="p-5">
-                    <a href="contactus.html">Contact</a>
-                </li>
-            </ul>
-
-            <ul class="text-white flex items-center place-content-around menu-list">
-               
-                  <li class="p-3">
-                  <a href='./adminindex.html'> <button class="outline-btn"> Admin</button> </a>
-                </li>
-                <li class="p-3">
-                    <button class="filled-button">View all jobs</button>
-                </li>
-
-            </ul>
-
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </nav>
 
+    <div class="event-section-1">
 
-    <div class="popup-holder">
-       
-       <div class="form-holder flex flex-col items-start">
-       <span class='remove-pop-up cursor-pointer'><i class="bi bi-x"></i></span>
-           <form method="POST" action="/bookEvents" class="flex flex-col w-full" style="gap: 1rem;">
-           @csrf
-           <input type="text" name="name" id="fulname" placeholder="fullname" class="p-2 ">
-               <input type="text" name="email" id="email" placeholder="Email" class="p-2">
-               <input type="text" name="eventId" value="" id="eventId"   style="display:none" class="p-2">
-               <input type="text" name="eventName" value="" id="eventName"  style="display:none" class="p-2">
-
-               <input type="text" name="amount"  value="" id="amount" placeholder="amount" class="p-2">
-               <input type="text" name="seatNumber" value="" id="seatNumber" placeholder="seatNumber"  style="display:none" class="p-2">
-               <input type="text" name="seatNumber" value="" id="status" placeholder="seatNumber"  style="display:none" class="p-2">
-              
-               <button type="submit" class="default-btn">Confirm</button>
-           </form>
-
-       </div>
-   </div>
-
-
-    <div class="event-page">
-    <?php  $event = DB::table('events')->get(); ?>
-
-    @foreach($event as $event)
-
-        <div class="feed-card">
-            <div class="feed-card-image">
-                <img src="./assets/bg/bg-1.jpg" alt="">
-            </div>
-
-            <div class="card-text">
-                <div class="">
-                    <h1 class="mb-4">{{ $event->name }}</h1>
-                    <p class="about-event">{{ $event->description }}</p>
-
-                    <p class="my-4">{{ $event->time }}</p>
-
-                </div>
-                <input type="text" value="{{$event->name}}" id="eventName{{$event->id}}"  style="display:none" >
-               <input type="text"   value="{{$event->price}}" id="amount{{$event->id}}"  style="display:none" >
-               <input type="text" value="{{$event->bookedSeats}}" id="seatNumber{{$event->id}}"   style="display:none" >
-     
-                <button id="{{ $event->id }}"class="buy-btn w-full" onclick="book(this)" >Reserve seat</button>
-
-            </div>
+        <div class="logo absolute-position">
+            <img src="/img/logo (1).png" alt="">
         </div>
-        @endforeach
+        <h1>
+            OUR EVENTS
+        </h1>
+        <p class="thin">
+            Exploring the ideas of shaping tomorrow's <br> opportunities
 
-@forelse ($event as $plan)
+            <br> This Event is channeled to a new market entrance and <br> Career development & Progression, back to market.
+        </p>
 
-@empty
-<p>No events available</p>
-@endforelse
-        <div class="feed-card">
-            <div class="feed-card-image">
-                <img src="./assets/bg/bg-1.jpg" alt="">
+
+        <div class="sub-section-1">
+            <div>
+                <p class="header">Upcoming Events</p>
+
+
+                <button class="grey-btn-i">RESERVE SEAT</button>
+
             </div>
+            <div>
+                <p class="header">Recent Events</p>
 
-            <div class="card-text">
-                <div class="">
-                    <h1 class="mb-4">Event Title</h1>
-                    <p class="about-event">Lorem ipsum dolor seat amet consectetur adipisicing elit. Id eius saepe
-                        commodi repellat, blanditiis vero
-                        provident consequatur consectetur consequuntur officiis? Molestias perferendis libero
-                        e quia exercitationem perspiciatis.</p>
+                <div class="flexed-event">
+                    <section>
+                        <img src="/img/Rectangle 172.png" alt="">
+                    </section>
 
-                    <p class="my-4">21 august 2022</p>
-
+                    <button class="grey-btn-i  full-width">view event</button>
                 </div>
 
-                <button class="buy-btn w-full">Reserve seat</button>
+                <div class="flexed-event">
+                    <button class="grey-btn-i  full-width">view event</button>
 
+                    <section>
+                        <img src="/img/Rectangle 173.png" alt="">
+                    </section>
+                </div>
             </div>
         </div>
 
-        <div class="feed-card">
-            <div class="feed-card-image">
-                <img src="./assets/bg/bg-1.jpg" alt="">
-            </div>
+        <div class="sub-section-2">
+            <section class="inner-sub-section">
+                <p class="header-i">RECENT JOB</p>
+                <div class="event-grid">
+                    <div>
+                        <div class="event-card-img">
+                            <img src="/img/Rectangle 177.png" alt="">
+                        </div>
+                        <div class="event-card-img">
+                            <img src="/img/Rectangle 176.png" alt="">
+                        </div>
+                    </div>
 
-            <div class="card-text">
-                <div class="">
-                    <h1 class="mb-4">Event Title</h1>
-                    <p class="about-event">Lorem ipsum dolor seat amet consectetur adipisicing elit. Id eius saepe
-                        commodi repellat, blanditiis vero
-                        provident consequatur consectetur consequuntur officiis? Molestias perferendis libero
-                        e quia exercitationem perspiciatis.</p>
+                    <div>
+                        <div class="event-card-img">
+                            <img src="/img/Rectangle 174.png" alt="">
+                        </div>
+                        <div class="event-card-img">
+                            <img src="/img/Rectangle 176.png" alt="">
+                        </div>
+                    </div>
 
-                    <p class="my-4">21 august 2022</p>
+                    <div class="buttons-holder">
+                        <button class="red-primary-btn">JOIN BIZ CLUB</button>
 
+                        <button class="red-primary-btn">JOIN JOB CLUB</button>
+                    </div>
                 </div>
 
-                <button class="buy-btn w-full">Reserve seat</button>
-
+            </section>
+            <div>
+                <section class="red-border">
+                    <p class="header-i">JOB SEARCH CLINIC</p>
+                </section>
             </div>
         </div>
-
-
-
     </div>
 
-    <footer class="flex w-full">
-        <div>
-            <img src="./assets/logo/lamids.png" alt="">
-            <ul class="flex justify-around">
+
+    <div class="newbiz-darkbottom pic-bg">
+        <div class="innernewbiz-darkbottom">
+            <div class="newbiz-sub-section">
+                <div class="">
+                    <p class="thick big-text">HUMAN DEVELOPMENT</p>
+                </div>
+                <div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="//img/Polygon 22.png" alt="">
+                        </div>
+                        <button class="grey-btn">RESERVE SEAT</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="//img/Polygon 23.png" alt="">
+                        </div>
+                        <button class="grey-btn">RESERVE SEAT</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="//img/Polygon 25.png" alt="">
+                        </div>
+                        <button class="grey-btn">RESERVE SEAT</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="//img/Polygon 27.png" alt="">
+                        </div>
+                        <button class="grey-btn">RESERVE SEAT</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="newbiz-sub-section">
+                <div class="">
+                    <p class="thick big-text">TRAINING</p>
+                </div>
+                <div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="//img/Polygon 22.png" alt="">
+                        </div>
+                        <button class="grey-btn">RESERVE SEAT</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="//img/Polygon 23.png" alt="">
+                        </div>
+                        <button class="grey-btn">RESERVE SEAT</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="//img/Polygon 25.png" alt="">
+                        </div>
+                        <button class="grey-btn">RESERVE SEAT</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="//img/Polygon 27.png" alt="">
+                        </div>
+                        <button class="grey-btn">RESERVE SEAT</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="newbizsection3">
+        <img src="//img/Frame 52 (1).png" alt="">
+    </div>
+
+    <div class="newbizsection4">
+        <div class="three-section-holder">
+            <div class="white-section">
+                <p>Free
+                    <b>Business <br> Health </b> Check</p>
+                <button>Signup for a free check</button>
+            </div>
+            <div class="red-bg">
+                <p>
+                    JOB SEARCH <br> CLINIC
+                </p>
+            </div>
+            <div class="white-section">
+                <p>Lamid’s <b>Business</b> <br> Guides
+                </p>
+                <button>Shop for Guides</button>
+            </div>
+        </div>
+
+        <div class="width-60">
+            <div class="newbiz-sub-section">
+                <div class="width-80">
+                    <p class="thick big-text">UPCOMING EVENTS</p>
+                </div>
+                <div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="//img/Polygon 22.png" alt="">
+                        </div>
+                        <button class="grey-btn">RESERVE SEAT</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="//img/Polygon 23.png" alt="">
+                        </div>
+                        <button class="grey-btn">RESERVE SEAT</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="//img/Polygon 25.png" alt="">
+                        </div>
+                        <button class="grey-btn">RESERVE SEAT</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="//img/Polygon 27.png" alt="">
+                        </div>
+                        <button class="grey-btn">RESERVE SEAT</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="back-bg">
+        <div class="width-60 inner-back-bg">
+            <div class="newbiz-sub-section">
+                <div class="">
+                    <p class="thick white-text big-text">BUSINESS GUIDES</p>
+                </div>
+                <div class="centered-flex">
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="/img/Rectangle 168 (1).png" alt="">
+                        </div>
+                        <button class="red-btn">PURCHASE</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="/img/Rectangle 169.png" alt="">
+                        </div>
+                        <button class="red-btn">PURCHASE</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="/img/Rectangle 170.png" alt="">
+                        </div>
+                        <button class="red-btn">PURCHASE</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="/img/Rectangle 171.png" alt="">
+                        </div>
+                        <button class="red-btn">PURCHASE</button>
+                    </div>
+                </div>
+            </div>
+
+            <p class="white-text center-text">Grow your business with plan and strategy templates tailored for you</p>
+
+            <div class="newbiz-sub-section">
+                <div class="">
+                    <p class="thick white-text">RECENT GUIDES</p>
+                </div>
+                <div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="/img/Rectangle 168 (2).png" alt="">
+                        </div>
+                        <button class="red-btn">PURCHASE</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="/img/Rectangle 169 (1).png" alt="">
+                        </div>
+                        <button class="red-btn">PURCHASE</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="/img/Rectangle 170 (2).png" alt="">
+                        </div>
+                        <button class="red-btn">PURCHASE</button>
+                    </div>
+                    <div>
+                        <div class="newbiz-img">
+                            <img src="/img/Rectangle 171 (1).png" alt="">
+                        </div>
+                        <button class="red-btn">PURCHASE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="full-width centered-flex">
+                <button class="classic-btn">SEE BUSINESS GUIDES</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="down-grid">
+        <div class="inner-down-grid-holder">
+            <div class="inner-down-grid">
+                <div>
+                    <button>HOME</button>
+                </div>
+                <div>
+                    <button>ABOUT US</button>
+                </div>
+                <div>
+                    <button>CONTACT US</button>
+                </div>
+                <div>
+                    <button>SERVICES</button>
+                </div>
+                <div>
+                    <button>EVENTS</button>
+                </div>
+                <div>
+                    <button>Business Plan</button>
+                </div>
+            </div>
+            <div class="bottom-of-grid">
+                <input type="text" placeholder="Your mail..."> <button>GET NEWSLETTER</button>
+            </div>
+        </div>
+    </section>
+    <section class="bottom">
+        <div class="flexed">
+            <div class="logo-2">
+                <img src="/img/logo (1).png" alt="">
+            </div>
+            <ul class="socials">
                 <li>
-                    <a href="http://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                    <a href=""><img src="/img/Rectangle 178.png" alt=""></a>
                 </li>
                 <li>
-                    <a href="http://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+                    <a href=""><img src="/img/Rectangle 179.png" alt=""></a>
                 </li>
                 <li>
-                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><img src="/img/Rectangle 180.png" alt=""></a>
                 </li>
                 <li>
-                    <a href="http://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+                    <a href=""><img src="/img/Rectangle 181.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="/img/Rectangle 182.png" alt=""></a>
                 </li>
             </ul>
         </div>
-    </footer>
 
-    <div class="widget-holder">
-        <div class="chat-text-holder">
-            <div class="system">
-                Hi
-            </div>
+        <p class="bottom-text"><b>All right reserved - Copyrights 2023 Lamidconsulting</b></p>
 
-            <div class="client">
-                I'm Good today and you
-            </div>
+        <div class="mobile-bottom">
+            <ul class="all-bottom-list-holders">
+                <li>
+                    <ul>
+                        <li>
+                            <h3>HOME</h3>
+                        </li>
+                        <li>
+                            <p> <a href=""> join biz </a></p>
+                        </li>
+                        <li>
+                            <p> <a href=""> join biz club </a></p>
+                        </li>
+                        <li>
+                            <p> <a href=""> join biz shpere </a></p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <h3>SERVICES</h3>
+                        </li>
+                        <li>
+                            <p> <a href=""> biz </a></p>
+                        </li>
+                        <li>
+                            <p> <a href=""> hcd </a></p>
+                        </li>
+                        <li>
+                            <p> <a href=""> biz-4-bbgr</a></p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <h3>ABOUT US</h3>
+                        </li>
+                        <li>
+                            <p> <a href="">business guides</a></p>
+                        </li>
+                        <li>
+                            <p> <a href="">benefits</a></p>
+                        </li>
+                        <li>
+                            <p> <a href="">job search clinic</a></p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <h3>EVENTS</h3>
+                        </li>
+                        <li>
+                            <p> <a href="">recent events</a></p>
+                        </li>
+                        <li>
+                            <p> <a href="">upcoming events</a></p>
+                        </li>
 
-            <div class="client">
-                I'm Good today and you, can you help me with my Lamid account.
-            </div>
+                    </ul>
+                </li>
+            </ul>
 
+            <ul class="contact-us">
+                <li>
+                    <h3>CONTACT US</h3>
+                </li>
+                <li>
+                    <p><i class="bi bi-envelope-fill"></i> <a href=""> hp@lamidconsulting.com
+                            <br>
+                            crm@lamidconsulting.com</a></p>
+                </li>
+                <li>
+                    <p><i class="bi bi-telephone-fill"></i> <a href=""> +2347026228801
+                        </a></p>
+                </li>
+                <li>
+                    <p><i class="bi bi-geo-alt"></i> <a href="">2 nd Floor Ivory Music
+                            <br> House, Alausa, Lagos.
+                        </a></p>
+                </li>
+            </ul>
         </div>
-        <div class="text-box-holder">
-            <input type="text" placeholder="Text message">
-            <button><i class="bi bi-arrow-up-short"></i></button>
-        </div>
-    </div>
-
-    <div class="widget-toggler">
-        <img src="./assets/whatsapp/images1.png" alt="">
-    </div>
-    <script src="./Componets/menu/menu.js"></script>
-    <script src="./Componets/whatsappwidget/whatsappwidget.js"></script>
+    </section>
     <script>
+        const menu = document.querySelector('.menu');
+        const hamburger = document.querySelector('.hamburger');
 
-$(".buy-btn").click(function () {
-    $(".popup-holder").fadeToggle('slow');
-  });
 
-   $(".remove-pop-up").click(function () {
-    $(".popup-holder").fadeToggle('slow');
-  });
-  
-  $(".popup-holder").hide(.0000005);
-
-$(function () {
-    $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
-        default_offset_pct: 0.7
-    });
-    $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
-        default_offset_pct: 0.3,
-        orientation: 'vertical'
-    });
-});
-
-</script>
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('collapsed');
+        });
+    </script>
 </body>
 
 </html>

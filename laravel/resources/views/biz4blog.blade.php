@@ -3,17 +3,17 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../../public/styles/newhomage.css">
-    <link rel="stylesheet" href="../../public/styles/newbiz.css">
-    <link rel="stylesheet" href="../../public/styles/newhcd.css">
-    <link rel="stylesheet" type="text/css" href="../../public/styles/newbiz4bbgr.css">
-    <link rel="stylesheet" type="text/css" href="../../public/styles/newaboutus.css">
+    <link rel="stylesheet" type="text/css" href="/styles/newhomage.css">
+    <link rel="stylesheet" href="/styles/newbiz.css">
+    <link rel="stylesheet" href="/styles/newhcd.css">
+    <link rel="stylesheet" type="text/css" href="/styles/newbiz4bbgr.css">
+    <link rel="stylesheet" type="text/css" href="/styles/newaboutus.css">
 </head>
 
 <body>
     <nav class="menu">
         <ul>
-            <li><a href="#">HOME</a></li>
+            <li><a href="/">HOME</a></li>
             <li><a href="#" class="active">SERVICES</a></li>
             <li><a href="#">ABOUT US</a></li>
             <li><a href="#">EVENTS</a></li>
@@ -29,14 +29,14 @@
     <div class="absection1-biz">
         <div class="biz-sub">
             <div class="logo-biz hide-mobile">
-                <img src="../../public/img/logo (1).png" alt="">
+                <img src="/img/logo (1).png" alt="">
             </div>
             <div class="biz-top-holder">
 
             </div>
             <div class="biz-top-holder flexed">
                 <div class="biz-img">
-                    <img src="../../public/img//Rectangle 4.png" alt="biz-img" srcset="">
+                    <img src="/img//Rectangle 4.png" alt="biz-img" srcset="">
                 </div>
                 <div class="biz-text">
 
@@ -73,7 +73,7 @@
                 </li>
                 <li>
                     <div class="hcd-list-img">
-                        <img src="../../public//img/Polygon 30.png" alt="">
+                        <img src="//img/Polygon 30.png" alt="">
                     </div>
                     <p class="redtext thick padded-white-bg margin-top-1">Social Impact by
                         Cooperatives</p>
@@ -81,7 +81,7 @@
 
                 <li>
                     <div class="hcd-list-img">
-                        <img src="../../public//img/Polygon 30.png" alt="">
+                        <img src="//img/Polygon 30.png" alt="">
                     </div>
                     <p class="redtext thick padded-white-bg margin-top-1">Job and Wealth
                         Creation</p>
@@ -94,7 +94,7 @@
         </p>
 
         <div class="hcd-card scale-dwn">
-            <img src="../../public//img/Frame 6.png" alt="">
+            <img src="//img/Frame 6.png" alt="">
         </div>
     </div>
 
@@ -109,20 +109,20 @@
                 <ul class="newbizbb-icon">
                     <li>
                         <div class="full-biz-img">
-                            <img src="../../public//img/Ellipse 9.png" alt="">
+                            <img src="//img/Ellipse 9.png" alt="">
                         </div>
 
                     </li>
                     <li>
                         <div class="full-biz-img">
-                            <img src="../../public//img/Ellipse 10.png" alt="">
+                            <img src="//img/Ellipse 10.png" alt="">
                         </div>
 
                     </li>
 
                     <li class="full-biz-img">
                         <div>
-                            <img src="../../public//img/Ellipse 11.png" alt="">
+                            <img src="//img/Ellipse 11.png" alt="">
                         </div>
 
                     </li>
@@ -150,7 +150,7 @@
     </div>
 
     <div class="newbizsection3">
-        <img src="../../public//img/social impact.png" alt="">
+        <img src="//img/social impact.png" alt="">
     </div>
     <div class="newbizsection4">
         <div class="innernewbizsection4">
@@ -159,7 +159,7 @@
                         impact enabling inclusive, sustainable human development.
                     </b>
                 </p>
-                <img src="../../public//img/Rectangle 158.png" alt="">
+                <img src="//img/Rectangle 158.png" alt="">
             </div>
             <div>
                 <section>
@@ -174,7 +174,7 @@
                         </p>
                     </p>
                 </section>
-                <img src="../../public//img/Rectangle 164.png" alt="">
+                <img src="//img/Rectangle 164.png" alt="">
             </div>
         </div>
     </div>
@@ -205,20 +205,20 @@
                 <ul class="newbizbb-icon scale-dwn">
                     <li>
                         <div class="full-biz-img">
-                            <img src="../../public//img/Ellipse 15.png" alt="">
+                            <img src="//img/Ellipse 15.png" alt="">
                         </div>
 
                     </li>
                     <li>
                         <div class="full-biz-img">
-                            <img src="../../public//img/Ellipse 16.png" alt="">
+                            <img src="//img/Ellipse 16.png" alt="">
                         </div>
 
                     </li>
 
                     <li class="full-biz-img">
                         <div>
-                            <img src="../../public//img/Ellipse 17.png" alt="">
+                            <img src="//img/Ellipse 17.png" alt="">
                         </div>
 
                     </li>
@@ -227,9 +227,9 @@
 
             <div class="newbizbtm">
                 <div class="abls">
-                    <img src="../../public//img/Rectangle 166.png" alt="">
+                    <img src="//img/Rectangle 166.png" alt="">
                 </div>
-                <img src="../../public//img/Group 131.png" alt="">
+                <img src="//img/Group 131.png" alt="">
             </div>
         </div>
     </div>
@@ -245,25 +245,25 @@
                 <div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public//img/Polygon 22.png" alt="">
+                            <img src="//img/Polygon 22.png" alt="">
                         </div>
                         <button class="grey-btn">RESERVE SEAT</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public//img/Polygon 23.png" alt="">
+                            <img src="//img/Polygon 23.png" alt="">
                         </div>
                         <button class="grey-btn">RESERVE SEAT</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public//img/Polygon 25.png" alt="">
+                            <img src="//img/Polygon 25.png" alt="">
                         </div>
                         <button class="grey-btn">RESERVE SEAT</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public//img/Polygon 27.png" alt="">
+                            <img src="//img/Polygon 27.png" alt="">
                         </div>
                         <button class="grey-btn">RESERVE SEAT</button>
                     </div>
@@ -277,25 +277,25 @@
                 <div class="centered-flex">
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 168 (1).png" alt="">
+                            <img src="/img/Rectangle 168 (1).png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 169.png" alt="">
+                            <img src="/img/Rectangle 169.png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 170.png" alt="">
+                            <img src="/img/Rectangle 170.png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
                     <div>
                         <div class="newbiz-img">
-                            <img src="../../public/img/Rectangle 171.png" alt="">
+                            <img src="/img/Rectangle 171.png" alt="">
                         </div>
                         <button class="red-btn">PURCHASE</button>
                     </div>
@@ -336,14 +336,14 @@
     <section class="bottom">
         <div class="flexed">
             <div class="logo-2">
-                <img src="../../public/img/logo (1).png" alt="">
+                <img src="/img/logo (1).png" alt="">
             </div>
             <ul class="socials">
-                <li><a href=""><img src="../../public/img/Rectangle 178.png" alt=""></a></li>
-                <li><a href=""><img src="../../public/img/Rectangle 179.png" alt=""></a></li>
-                <li><a href=""><img src="../../public/img/Rectangle 180.png" alt=""></a></li>
-                <li><a href=""><img src="../../public/img/Rectangle 181.png" alt=""></a></li>
-                <li><a href=""><img src="../../public/img/Rectangle 182.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 178.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 179.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 180.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 181.png" alt=""></a></li>
+                <li><a href=""><img src="/img/Rectangle 182.png" alt=""></a></li>
             </ul>
         </div>
 
