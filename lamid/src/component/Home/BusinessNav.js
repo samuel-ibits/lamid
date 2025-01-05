@@ -3,9 +3,9 @@ import React from 'react';
 const BusinessNav = () => {
   // Correct image paths (use require or import images properly)
   const images = {
-    biz: require('../assets/images/biz.png'),
-    hcd: require('../assets/images/hcd.png'),
-    global: require('../assets/images/sd.png')
+    biz: require('../../assets/images/biz.png'),
+    hcd: require('../../assets/images/hcd.png'),
+    global: require('../../assets/images/sd.png')
   };
 
   const sections = [
@@ -33,14 +33,14 @@ const BusinessNav = () => {
   ];
 
   return (
-    <div className="w-full bg-black p-8">
+    <div className="w-full bg-black py-8">
       <div className="max-w-6xl mx-auto">
-        {/* Use responsive grid with appropriate column numbers for small screens */}
+        {/* Responsive grid with 1, 2, and 3 columns depending on screen size */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center">
           {sections.map((section, index) => (
             <div key={index} className="flex flex-col items-center space-y-4">
               {/* Image Container */}
-              <div className={`group transition-transform duration-300 hover:scale-105`}>
+              <div className="group transition-transform duration-300 hover:scale-105">
                 <div className={`relative ${section.dimensions} rounded-tl-3xl rounded-br-3xl overflow-hidden border-2 border-${section.color}-500 hover:border-${section.color}-400`}>
                   <img
                     src={section.image}
